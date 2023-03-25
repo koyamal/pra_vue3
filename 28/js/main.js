@@ -21,7 +21,17 @@ const app = Vue.createApp({
         deleteItem: function(index){
             console.log('Delete Button Clicked!');
             // console.log(index);
-            this.todos.splice(index, 1);
+            if(this.todos[index].isDone){
+                this.todos.splice(index, 1);
+            }else{
+                const output = 
+                `
+                This Task is Not Done.
+                Before Delete Task,
+                Change Status to Done.
+                `
+                alert(output);
+            }
         }
     }
 })
