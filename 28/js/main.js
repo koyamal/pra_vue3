@@ -6,12 +6,14 @@ const app = Vue.createApp({
     methods: {
         addItem: function(event){
             console.log('Button Clicked!');
-            let todo = {
-                item: this.newItem
+            if(this.newItem !== ''){
+                let todo = {
+                    item: this.newItem
+                }
+                this.todos.push(todo);
+                this.newItem = "";
             }
-            this.todos.push(todo);
-            this.newItem = "";
-            // console.log(this);
+            // iconsole.log(this);
         }
     }
 })
