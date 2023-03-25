@@ -5,7 +5,7 @@ const app = Vue.createApp({
     }),
     methods: {
         addItem: function(event){
-            console.log('Button Clicked!');
+            console.log('Add Button Clicked!');
             if(this.newItem === ''){
                 return
             }
@@ -17,6 +17,11 @@ const app = Vue.createApp({
             this.todos.push(todo);
             this.newItem = "";
             // iconsole.log(this);
+        },
+        deleteItem: function(index){
+            console.log('Delete Button Clicked!');
+            // console.log(index);
+            this.todos.splice(index, 1);
         }
     }
 })
