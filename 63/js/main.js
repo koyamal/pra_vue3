@@ -7,6 +7,9 @@ const app = Vue.createApp({
     },
     mounted: function(){
 
+    },
+    methods:{
+         
     }
 })
 
