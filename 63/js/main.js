@@ -5,7 +5,9 @@ const app = Vue.createApp({
         message: '',
     }),
     watch: {
-
+        keyword: function(newKeyword, oldKeyword){
+            console.log(newKeyword);
+        }
     },
     mounted: function(){
         this.getAnswer();
