@@ -11,7 +11,7 @@ export default {
     template: `
     <div class="articleClass">
     <h2>No-{{id}}: {{ title }}</h2>
-    <div v-if="flag">Content:<br> {{ content }}</div>
+    <div v-if="flag">{{ content }}</div>
     <button v-on:click="onClick">{{!flag? "Show": "x"}}</button>
     </div>
     `
