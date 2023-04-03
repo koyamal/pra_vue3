@@ -1,6 +1,6 @@
 import articlecontent from './articlecontent.js';
 
-let id = 0
+let id = 1
 const app = Vue.createApp({
     data: () => ({
         newTitle: '',
