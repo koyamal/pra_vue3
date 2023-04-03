@@ -1,15 +1,15 @@
-<script setup>
-import { ref } from 'vue'
-
-defineProps({
-  msg: String,
-})
-
-const count = ref(0)
+<script>
+export default {
+  data() {
+    return {
+      greeting: 'Hello World!'
+    }
+  }
+}
 </script>
 
 <template>
-  <h1>Hello, World.</h1>
+  <h2>{{ greeting }}</h2>
 </template>
 
 <style scoped>
