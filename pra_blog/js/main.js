@@ -5,7 +5,7 @@ const app = Vue.createApp({
     data: () => ({
         newTitle: '',
         newContent: '',
-        bothInputed: false,
+        bothInputed: true,
         isDanger: true,
         articles: [
             {
@@ -51,14 +51,15 @@ const app = Vue.createApp({
     },
     methods:{
         addArticle: function(){
-            if(this.newTitle && this.newContent){
-                this.articles.push({id: id++, title: this.newTitle, content: this.newContent});
-                this.newContent = '';
-                this.newTitle = '';
-                this.bothInputed = false
-            }else{
-                this.bothInputed = true
+            this.bothInputed = this.newTitle && this.newContent
+            if(this.bothInputed){
+                this.articles.push({id: id++, title: this.newTitle, content: this.newContent})
+                this.resetNewValues()
             }
+        },
+        resetNewValues: function(){
+            this.newContent = ''
+            this.newTitle = ''
         }
     }
 })

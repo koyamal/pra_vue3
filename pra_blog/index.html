@@ -18,7 +18,7 @@
         <textarea id="content" v-model="newContent"></textarea>
         <br>
         <button v-on:click="addArticle">Add</button>
-        <p v-show="bothInputed" v-bind:class="{ danger: isDanger }">Input Title and Content.</p>
+        <p v-show="!bothInputed" v-bind:class="{ danger: isDanger }">Input Title and Content.</p>
     </div>
     <script src="https://unpkg.com/vue@3.1.5"></script>
     <script type="module" src="js/main.js"></script>
