@@ -9,17 +9,38 @@ const app = Vue.createApp({
             {
                 id: id++,
                 title: 'Hello, World',
-                content: 'This is Hello, World article.'
+                content: `
+                This is Hello, World article.
+                This is Hello, World article.
+                This is Hello, World article.
+                This is Hello, World article.
+                This is Hello, World article.
+                This is Hello, World article.
+                `
             },
             {
                 id: id++,
                 title: 'Hello, Vue',
-                content: 'This is Hello, Vue article.'
+                content: `
+                This is Hello, Vue article.
+                This is Hello, Vue article.
+                This is Hello, Vue article.
+                This is Hello, Vue article.
+                This is Hello, Vue article.
+                This is Hello, Vue article.
+                `
             },
             {
                 id: id++,
                 title: 'Hello, JavaScript',
-                content: 'This is Hello, JavaScript article.'
+                content: `
+                This is Hello, JavaScript article.
+                This is Hello, JavaScript article.
+                This is Hello, JavaScript article.
+                This is Hello, JavaScript article.
+                This is Hello, JavaScript article.
+                This is Hello, JavaScript article.
+                `
             }
         ]
     }),
