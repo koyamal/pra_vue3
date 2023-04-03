@@ -49,9 +49,11 @@ const app = Vue.createApp({
     },
     methods:{
         addArticle: function(){
-            this.articles.push({id: id++, title: this.newTitle, content: this.newContent});
-            this.newContent = '';
-            this.newTitle = '';
+            if(this.newTitle && this.newContent){
+                this.articles.push({id: id++, title: this.newTitle, content: this.newContent});
+                this.newContent = '';
+                this.newTitle = '';
+            }
         }
     }
 })

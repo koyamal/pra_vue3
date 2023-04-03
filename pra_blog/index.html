@@ -14,7 +14,8 @@
         <input id="title" type="text" v-model="newTitle">
         <br>
         <label for="content">Content:</label>
-        <input id="content" type="text" v-model="newContent">
+        <textarea id="content" v-model="newContent"></textarea>
+        <br>
         <button v-on:click="addArticle">Add</button>
     </div>
     <script src="https://unpkg.com/vue@3.1.5"></script>
