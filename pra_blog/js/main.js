@@ -5,6 +5,8 @@ const app = Vue.createApp({
     data: () => ({
         newTitle: '',
         newContent: '',
+        bothInputed: false,
+        isDanger: true,
         articles: [
             {
                 id: id++,
@@ -53,6 +55,9 @@ const app = Vue.createApp({
                 this.articles.push({id: id++, title: this.newTitle, content: this.newContent});
                 this.newContent = '';
                 this.newTitle = '';
+                this.bothInputed = false
+            }else{
+                this.bothInputed = true
             }
         }
     }
