@@ -12,7 +12,7 @@ export default {
     <div class="articleClass">
     <p>Id: {{ id }}</p>
     <p>Title: {{ title }}</p>
-    <p v-if="flag">Content: {{ content }}</p>
+    <div v-if="flag">Content:<br> {{ content }}</div>
     <button v-on:click="onClick">{{!flag? "Show": "x"}}</button>
     </div>
     `
