@@ -3,6 +3,8 @@ import articlecontent from './articlecontent.js';
 let id = 0
 const app = Vue.createApp({
     data: () => ({
+        newTitle: '',
+        newContent: '',
         articles: [
             {
                 id: id++,
@@ -23,6 +25,13 @@ const app = Vue.createApp({
     }),
     components: {
         articlecontent
+    },
+    methods:{
+        addArticle: function(){
+            this.articles.push({id: id++, title: this.newTitle, content: this.newContent});
+            this.newContent = '';
+            this.newTitle = '';
+        }
     }
 })
 

@@ -9,7 +9,13 @@
 </head>
 <body>
     <div id="app">
-        <articlecontent v-for="article in articles" :id="article.id" :title="article.title" :content="article.content"></article>
+        <articlecontent v-for="article in articles" :id="article.id" :title="article.title" :content="article.content"></articlecontent>
+        <label for="title">Title:</label>
+        <input id="title" type="text" v-model="newTitle">
+        <br>
+        <label for="content">Content:</label>
+        <input id="content" type="text" v-model="newContent">
+        <button v-on:click="addArticle">Add</button>
     </div>
     <script src="https://unpkg.com/vue@3.1.5"></script>
     <script type="module" src="js/main.js"></script>
