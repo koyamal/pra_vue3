@@ -37,8 +37,8 @@ export default {
     AddArticle
   },
   methods: {
-    getMessage: function(val){
-      console.log(val)
+    getArticle: function(art){
+      this.articles.push(art)
     }
   }
 }
@@ -51,7 +51,7 @@ export default {
     <div v-for="article in articles" :key="article.id">
       <DisplayArticle :art="article"/>
     </div>
-    <AddArticle @onClick="getMessage"/>
+    <AddArticle @serveArticle="getArticle"/>
   </div>
 </template>
 

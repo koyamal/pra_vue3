@@ -15,7 +15,7 @@ export default {
   methods:{
     onClick: function(){
       this.flag = true
-      this.$emit("onClick", this.article.title)
+      this.$emit("serveArticle", this.article)
     }
   }
 }
