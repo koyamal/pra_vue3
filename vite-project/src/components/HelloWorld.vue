@@ -1,6 +1,5 @@
 <script>
 import DisplayArticle from './DisplayArticle.vue'
-import Test from './Test.vue'
 let id = 1
 export default {
   data() {
@@ -33,8 +32,7 @@ export default {
   },
   props: ['msg'],
   components: {
-    DisplayArticle,
-    Test
+    DisplayArticle
   }
 }
 </script>
@@ -43,12 +41,8 @@ export default {
   <div>
     <h2>{{ greeting }}</h2>
     <p>{{ msg }}</p>
-    <Test></Test>
     <div v-for="article in articles" :key="article.id">
-      <DisplayArticle/>
-      <h2>{{ article.title }}</h2>
-      <p>{{ article.content }}</p>
-      <p>by {{ article.author }}</p>
+      <DisplayArticle :art="article"/>
     </div>
   </div>
 </template>
