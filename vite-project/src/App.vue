@@ -1,6 +1,11 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 export default{
+  data: function(){
+    return {
+      msg: 'This is Hello World Blog powered by Vue.js'
+    }
+  },
   components: {
     HelloWorld
   }
@@ -9,7 +14,7 @@ export default{
 
 <template>
   <div>
-    <HelloWorld msg="Vite + Vue" />
+    <HelloWorld :msg="msg" />
   </div>
 </template>
 
