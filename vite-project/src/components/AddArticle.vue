@@ -17,7 +17,7 @@ export default {
     onClick: function(){
       this.flag = true
       this.article.id = this.nowId
-      this.$emit("serveArticle", {id: this.article.id, title: this.article.title, content: this.article.content, author: this.article.author, upDateTime: this.article.upDateTime})
+      this.$emit("serveArticle", {...this.article})
       this.nowId ++
     }
   },
