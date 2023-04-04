@@ -4,12 +4,16 @@ export default {
     return {
       greeting: 'Hello World!'
     }
-  }
+  },
+  props: ['msg']
 }
 </script>
 
 <template>
-  <h2>{{ greeting }}</h2>
+  <div>
+    <h2>{{ greeting }}</h2>
+    <p>{{ msg }}</p>
+  </div>
 </template>
 
 <style scoped>
