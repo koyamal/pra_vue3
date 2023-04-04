@@ -35,6 +35,11 @@ export default {
   components: {
     DisplayArticle,
     AddArticle
+  },
+  methods: {
+    getMessage: function(val){
+      console.log(val)
+    }
   }
 }
 </script>
@@ -46,7 +51,7 @@ export default {
     <div v-for="article in articles" :key="article.id">
       <DisplayArticle :art="article"/>
     </div>
-    <AddArticle/>
+    <AddArticle @onClick="getMessage"/>
   </div>
 </template>
 
