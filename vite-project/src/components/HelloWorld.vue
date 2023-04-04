@@ -5,6 +5,7 @@ let id = 1
 export default {
   data() {
     return {
+      articleId: 0,
       pageTitle: 'Hello World Blog',
       articles: [
         {
@@ -39,7 +40,11 @@ export default {
   methods: {
     getArticle: function(art){
       this.articles.push(art)
+      this.articleId ++
     }
+  },
+  mounted: function(){
+    this.articleId = id
   }
 }
 </script>
@@ -47,11 +52,12 @@ export default {
 <template>
   <div>
     <h1>{{ pageTitle }}</h1>
+    <p>{{ articles }}</p>
     <p>{{ msg }}</p>
     <div v-for="article in articles" :key="article.id">
       <DisplayArticle :art="article"/>
     </div>
-    <AddArticle @serveArticle="getArticle"/>
+    <AddArticle :articleId="articleId" @serveArticle="getArticle"/>
   </div>
 </template>
 

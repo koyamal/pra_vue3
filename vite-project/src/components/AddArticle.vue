@@ -3,21 +3,25 @@ export default {
   data() {
     return {
       article: {
-        id: 0,
+        id: 1000,
         title: '',
         content: '',
         author: '',
         upDateTime: '2023-02-04 19:02'
       },
-      flag: false
+      flag: false,
+      nowId: this.articleId
     }
   },
   methods:{
     onClick: function(){
       this.flag = true
+      this.article.id = this.nowId
       this.$emit("serveArticle", this.article)
+      this.nowId ++
     }
-  }
+  },
+  props: ['articleId']
 }
 </script>
 
