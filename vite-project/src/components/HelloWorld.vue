@@ -4,7 +4,7 @@ let id = 1
 export default {
   data() {
     return {
-      greeting: 'Hello World!',
+      pageTitle: 'Hello World Blog',
       articles: [
         {
           id: id++,
@@ -39,7 +39,7 @@ export default {
 
 <template>
   <div>
-    <h2>{{ greeting }}</h2>
+    <h1>{{ pageTitle }}</h1>
     <p>{{ msg }}</p>
     <div v-for="article in articles" :key="article.id">
       <DisplayArticle :art="article"/>
