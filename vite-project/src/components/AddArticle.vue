@@ -9,13 +9,11 @@ export default {
         author: '',
         upDateTime: '2023-02-04 19:02'
       },
-      flag: false,
       nowId: this.articleId
     }
   },
   methods:{
     onClick: function(){
-      this.flag = true
       this.article.id = this.nowId
       this.$emit("serveArticle", {...this.article})
       this.nowId ++
@@ -38,7 +36,6 @@ export default {
       <label for="author">Author: </label>
       <input id="author" type="text" v-model="article.author">
       <button v-on:click="onClick">Add</button>
-      <p v-if="flag">{{ article }}</p>
     </div>
 </template>
 

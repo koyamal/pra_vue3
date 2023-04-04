@@ -51,7 +51,6 @@ export default {
 <template>
   <div>
     <h1>{{ pageTitle }}</h1>
-    <p>{{ articles }}</p>
     <p>{{ msg }}</p>
     <div v-for="article in articles" :key="article.id">
       <DisplayArticle :art="article"/>

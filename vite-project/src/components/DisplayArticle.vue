@@ -11,7 +11,7 @@ export default {
 
 <template>
     <div class="article">
-        <h2>{{ art.title }}</h2>
+        <h2>{{ art.title }}<span style="font-size: smaller;">  (id:{{art.id}})</span></h2>
         <p>{{ art.content }}</p>
         <p>by {{ art.author }}</p>
     </div>
