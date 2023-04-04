@@ -7,6 +7,7 @@ export default {
     return {
       articleId: null,
       pageTitle: 'Hello World Blog',
+      isDisplayAddArticle: false,
       articles: [
         {
           id: id++,
@@ -40,6 +41,9 @@ export default {
   methods: {
     getArticle: function(art){
       this.articles.push(art)
+    },
+    displayAddArticle: function(){
+      this.isDisplayAddArticle = !this.isDisplayAddArticle
     }
   },
   beforeMount: function(){
@@ -55,7 +59,8 @@ export default {
     <div v-for="article in articles" :key="article.id">
       <DisplayArticle :art="article"/>
     </div>
-    <AddArticle :articleId="articleId" @serveArticle="getArticle"/>
+    <button v-on:click="displayAddArticle">{{ isDisplayAddArticle? "x": "Create Article" }}</button>
+    <AddArticle v-show="isDisplayAddArticle" :articleId="articleId" @serveArticle="getArticle"/>
   </div>
 </template>
 
