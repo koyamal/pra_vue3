@@ -1,5 +1,6 @@
 <script>
 import DisplayArticle from './DisplayArticle.vue'
+import AddArticle from './AddArticle.vue'
 let id = 1
 export default {
   data() {
@@ -32,7 +33,8 @@ export default {
   },
   props: ['msg'],
   components: {
-    DisplayArticle
+    DisplayArticle,
+    AddArticle
   }
 }
 </script>
@@ -44,6 +46,7 @@ export default {
     <div v-for="article in articles" :key="article.id">
       <DisplayArticle :art="article"/>
     </div>
+    <AddArticle/>
   </div>
 </template>
 
