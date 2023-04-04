@@ -5,7 +5,7 @@ let id = 1
 export default {
   data() {
     return {
-      articleId: 0,
+      articleId: null,
       pageTitle: 'Hello World Blog',
       articles: [
         {
@@ -40,10 +40,9 @@ export default {
   methods: {
     getArticle: function(art){
       this.articles.push(art)
-      this.articleId ++
     }
   },
-  mounted: function(){
+  beforeMount: function(){
     this.articleId = id
   }
 }
