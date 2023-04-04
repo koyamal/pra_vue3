@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div class="article">
         <h2>{{ art.title }}</h2>
         <p>{{ art.content }}</p>
         <p>by {{ art.author }}</p>
@@ -18,4 +18,9 @@ export default {
 </template>
 
 <style scoped>
+.article{
+  color: white;
+  background-color: blue;
+  width: 500px;
+}
 </style>
