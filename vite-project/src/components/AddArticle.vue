@@ -14,12 +14,15 @@ export default {
   },
   methods:{
     addArticle: function(){
-      this.article.id = this.nowId
-      this.$emit("serveArticle", {...this.article})
-      this.nowId ++
-      this.article.title = ""
-      this.article.author = ""
-      this.article.content = ""
+      if(this.article.title !== "" && this.article.content !== ""){
+        this.article.id = this.nowId
+        this.article.author = this.article.author || "Anonymous"
+        this.$emit("serveArticle", {...this.article})
+        this.nowId ++
+        this.article.title = ""
+        this.article.author = ""
+        this.article.content = ""
+      }
     }
   },
   props: ['articleId']
