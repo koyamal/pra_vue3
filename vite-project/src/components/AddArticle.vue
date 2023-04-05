@@ -17,6 +17,9 @@ export default {
       this.article.id = this.nowId
       this.$emit("serveArticle", {...this.article})
       this.nowId ++
+      this.article.title = ""
+      this.article.author = ""
+      this.article.content = ""
     }
   },
   props: ['articleId']
