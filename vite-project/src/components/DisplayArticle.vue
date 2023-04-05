@@ -19,7 +19,7 @@ export default {
         <h2>{{ art.title }}<span style="font-size: smaller;">  (id:{{art.id}})</span></h2>
         <p>{{ art.content }}</p>
         <p>by {{ art.author }}</p>
-        <button v-on:click="onClick">Delete</button>
+        <button class="deleteButton" v-on:click="onClick">Delete</button>
     </div>
 </template>
 
@@ -28,5 +28,9 @@ export default {
   color: white;
   background-color: blue;
   width: 500px;
+  margin-bottom: 1%;
+}
+.deleteButton{
+  margin-bottom: 1%;
 }
 </style>
