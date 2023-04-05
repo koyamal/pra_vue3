@@ -44,6 +44,9 @@ export default {
     },
     displayAddArticle: function(){
       this.isDisplayAddArticle = !this.isDisplayAddArticle
+    },
+    deleteArticle: function(artId){
+      this.articles = this.articles.filter((art) => art.id !== artId)
     }
   },
   beforeMount: function(){
@@ -57,7 +60,7 @@ export default {
     <h1>{{ pageTitle }}</h1>
     <p>{{ msg }}</p>
     <div v-for="article in articles" :key="article.id">
-      <DisplayArticle :art="article"/>
+      <DisplayArticle :art="article" @deleteArticleEvnet="deleteArticle"/>
     </div>
     <button v-on:click="displayAddArticle">{{ isDisplayAddArticle? "x": "Create Article" }}</button>
     <AddArticle v-show="isDisplayAddArticle" :articleId="articleId" @serveArticle="getArticle"/>
