@@ -3,7 +3,7 @@ export default {
   data() {
     return {
       article: {
-        id: 1000,
+        id: null,
         title: '',
         content: '',
         author: '',
