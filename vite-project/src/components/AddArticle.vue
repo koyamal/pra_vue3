@@ -9,7 +9,8 @@ export default {
         author: '',
         upDateTime: '2023-02-04 19:02'
       },
-      nowId: this.articleId
+      nowId: this.articleId,
+      isInputError: false
     }
   },
   methods:{
@@ -22,6 +23,9 @@ export default {
         this.article.title = ""
         this.article.author = ""
         this.article.content = ""
+        this.isInputError = false
+      }else{
+        this.isInputError = true
       }
     }
   },
@@ -31,6 +35,7 @@ export default {
 
 <template>
     <div>
+      <p class="text-danger" v-show="isInputError">Input Title and Content</p>
       <label for="title">Title: </label>
       <input id="title" type="text" v-model="article.title">
       <br>
@@ -46,4 +51,8 @@ export default {
 </template>
 
 <style scoped>
+.text-danger{
+  color: red;
+  font-size: large;
+}
 </style>
