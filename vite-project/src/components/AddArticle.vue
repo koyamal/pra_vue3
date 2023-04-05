@@ -13,7 +13,7 @@ export default {
     }
   },
   methods:{
-    onClick: function(){
+    addArticle: function(){
       this.article.id = this.nowId
       this.$emit("serveArticle", {...this.article})
       this.nowId ++
@@ -38,7 +38,7 @@ export default {
       <br>
       <label for="author">Author: </label>
       <input id="author" type="text" v-model="article.author">
-      <button v-on:click="onClick">Add</button>
+      <button v-on:click="addArticle">Add</button>
     </div>
 </template>
 
