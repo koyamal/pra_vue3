@@ -16,7 +16,10 @@ export default {
 
 <template>
     <div class="article">
-        <h2>{{ art.title }}<span style="font-size: smaller;">  (id:{{art.id}})</span></h2>
+      <div class="test">
+        <h2 class="">{{ art.title }}<span style="font-size: smaller;">  (id:{{art.id}})</span></h2>
+        <button class="showButton">Hello</button>
+      </div>
         <p>{{ art.content }}</p>
         <p>by {{ art.author }}</p>
         <button class="deleteButton" v-on:click="onClick">Delete</button>
@@ -32,5 +35,18 @@ export default {
 }
 .deleteButton{
   margin-bottom: 1%;
+}
+.left{
+  float: left
+}
+.showButton{
+  color: red;
+  float: right;
+  display:block;
+}
+
+.test{
+  background-color: white;
+  color: green
 }
 </style>
