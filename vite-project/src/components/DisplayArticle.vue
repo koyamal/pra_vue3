@@ -51,6 +51,7 @@ export default {
   margin: 0;
 }
 .showButton{
+  border-radius: 100px;
   position: absolute;
   right: 0;
   padding: 0.1em 0.5em;
