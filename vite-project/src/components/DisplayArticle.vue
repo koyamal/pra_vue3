@@ -16,8 +16,8 @@ export default {
 
 <template>
     <div class="article">
-      <div class="test">
-        <h2 class="">{{ art.title }}<span style="font-size: smaller;">  (id:{{art.id}})</span></h2>
+      <div class="titleBox">
+        <h2 class="artTitle">{{ art.title }}<span style="font-size: smaller;">  (id:{{art.id}})</span></h2>
         <button class="showButton">Hello</button>
       </div>
         <p>{{ art.content }}</p>
@@ -36,13 +36,17 @@ export default {
 .deleteButton{
   margin-bottom: 1%;
 }
-.left{
-  float: left
+.titleBox{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.artTitle{
+  margin: 0;
 }
 .showButton{
-  color: red;
-  float: right;
-  display:block;
+  position: absolute;
+  right: 0;
 }
 
 .test{
