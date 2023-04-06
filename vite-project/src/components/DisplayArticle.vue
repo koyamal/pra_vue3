@@ -37,7 +37,7 @@ export default {
   color: white;
   background-color: blue;
   width: 500px;
-  margin-bottom: 1%;
+  margin-bottom: 1em;
 }
 .deleteButton{
   margin-bottom: 1%;
@@ -57,10 +57,5 @@ export default {
   padding: 0.1em 0.5em;
   margin-top: 0.4em;
   margin-right: 0.4em;
-}
-
-.test{
-  background-color: white;
-  color: green
 }
 </style>
