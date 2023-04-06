@@ -18,7 +18,7 @@ export default {
     <div class="article">
       <div class="titleBox">
         <h2 class="artTitle">{{ art.title }}<span style="font-size: smaller;">  (id:{{art.id}})</span></h2>
-        <button class="showButton">Hello</button>
+        <button class="showButton">{{ false? "open": "close" }}</button>
       </div>
         <p>{{ art.content }}</p>
         <p>by {{ art.author }}</p>
