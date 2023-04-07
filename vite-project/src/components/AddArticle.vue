@@ -36,23 +36,55 @@ export default {
 <template>
     <div>
       <p class="text-danger" v-show="isInputError">Input Title and Content</p>
-      <label for="title">Title: </label>
-      <input id="title" type="text" v-model="article.title">
-      <br>
-      <br>
-      <label for="content">Content: </label>
-      <textarea id="content" type="text" v-model="article.content"></textarea>
-      <br>
-      <br>
-      <label for="author">Author: </label>
-      <input id="author" type="text" v-model="article.author">
-      <button v-on:click="addArticle">Add</button>
+      <div class="articleInfo">
+        <div>
+          <label for="title">Title: </label>
+          <input id="title" type="text" v-model="article.title">
+        </div>
+        <div>
+          <label class="vertical-align-top" for="content">Content: </label>
+          <textarea id="content" type="text" v-model="article.content"></textarea>
+        </div>
+        <div>
+          <label for="author">Author: </label>
+          <input id="author" type="text" v-model="article.author">
+        </div>
+        <button v-on:click="addArticle">Add</button>
+      </div>
+
     </div>
 </template>
 
 <style scoped>
+.articleInfo label{
+  display: inline-block;
+  text-align: right;
+  width: 4em;
+  margin-right: 1em
+}
+.articleInfo input{
+  display: inline-block;
+  /* text-align: right; */
+  width: 20em;
+}
+.articleInfo textarea{
+  display: inline-block;
+  /* text-align: right; */
+  width: 20em;
+  margin-top: 1em;
+  margin-bottom: 0.5em
+}
+
+.articleInfo button{
+  margin-top: 1em;
+  float: right;
+}
 .text-danger{
   color: red;
   font-size: large;
+}
+.vertical-align-top{
+  margin-top: 0.6em;
+  vertical-align: top;
 }
 </style>
