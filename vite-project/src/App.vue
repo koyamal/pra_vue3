@@ -1,4 +1,5 @@
 <script>
+import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 export default{
   data: function(){
@@ -7,14 +8,19 @@ export default{
     }
   },
   components: {
-    HelloWorld
+    HelloWorld,
+    RouterLink,
+    RouterView,
   }
 }
 </script>
 
 <template>
   <div>
-    <HelloWorld :msg="msg" />
+    <RouterLink to="/">Home</RouterLink>
+    <RouterLink to="/about">About</RouterLink>
+    <RouterView />
+    <!-- <HelloWorld :msg="msg" /> -->
   </div>
 </template>
 
