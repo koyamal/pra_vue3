@@ -49,7 +49,14 @@ export default {
       this.articles = this.articles.filter((art) => art.id !== artId)
     }
   },
+  // beforeCreate: function(){
+  //   console.log('beforeCreate', this.articleId)
+  // },
+  // created: function(){
+  //   console.log('created', this.articleId)
+  // },
   beforeMount: function(){
+    // console.log('beforeMount', this.articleId)
     this.articleId = id
   },
   // mounted: function(){
