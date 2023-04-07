@@ -62,13 +62,13 @@ export default {
     <div v-for="article in articles" :key="article.id">
       <DisplayArticle :art="article" @deleteArticleEvnet="deleteArticle"/>
     </div>
-    <button v-on:click="displayAddArticle">{{ isDisplayAddArticle? "x": "Create Article" }}</button>
+    <button class="dispAddArt" v-on:click="displayAddArticle">{{ isDisplayAddArticle? "x": "Create Article" }}</button>
     <AddArticle v-show="isDisplayAddArticle" :articleId="articleId" @serveArticle="getArticle"/>
   </div>
 </template>
 
 <style scoped>
-.read-the-docs {
-  color: #888;
+.dispAddArt{
+  margin-bottom: 1em;
 }
 </style>
