@@ -51,7 +51,10 @@ export default {
   },
   beforeMount: function(){
     this.articleId = id
-  }
+  },
+  // mounted: function(){
+  //   this.articleId = id
+  // }
 }
 </script>
 
