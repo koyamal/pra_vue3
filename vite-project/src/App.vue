@@ -17,8 +17,12 @@ export default{
 
 <template>
   <div>
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/about">About</RouterLink>
+    <p>
+      <RouterLink to="/">Home</RouterLink>
+    </p>
+    <p>
+      <RouterLink to="/add">Add</RouterLink>
+    </p>
     <RouterView />
     <!-- <HelloWorld :msg="msg" /> -->
   </div>
