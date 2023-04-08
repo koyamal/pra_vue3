@@ -7,6 +7,8 @@ const aaa = function(){
 
 export default function(val){
     funcB(val)
+
+    return 'Fin'
 }
 
 export {aa, aaa}
