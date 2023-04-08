@@ -1,6 +1,4 @@
 import { createRouter, createWebHashHistory } from "vue-router"
-const Home = { template: '<div>Homes</div>' }
-const About = { template: '<div>About</div>' }
 import HelloWorld from './components/HelloWorld.vue'
 import AddArticle from './components/AddArticle.vue'
 const routes = [
