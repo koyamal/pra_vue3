@@ -1,6 +1,7 @@
 export default {
     data: () => ({
-        flag: false
+        flag: false,
+        isShow: false
     }),
     methods:{
         onClick: function(){
@@ -10,7 +11,7 @@ export default {
     props: ['id', 'title','content'],
     template: `
     <div class="articleClass">
-    <h2>No-{{id}}: {{ title }}</h2>
+    <h2 v-isShow="is">No-{{id}}: {{ title }}</h2>
     <div v-if="flag">{{ content }}</div>
     <button v-on:click="onClick">{{!flag? "Show": "x"}}</button>
     </div>
