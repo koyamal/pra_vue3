@@ -1,23 +1,18 @@
 <script setup lang="ts">
-import {ref} from "vue";
+import {ref, computed} from "vue";
 
-const now = new Date();
-const nowStr = now.toLocaleTimeString();
-let timeStr = nowStr;
-const timeStrRef = ref(nowStr);
-let num = 0
-function changeTime(): void {
-  const newTime = new Date();
-  const newTimeStr = newTime.toLocaleTimeString();
-  timeStr = newTimeStr;
-  timeStrRef.value = newTimeStr;
-  num += 1;
-}
-setInterval(changeTime, 1000);
+const radiusInit = Math.round(Math.random() * 10);
+const PI = ref(3.14);
+const radius = ref(radiusInit);
+const area = computed(() :number => {
+  return radius.value * radius.value * PI.value;
+});
+
+setInterval(():void => {
+  radius.value = Math.round(Math.random() * 10);
+}, 1000)
 </script>
 
 <template>
-  <p>Now: {{ timeStr }}</p>
-  <p>Now(ref): {{ timeStrRef }}</p>
-  {{ num }}
+  <p>Calculating the area of a circle with radius {{ radius }} by {{ PI }} is {{ area }}</p>
 </template>
