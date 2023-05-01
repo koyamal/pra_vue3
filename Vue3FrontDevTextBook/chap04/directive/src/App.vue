@@ -1,11 +1,16 @@
 <script setup lang="ts">
 import {ref} from "vue";
 
-// const widthOrHeight = ref("height");
-const widthOrHeight = ref("width");
-const widthOrHeightValue = ref(1000);
+const imgAttributes = ref({
+  src: "/images/logo.svg",
+  alt: "VueLogo",
+  width: 75,
+  height: 75,
+});
 </script>
 
 <template>
-  <p><img alt="VueLog" src="./assets/logo.svg" v-bind:[widthOrHeight]="widthOrHeightValue"></p>
+  <p><img v-bind="imgAttributes"></p>
+  <p><img v-bind="imgAttributes" title="VueLogo!"></p>
+  <p><img v-bind="imgAttributes" alt="VueLogoooo!"></p>
 </template>
