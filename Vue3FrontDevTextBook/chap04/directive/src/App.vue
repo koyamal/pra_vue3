@@ -1,14 +1,16 @@
 <script setup lang="ts">
 import {ref} from "vue";
 
-const pBgColor = ref("white");
-const onPClick = (bgColor: string): void => {
-  pBgColor.value = bgColor;
+const pMsg = ref("Click Here");
+const pBgColorEvent = ref("white");
+const onPClickWithEvent = (bgColor: string, event: MouseEvent): void => {
+  pBgColorEvent.value = bgColor;
+  pMsg.value = event.timeStamp.toString();
 }
 </script>
 
 <template>
-  <p v-on:click="onPClick('red')" v-bind:style="{backgroundColor: pBgColor}">
-    click
+  <p v-on:click="onPClickWithEvent('blue', $event)" v-bind:style="{backgroundColor: pBgColorEvent}">
+    {{ pMsg }}
   </p>
 </template>
