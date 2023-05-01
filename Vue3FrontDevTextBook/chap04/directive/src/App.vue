@@ -1,16 +1,38 @@
 <script setup lang="ts">
-import {ref} from "vue";
+import {ref, computed} from "vue";
 
-const imgAttributes = ref({
-  src: "/images/logo.svg",
-  alt: "VueLogo",
-  width: 75,
-  height: 75,
+const msg = ref("Hello, World.");
+const msgTextRed = ref("red");
+const msgTextColor = ref("white");
+const msgBgColor = ref("black");
+
+const msgStyles = ref({
+  color: "white",
+  backgroundColor: "black",
 });
+const msgStyles2 = ref({
+  fontSize: "24pt",
+});
+const msgStyles3 = ref({
+  color: "pink",
+  fontSize: "24pt",
+});
+const textSize = computed(
+  (): string => {
+    const size = Math.round(Math.random() * 25) + 10;
+    return `${size}pt`;
+  }
+);
 </script>
 
 <template>
-  <p><img v-bind="imgAttributes"></p>
-  <p><img v-bind="imgAttributes" title="VueLogo!"></p>
-  <p><img v-bind="imgAttributes" alt="VueLogoooo!"></p>
+  <p v-bind:style="{color: msgTextRed}">{{ msg }}</p>
+  <p v-bind:style="{color: 'pink'}">{{ msg }}</p>
+  <p v-bind:style="{fontSize: textSize}">{{ msg }}</p>
+  <p v-bind:style="{color: msgTextColor, backgroundColor: msgBgColor}">{{ msg }}</p>
+  <p v-bind:style="{color: msgTextColor, 'backgroundColor': msgBgColor}">{{ msg }}</p>
+  <p v-bind:style="msgStyles">{{ msg }}</p>
+  <p v-bind:style="[msgStyles, msgStyles2]">{{ msg }}</p>
+  <p v-bind:style="[msgStyles, msgStyles3]">{{ msg }}</p>
+  <p v-bind:style="[msgStyles3, msgStyles]">{{ msg }}</p>
 </template>
