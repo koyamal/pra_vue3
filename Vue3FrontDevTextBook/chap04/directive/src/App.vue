@@ -17,12 +17,15 @@ const msgStyles3 = ref({
   color: "pink",
   fontSize: "24pt",
 });
+const test = ref(0);
 const textSize = computed(
   (): string => {
     const size = Math.round(Math.random() * 25) + 10;
+    console.log(test.value);
     return `${size}pt`;
   }
 );
+setInterval(() => { test.value += 1}, 1000);
 </script>
 
 <template>
