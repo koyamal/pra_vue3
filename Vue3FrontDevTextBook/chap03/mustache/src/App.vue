@@ -1,9 +1,23 @@
 <script setup lang="ts">
 import {ref} from "vue";
 
-const name = ref("Tanaka");
+const now = new Date();
+const nowStr = now.toLocaleTimeString();
+let timeStr = nowStr;
+const timeStrRef = ref(nowStr);
+let num = 0
+function changeTime(): void {
+  const newTime = new Date();
+  const newTimeStr = newTime.toLocaleTimeString();
+  timeStr = newTimeStr;
+  timeStrRef.value = newTimeStr;
+  num += 1;
+}
+setInterval(changeTime, 1000);
 </script>
 
 <template>
-  <h1>Hello, {{ name }}</h1>
+  <p>Now: {{ timeStr }}</p>
+  <p>Now(ref): {{ timeStrRef }}</p>
+  {{ num }}
 </template>
