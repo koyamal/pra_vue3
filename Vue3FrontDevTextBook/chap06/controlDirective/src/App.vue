@@ -10,11 +10,11 @@ const randomNumber = computed(
 
 <template>
   <p>
-    Score is {{ randomNumber }}:
-    <span v-if="randomNumber >= 80">Excellent</span>
-    <span v-else-if="randomNumber >= 70">Good</span>
-    <span v-else-if="randomNumber >= 60">Passable</span>
-    <span v-else>Bad</span>
+    Score: {{ randomNumber }}
+    <template v-if="randomNumber >= 80">
+      Good.
+      <span style="color: red">Nice!</span>
+    </template>
   </p>
 </template>
 
