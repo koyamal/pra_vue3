@@ -16,7 +16,7 @@ const onInputName = (event: Event): void => {
   </section>
   <br>
   <section>
-    <input type="text" v-on:input="onInputName">
+    <input type="text" v-bind:value="inputNameOn" v-on:input="onInputName">
     <p>{{ inputNameOn }}</p>
   </section>
 </template>
