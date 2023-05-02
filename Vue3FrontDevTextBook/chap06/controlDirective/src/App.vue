@@ -1,23 +1,21 @@
 <script setup lang="ts">
-import {computed, ref} from "vue";
+import {computed} from "vue";
 
-const number = ref(80);
-const showOrNot = computed(
-  (): boolean => {
-    let showOrNot = false;
-    const rand = Math.round(Math.random() * 100);
-    if(rand >= 50) {
-      showOrNot = true;
-    }
-    return showOrNot;
+const randomNumber = computed(
+  ():number => {
+    return Math.round(Math.random() * 100);
   }
-);
+)
 </script>
 
 <template>
-  <p v-if="number >= 50">True. 1</p>
-  <p v-if="Math.round(Math.random() * 100) >= 50">True. 2</p>
-  <p v-if="showOrNot">True. 3</p>
+  <p>
+    Score is {{ randomNumber }}:
+    <span v-if="randomNumber >= 80">Excellent</span>
+    <span v-else-if="randomNumber >= 70">Good</span>
+    <span v-else-if="randomNumber >= 60">Passable</span>
+    <span v-else>Bad</span>
+  </p>
 </template>
 
 <style scoped>
