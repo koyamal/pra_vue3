@@ -1,14 +1,12 @@
 <script setup lang="ts">
 import {ref} from "vue";
 
-const trimedText = ref("");
+const htmlStr = ref(`<a href="https://vuejs.org//">Vue.js</a>`);
 </script>
 
 <template>
-  <section>
-    <input type="text" v-model.trim="trimedText">
-    <p>Text: {{ trimedText }}</p>
-  </section>
+  <section>{{ htmlStr }}</section>
+  <section v-html="htmlStr"></section>
 </template>
 
 <style scoped>
