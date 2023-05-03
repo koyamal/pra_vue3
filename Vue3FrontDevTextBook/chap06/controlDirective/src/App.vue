@@ -7,6 +7,7 @@ const cocktailListInit: {[key: number]: string} = {
   6792: "NewYork",
 };
 const cocktailList = ref(cocktailListInit);
+console.log(cocktailListInit);
 </script>
 
 <template>
