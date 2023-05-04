@@ -1,66 +1,50 @@
-<script setup lang="ts">
-import {
-  ref,
-  computed,
-  onBeforeMount,
-  onMounted,
-  onBeforeUpdate,
-  onUpdated,
-  onRenderTracked,
-  onRenderTriggered,
-} from "vue";
-import type { DebuggerEvent } from "vue";
+<script lang="ts">
+import { defineComponent, ref, computed } from 'vue';
 
-const heightInit = Math.round(Math.random() * 10);
-const widthInit = Math.round(Math.random() * 10);
-const height = ref(heightInit);
-const width = ref(widthInit);
-const area = computed(
-  (): number => {
-    return height.value * width.value;
+export default defineComponent({
+  name: "App",
+  setup(){
+    const cocktailDataListInit = new Map<number, Cocktail>();
+    cocktailDataListInit.set(1, {id: 1, name: "WhiteLady", price: 1200});
+    cocktailDataListInit.set(2, {id: 2, name: "BlueHawaii", price: 1500});
+    cocktailDataListInit.set(3, {id: 3, name: "NewYork", price: 1100});
+    cocktailDataListInit.set(4, {id: 4, name: "Matani", price: 1500});
+    const cocktailNo = ref(1);
+
+    const priceMsg = computed(
+      (): string => {
+        const cocktail = cocktailDataListInit.get(cocktailNo.value);
+        let msg = `No Cocktail No.${cocktailNo.value}`
+        if(cocktail != undefined){
+          msg = `No.${cocktailNo.value} is ${cocktail.name}. Price: ${cocktail.price}`;
+        }
+        return msg;
+      }
+    );
+
+    setInterval(
+      (): void => {
+        cocktailNo.value = Math.round(Math.random() * 3) + 1;
+      },
+      1000
+    );
+    return {
+      cocktailNo,
+      priceMsg,
+    };
   }
-);
-const change = (): void => {
-  height.value = Math.round(Math.random() * 10);
-  width.value = Math.round(Math.random() * 10);
-}
-onBeforeMount(
-  (): void => {
-    console.log(`beforeMount called: ${height.value} * ${width.value}`);
-  }
-);
-onMounted(
-  (): void => {
-    console.log(`onMounted called: ${height.value} * ${width.value}`);
-  }
-);
-onBeforeUpdate(
-  (): void => {
-    console.log(`onBeforeUpdate called: ${height.value} * ${width.value}`);
-  }
-);
-onUpdated(
-  (): void => {
-    console.log(`onUpdated called: ${height.value} * ${width.value}`);
-  }
-);
-onRenderTracked(
-  (event: DebuggerEvent): void => {
-    console.log(`onRenderTracked called: ${height.value} * ${width.value}`);
-    console.log(event);
-  }
-);
-onRenderTriggered(
-  (event: DebuggerEvent): void => {
-    console.log(`onRenderTriggered called: ${height.value} * ${width.value}`);
-    console.log(event);
-  }
-);
+});
+
+interface Cocktail {
+  id: number;
+  name: string;
+  price: number;
+};
 </script>
 
 <template>
-  <p>Height: {{ height }}, Width: {{ width }} ==> Area: {{ area }}</p>
-  <button v-on:click="change">Change</button>
+  <p>Cocktail No. {{ cocktailNo }}</p>
+  <p>{{ priceMsg }}</p>
 </template>
 
 <style scoped>
