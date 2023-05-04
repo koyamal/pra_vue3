@@ -7,7 +7,8 @@ const priceMsg = ref("");
 watch(cocktailNo,
   (): void => {
     priceMsg.value = getCocktailInfo(cocktailNo.value);
-  }
+  },
+  {immediate: true}
 );
 
 setInterval(
