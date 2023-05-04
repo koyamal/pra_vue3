@@ -1,22 +1,12 @@
 <script setup lang="ts">
-import {ref, computed} from "vue";
-
-const cocktailDataListInit = new Map<number, Cocktail>();
-cocktailDataListInit.set(1, {id: 1, name: "WhiteLady", price: 1200});
-cocktailDataListInit.set(2, {id: 2, name: "BlueHawaii", price: 1500});
-cocktailDataListInit.set(3, {id: 3, name: "NewYork", price: 1100});
-cocktailDataListInit.set(4, {id: 4, name: "Matani", price: 1500});
+import {ref, computed, watchEffect} from "vue";
 
 const cocktailNo = ref(1);
+const priceMsg = ref("");
 
-const priceMsg = computed(
-  (): string => {
-    const cocktail = cocktailDataListInit.get(cocktailNo.value);
-    let msg = `No Cocktail No.${cocktailNo.value}`
-    if(cocktail != undefined){
-      msg = `No.${cocktailNo.value} is ${cocktail.name}. Price: ${cocktail.price}`;
-    }
-    return msg;
+watchEffect(
+  (): void => {
+    priceMsg.value = getCocktailInfo(cocktailNo.value);
   }
 );
 
@@ -32,6 +22,21 @@ interface Cocktail {
   name: string;
   price: number;
 };
+
+function getCocktailInfo(cocktailNo: number): string {
+  const cocktailDataListInit = new Map<number, Cocktail>();
+  cocktailDataListInit.set(1, {id: 1, name: "WhiteLady", price: 1200});
+  cocktailDataListInit.set(2, {id: 2, name: "BlueHawaii", price: 1500});
+  cocktailDataListInit.set(3, {id: 3, name: "NewYork", price: 1100});
+  cocktailDataListInit.set(4, {id: 4, name: "Matani", price: 1500});
+
+  const cocktail = cocktailDataListInit.get(cocktailNo);
+  let msg = `No Cocktail No.${cocktailNo}`
+  if(cocktail != undefined){
+    msg = `No.${cocktailNo} is ${cocktail.name}. Price: ${cocktail.price}`;
+  }
+  return msg;
+}
 </script>
 
 <template>
