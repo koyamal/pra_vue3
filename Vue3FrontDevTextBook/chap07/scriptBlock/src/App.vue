@@ -1,52 +1,66 @@
 <script setup lang="ts">
-import {ref, computed, watch} from "vue";
+import {
+  ref,
+  computed,
+  onBeforeMount,
+  onMounted,
+  onBeforeUpdate,
+  onUpdated,
+  onRenderTracked,
+  onRenderTriggered,
+} from "vue";
+import type { DebuggerEvent } from "vue";
 
-const cocktailNo = ref(1);
-const priceMsg = ref("");
-
-watch(cocktailNo,
-  (newVal: number, oldVal: number|undefined): void => {
-    let msg = "Previous: ";
-    msg += getCocktailInfo(oldVal || 1);
-    msg += "Now: ";
-    msg += getCocktailInfo(newVal);
-    priceMsg.value = msg;
-  },
-  {immediate: true}
-);
-
-setInterval(
-  (): void => {
-    cocktailNo.value = Math.round(Math.random() * 3) + 1;
-  },
-  1000
-);
-
-interface Cocktail {
-  id: number;
-  name: string;
-  price: number;
-};
-
-function getCocktailInfo(cocktailNo: number): string {
-  const cocktailDataListInit = new Map<number, Cocktail>();
-  cocktailDataListInit.set(1, {id: 1, name: "WhiteLady", price: 1200});
-  cocktailDataListInit.set(2, {id: 2, name: "BlueHawaii", price: 1500});
-  cocktailDataListInit.set(3, {id: 3, name: "NewYork", price: 1100});
-  cocktailDataListInit.set(4, {id: 4, name: "Matani", price: 1500});
-
-  const cocktail = cocktailDataListInit.get(cocktailNo);
-  let msg = `No Cocktail No.${cocktailNo}`
-  if(cocktail != undefined){
-    msg = `No.${cocktailNo} is ${cocktail.name}. Price: ${cocktail.price}`;
+const heightInit = Math.round(Math.random() * 10);
+const widthInit = Math.round(Math.random() * 10);
+const height = ref(heightInit);
+const width = ref(widthInit);
+const area = computed(
+  (): number => {
+    return height.value * width.value;
   }
-  return msg;
+);
+const change = (): void => {
+  height.value = Math.round(Math.random() * 10);
+  width.value = Math.round(Math.random() * 10);
 }
+onBeforeMount(
+  (): void => {
+    console.log(`beforeMount called: ${height.value} * ${width.value}`);
+  }
+);
+onMounted(
+  (): void => {
+    console.log(`onMounted called: ${height.value} * ${width.value}`);
+  }
+);
+onBeforeUpdate(
+  (): void => {
+    console.log(`onBeforeUpdate called: ${height.value} * ${width.value}`);
+  }
+);
+onUpdated(
+  (): void => {
+    console.log(`onUpdated called: ${height.value} * ${width.value}`);
+  }
+);
+onRenderTracked(
+  (event: DebuggerEvent): void => {
+    console.log(`onRenderTracked called: ${height.value} * ${width.value}`);
+    console.log(event);
+  }
+);
+onRenderTriggered(
+  (event: DebuggerEvent): void => {
+    console.log(`onRenderTriggered called: ${height.value} * ${width.value}`);
+    console.log(event);
+  }
+);
 </script>
 
 <template>
-  <p>Cocktail No. {{ cocktailNo }}</p>
-  <p>{{ priceMsg }}</p>
+  <p>Height: {{ height }}, Width: {{ width }} ==> Area: {{ area }}</p>
+  <button v-on:click="change">Change</button>
 </template>
 
 <style scoped>
