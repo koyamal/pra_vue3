@@ -1,22 +1,30 @@
 <script setup lang="ts">
 import {ref} from "vue";
 
-const cocktailListInit = new Map<number, string>();
-cocktailListInit.set(2345, "WhiteLady");
-cocktailListInit.set(4412, "BlueHawaii");
-cocktailListInit.set(6792, "NewYork");
-const cocktailList = ref(cocktailListInit);
+const whiteLadyInit: {
+  id: number;
+  name: string;
+  price: number;
+  recipe: string;
+} = {
+  id: 2345,
+  name: "WhiteLady",
+  price: 1200,
+  recipe: "JIN:30ml + KWTR:15ml + Lemmon:15ml",
+};
+const whiteLady = ref(whiteLadyInit);
 </script>
 
 <template>
-  <ul>
-    <li
-      v-for="[id, cocktailName] in cocktailList"
-      v-bind:key="id"
+  <dl>
+    <template
+      v-for="(value, key) in whiteLady"
+      v-bind:key="key"
     >
-      ID:{{ id }}. {{ cocktailName }}
-    </li>
-  </ul>
+      <dt>{{ key }}</dt>
+      <dt>{{ value }}</dt>
+    </template>
+  </dl>
 </template>
 
 <style scoped>
