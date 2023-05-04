@@ -22,6 +22,11 @@ export default defineComponent({
   },
   updated(): void {
     console.log(`updated called: ${this.height} * ${this.width}`);
+  },
+  watch: {
+    height(newVal: number, oldVal: number|undefined): void{
+      console.log(`New: ${newVal}, Old: ${oldVal}`);
+    }
   }
 });
 </script>
