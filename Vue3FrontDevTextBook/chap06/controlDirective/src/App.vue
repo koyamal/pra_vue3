@@ -1,30 +1,30 @@
 <script setup lang="ts">
 import {ref} from "vue";
 
-const whiteLadyInit: {
+const cocktailDataListInit: Cocktail[] = [
+  {id: 2345, name: "WhiteLady", price: 1200},
+  {id: 4412, name: "BlueHawaii", price: 1200},
+  {id: 6792, name: "NewYork", price: 1200},
+  {id: 8429, name: "Matani", price: 1200},
+];
+const cocktailDataList = ref(cocktailDataListInit);
+
+interface Cocktail {
   id: number;
   name: string;
   price: number;
-  recipe: string;
-} = {
-  id: 2345,
-  name: "WhiteLady",
-  price: 1200,
-  recipe: "JIN:30ml + KWTR:15ml + Lemmon:15ml",
-};
-const whiteLady = ref(whiteLadyInit);
+}
 </script>
 
 <template>
-  <dl>
-    <template
-      v-for="(value, key) in whiteLady"
-      v-bind:key="key"
+  <ul>
+    <li
+      v-for="cocktailItem in cocktailDataList"
+      v-bind:key="cocktailItem.id"
     >
-      <dt>{{ key }}</dt>
-      <dt>{{ value }}</dt>
-    </template>
-  </dl>
+      {{ cocktailItem.name }}: ¥{{ cocktailItem.price }}
+    </li>
+  </ul>
 </template>
 
 <style scoped>
