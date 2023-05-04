@@ -20,7 +20,7 @@ interface Cocktail {
   <ul>
     <li
       v-for="[id, cocktailItem] in cocktailDataList"
-      v-bind:key="cocktailItem.id"
+      v-bind:key="id"
     >
       {{ cocktailItem.name }}: ¥{{ cocktailItem.price }}
     </li>
