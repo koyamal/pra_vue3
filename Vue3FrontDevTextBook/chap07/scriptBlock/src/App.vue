@@ -5,8 +5,12 @@ const cocktailNo = ref(1);
 const priceMsg = ref("");
 
 watch(cocktailNo,
-  (): void => {
-    priceMsg.value = getCocktailInfo(cocktailNo.value);
+  (newVal: number, oldVal: number|undefined): void => {
+    let msg = "Previous: ";
+    msg += getCocktailInfo(oldVal || 1);
+    msg += "Now: ";
+    msg += getCocktailInfo(newVal);
+    priceMsg.value = msg;
   },
   {immediate: true}
 );
