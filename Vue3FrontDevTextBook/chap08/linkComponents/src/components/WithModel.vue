@@ -11,7 +11,7 @@ const name = ref("No name");
   </section>
 </template>
 
-<style>
+<style scoped>
 section{
   border: orange 1px dashed;
   margin: 10px;
