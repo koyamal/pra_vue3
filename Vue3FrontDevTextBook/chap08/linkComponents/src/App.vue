@@ -1,13 +1,15 @@
 <script setup lang="ts">
-import WithModel from './components/WithModel.vue';
+import OneInfo from './components/OneInfo.vue';
 </script>
 
 <template>
-  <h1>Component Independence</h1>
+  <h1>Props Basics</h1>
   <section>
-    <h2>V-model Component</h2>
-      <WithModel />
-      <WithModel />
+    <h2>Direct to Attribute</h2>
+    <OneInfo
+      title="Use Props"
+      content="Use Props for Pass Data for Child Component"
+    />
   </section>
 </template>
 
