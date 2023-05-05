@@ -1,14 +1,19 @@
 <script setup lang="ts">
+import {ref} from "vue";
 import OneInfo from './components/OneInfo.vue';
+
+const propsTitle = ref("Generated random number");
+const rand = Math.round(Math.random() * 100);
+const propsContent = ref(rand);
 </script>
 
 <template>
   <h1>Props Basics</h1>
   <section>
-    <h2>Direct to Attribute</h2>
+    <h2>Use Template Variables</h2>
     <OneInfo
-      title="Use Props"
-      content="Use Props for Pass Data for Child Component"
+      v-bind:title="propsTitle"
+      v-bind:content="propsContent"
     />
   </section>
 </template>
