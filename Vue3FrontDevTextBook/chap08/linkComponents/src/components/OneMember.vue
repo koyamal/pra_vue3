@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {ref} from "vue";
+import {computed} from "vue";
 
 interface Props{
   id: number;
@@ -9,15 +9,20 @@ interface Props{
   note?: string;
 }
 
+interface Emits {
+  (event: "incrementPoint", id: number): void;
+}
+
+
 const props = withDefaults(
   defineProps<Props>(),
   {note: "--"}
 );
+const emit = defineEmits<Emits>();
 
-const localPoints = ref(props.points);
 
 const pointUp = (): void => {
-  localPoints.value++;
+  emit("incrementPoint", props.id);
 }
 </script>
 
@@ -30,7 +35,7 @@ const pointUp = (): void => {
       <dt>E-mail</dt>
       <dd>{{ email }}</dd>
       <dt>Point</dt>
-      <dd>{{ localPoints }}</dd>
+      <dd>{{ points }}</dd>
       <dt>Other</dt>
       <dd>{{ note }}</dd>
     </dl>
