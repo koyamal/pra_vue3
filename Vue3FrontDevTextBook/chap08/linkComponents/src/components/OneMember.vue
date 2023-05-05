@@ -23,7 +23,7 @@ const pointUp = (): void => {
 
 <template>
   <section class="box">
-    <h4>Info: {{ name }}</h4>
+    <h4>{{ name }}'s Info</h4>
     <dl>
       <dt>ID</dt>
       <dd>{{ id }}</dd>
