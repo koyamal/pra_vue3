@@ -5,6 +5,10 @@ import OneInfo from './components/OneInfo.vue';
 const propsTitle = ref("Generated random number");
 const rand = Math.round(Math.random() * 100);
 const propsContent = ref(rand);
+
+setInterval(():void => {
+  propsContent.value = Math.round(Math.random() * 100);
+}, 1000);
 </script>
 
 <template>
