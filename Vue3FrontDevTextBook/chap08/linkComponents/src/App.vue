@@ -1,30 +1,43 @@
 <script setup lang="ts">
-import {ref} from "vue";
-import OneInfo from './components/OneInfo.vue';
+import {ref, computed} from "vue";
+import OneMember from "./components/OneMember.vue";
 
-const weatherListInit = new Map<number, Weather>();
-weatherListInit.set(1, {id: 1, title: "Today's Weather", content: "Sunny"});
-weatherListInit.set(2, {id: 2, title: "Tomorrow's Weather", content: "Cloudy"});
-weatherListInit.set(3, {id: 3, title: "Day After Tomorrow's Weather", content: "Rainy"});
+const memberListInit = new Map<number, Member>();
+memberListInit.set(33456, {id: 33456, name: "Taro", email: "taro@exmaple.com", points: 35, note:"VIP"});
+memberListInit.set(47783, {id: 47783, name: "Jiro", email: "jiro@exmaple.com", points: 53});
+const memberList = ref(memberListInit);
 
-const weatherList = ref(weatherListInit);
+const totalPoints = computed(
+  (): number => {
+    let total = 0;
+    for(const member of memberList.value.values()){
+      total += member.points;
+    }
+    return total;
+  }
+);
 
-interface Weather {
+interface Member{
   id: number;
-  title: string;
-  content: string;
-}
+  name: string;
+  email: string;
+  points: number;
+  note?: string;
+};
 </script>
 
 <template>
-  <h1>Props Basics</h1>
   <section>
-    <h2>Display Components with Loop</h2>
-    <OneInfo
-     v-for="[id, weather] in weatherList"
-     v-bind:key="id"
-     v-bind:title="weather.title"
-     v-bind:content="weather.content"
+    <h1>Member's List</h1>
+    <p>Sum of Points: {{ totalPoints }}</p>
+    <OneMember
+      v-for="[id, member] in memberList"
+      v-bind:key="id"
+      v-bind:id="id"
+      v-bind:name="member.name"
+      v-bind:email="member.email"
+      v-bind:points="member.points"
+      v-bind:note="member.note"
     />
   </section>
 </template>
