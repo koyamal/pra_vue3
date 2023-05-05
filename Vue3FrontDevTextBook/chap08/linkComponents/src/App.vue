@@ -2,22 +2,29 @@
 import {ref} from "vue";
 import OneInfo from './components/OneInfo.vue';
 
-const propsTitle = ref("Generated random number");
-const rand = Math.round(Math.random() * 100);
-const propsContent = ref(rand);
+const weatherListInit = new Map<number, Weather>();
+weatherListInit.set(1, {id: 1, title: "Today's Weather", content: "Sunny"});
+weatherListInit.set(2, {id: 2, title: "Tomorrow's Weather", content: "Cloudy"});
+weatherListInit.set(3, {id: 3, title: "Day After Tomorrow's Weather", content: "Rainy"});
 
-setInterval(():void => {
-  propsContent.value = Math.round(Math.random() * 100);
-}, 1000);
+const weatherList = ref(weatherListInit);
+
+interface Weather {
+  id: number;
+  title: string;
+  content: string;
+}
 </script>
 
 <template>
   <h1>Props Basics</h1>
   <section>
-    <h2>Use Template Variables</h2>
+    <h2>Display Components with Loop</h2>
     <OneInfo
-      v-bind:title="propsTitle"
-      v-bind:content="propsContent"
+     v-for="[id, weather] in weatherList"
+     v-bind:key="id"
+     v-bind:title="weather.title"
+     v-bind:content="weather.content"
     />
   </section>
 </template>
