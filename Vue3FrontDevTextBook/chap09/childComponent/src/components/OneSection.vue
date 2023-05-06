@@ -9,7 +9,7 @@ defineProps<Props>();
   <section class="box">
     <h1>{{ name }}'s Condition</h1>
     <slot>
-      <p>{{name}} is No Problem</p>
+      <p>No Problem</p>
     </slot>
   </section>
 </template>
