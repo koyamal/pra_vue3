@@ -11,6 +11,9 @@ defineProps<Props>();
     <slot>
       <p>No Problem</p>
     </slot>
+    <slot>
+      <p>No Problem</p>
+    </slot>
   </section>
 </template>
 
