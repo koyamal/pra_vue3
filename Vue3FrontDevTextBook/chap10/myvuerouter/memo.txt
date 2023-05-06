@@ -1,0 +1,7 @@
+cp -r chap09 chap10
+
+cd chap10/childComponent
+
+npm ci
+
+vs code でフォルダ名変更
