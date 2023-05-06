@@ -11,15 +11,19 @@ const jiro = ref("Jiro");
 <template>
   <section>
     <OneSection v-bind:name="taro">
-      <ul>
-        <li
-          v-for="problem in taroProblems"
-          v-bind:key="problem"
-        >
-          {{ problem }}
-        </li>
-      </ul>
-      <p>{{taro}} Cannot Reach.</p>
+      <template v-slot:default>
+        <p>{{taro}} Cannot Reach.</p>
+      </template>
+      <template v-slot:detail>
+        <ul>
+          <li
+            v-for="problem in taroProblems"
+            v-bind:key="problem"
+          >
+            {{ problem }}
+          </li>
+        </ul>
+      </template>
     </OneSection>
     <OneSection v-bind:name="jiro" />
   </section>
