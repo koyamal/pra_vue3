@@ -15,10 +15,3 @@ const memberInfo = reactive({
     </slot>
   </section>
 </template>
-
-<style>
-.box{
-  border: green 1px solid;
-  margin: 10px;
-}
-</style>
