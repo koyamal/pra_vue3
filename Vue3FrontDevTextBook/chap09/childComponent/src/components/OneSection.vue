@@ -8,12 +8,15 @@ defineProps<Props>();
 <template>
   <section class="box">
     <h1>{{ name }}'s Condition</h1>
-    <slot />
+    <slot>
+      <p>No Problem</p>
+    </slot>
   </section>
 </template>
 
 <style>
 .box{
   border: green 1px solid;
+  margin: 10px;
 }
 </style>

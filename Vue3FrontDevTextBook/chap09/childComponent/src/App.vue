@@ -3,6 +3,7 @@ import {ref} from "vue";
 import OneSection from "./components/OneSection.vue";
 
 const taro = ref("Taro");
+const jiro = ref("Jiro");
 </script>
 
 <template>
@@ -11,6 +12,7 @@ const taro = ref("Taro");
     <OneSection v-bind:name="taro">
       <p>Cannot Reach.</p>
     </OneSection>
+    <OneSection v-bind:name="taro" />
   </section>
 </template>
 
