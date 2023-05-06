@@ -1,19 +1,17 @@
 <script setup lang="ts">
-interface Props {
-  name: string;
-}
-defineProps<Props>();
+import {reactive} from "vue";
+
+const memberInfo = reactive({
+  name: "Taro",
+  state: "No Problem"
+});
 </script>
 
 <template>
-  <section class="box">
-    <h1>{{ name }}'s Condition</h1>
-    <slot>
-      <p>No Problem</p>
-    </slot>
-    <h4>Details</h4>
-    <slot name="detail">
-      <p>Nothing</p>
+  <section>
+    <slot v-bind:memberInfo="memberInfo">
+      <h1>{{ memberInfo.name }}'s Condition</h1>
+      <p>{{ memberInfo.state }}</p>
     </slot>
   </section>
 </template>
