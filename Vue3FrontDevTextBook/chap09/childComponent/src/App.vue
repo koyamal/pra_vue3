@@ -10,9 +10,9 @@ const jiro = ref("Jiro");
   <section>
     <h2>Use of Slot</h2>
     <OneSection v-bind:name="taro">
-      <p>Cannot Reach.</p>
+      <p>{{taro}} Cannot Reach.</p>
     </OneSection>
-    <OneSection v-bind:name="taro" />
+    <OneSection v-bind:name="jiro" />
   </section>
 </template>
 
