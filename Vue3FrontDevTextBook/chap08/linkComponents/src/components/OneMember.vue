@@ -16,11 +16,6 @@ const member = computed(
 );
 const localNote = computed(
   (): string => {
-    // let localNote = member.value.note;
-    // if(localNote == undefined){
-    //   localNote = "--";
-    // }
-    // return localNote;
     return member.value.note || "--";
   }
 );
