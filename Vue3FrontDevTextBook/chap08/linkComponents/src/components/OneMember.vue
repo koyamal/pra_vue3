@@ -10,7 +10,7 @@ interface Props{
 }
 
 interface Emits {
-  (event: "incrementPoint", id: number): void;
+  (event: "update:points", points: number): void;
 }
 
 
@@ -20,9 +20,10 @@ const props = withDefaults(
 );
 const emit = defineEmits<Emits>();
 
-
-const pointUp = (): void => {
-  emit("incrementPoint", props.id);
+const onInput = (event: Event): void => {
+  const element = event.target as HTMLInputElement;
+  const inputPoints = Number(element.value);
+  emit("update:points", inputPoints);
 }
 </script>
 
@@ -35,11 +36,12 @@ const pointUp = (): void => {
       <dt>E-mail</dt>
       <dd>{{ email }}</dd>
       <dt>Point</dt>
-      <dd>{{ points }}</dd>
+      <dd>
+        <input type="number" v-bind:value="points" v-on:input="onInput">
+      </dd>
       <dt>Other</dt>
       <dd>{{ note }}</dd>
     </dl>
-    <button v-on:click="pointUp">Point Up</button>
   </section>
 </template>
 
