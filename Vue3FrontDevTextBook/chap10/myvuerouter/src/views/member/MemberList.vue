@@ -22,6 +22,12 @@ const memberList = inject("memberList") as Map<number, Member>;
   </nav>
   <section>
     <h2>MemberList</h2>
+    <p>
+      Registration is
+        <RouterLink v-bind:to="{name: 'MemberAdd'}">
+          here
+        </RouterLink>
+    </p>
     <section>
       <ul>
         <li
