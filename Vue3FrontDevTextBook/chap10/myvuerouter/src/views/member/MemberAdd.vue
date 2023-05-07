@@ -17,7 +17,7 @@ const member: Member = reactive(
 const onAdd = (): void => {
   console.log(member);
   memberList.set(member.id, member);
-  router.push({name: "MemberList"});
+  router.push({name: "MemberDetail", params: {id: member.id}});
 }
 </script>
 
