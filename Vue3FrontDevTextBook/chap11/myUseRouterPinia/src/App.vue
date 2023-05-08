@@ -1,17 +1,14 @@
 <script setup lang="ts">
-import {reactive, provide} from "vue";
 import {RouterView} from "vue-router";
-import type {Member} from "@/interface";
+import { useMembersStore } from "@/stores/members";
 
-const memberList = new Map<number, Member>();
-memberList.set(33456, {id: 33456, name: "Taro", email: "taro@example.com", points: 35, note: "VIP"});
-memberList.set(47783, {id: 47783, name: "Jiro", email: "jiro@example.com", points: 45});
-provide("memberList", reactive(memberList));
+const membersStore = useMembersStore();
+membersStore.initList();
 </script>
 
 <template>
   <header>
-    <h1>Vue Router Sample</h1>
+    <h1>Pinia Sample</h1>
   </header>
   <main>
     <RouterView />
