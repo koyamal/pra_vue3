@@ -29,8 +29,14 @@ export const useMembersStore = defineStore({
       const memberListJSONStr = sessionStorage.getItem("memberList");
       if(memberListJSONStr != undefined){
         const memberListJSON = JSON.parse(memberListJSONStr);
+        memberList = new Map<number, Member>(memberListJSON);
       }
       this.memberList = memberList;
     },
+    insertMember(member: Member): void {
+      this.memberList.set(member.id, member);
+      const memberListJSONStr = JSON.stringify([...this.memberList]);
+      sessionStorage.setItem("memberList", memberListJSONStr);
+    }
   },
 });
