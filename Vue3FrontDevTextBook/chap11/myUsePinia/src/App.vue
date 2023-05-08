@@ -20,10 +20,15 @@ const doubleCount = computed(
 const onIncrementClick = () => {
   counterStore.incrementCount();
 }
+const onReset = () => {
+  counterStore.$reset();
+}
 </script>
 
 <template>
   <p>Now Point: {{ count }}</p>
   <p>Double Point: {{ doubleCount }}</p>
   <button v-on:click="onIncrementClick">Add</button>
+  <br>
+  <button v-on:click="onReset">Reset</button>
 </template>
