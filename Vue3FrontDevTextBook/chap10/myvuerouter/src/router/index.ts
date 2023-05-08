@@ -42,6 +42,13 @@ const routeSettings: RouteRecordRaw[] = [
     ]
   },
   {
+    path: "/member/go",
+    name: "Go",
+    redirect: {
+      name: "MemberList",
+    }
+  },
+  {
     path: "/:pathMatch(.*)*",
     name: "NotFound",
     component: () => {
