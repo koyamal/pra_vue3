@@ -5,9 +5,16 @@ import type {Member} from "@/interface";
 import { useMembersStore } from "@/stores/members";
 
 const membersStore = useMembersStore();
+membersStore.prepareMemberList();
+
 const memberList = computed(
   (): Map<number, Member> => {
     return membersStore.memberList;
+  }
+);
+const isEmptyList = computed(
+  (): boolean => {
+    return membersStore.isMemberListEmpty;
   }
 );
 </script>
@@ -36,6 +43,7 @@ const memberList = computed(
     </p>
     <section>
       <ul>
+        <li v-if="isEmptyList">Member Not Exist.</li>
         <li
           v-for="[id, member] in memberList"
           v-bind:key="id"

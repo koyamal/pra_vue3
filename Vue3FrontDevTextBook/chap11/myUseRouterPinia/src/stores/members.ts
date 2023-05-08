@@ -18,15 +18,19 @@ export const useMembersStore = defineStore({
         const member = state.memberList.get(id) as Member;
         return member;
       }
-    }
+    },
+    isMemberListEmpty: (state): boolean => {
+      return state.memberList.size === 0;
+    },
   },
   actions: {
-    initList(): void {
-      this.memberList.set(33456, {id: 33456, name: "Taro", email: "taro@example.com", points: 35, note: "VIP"});
-      this.memberList.set(47783, {id: 47783, name: "Jiro", email: "jiro@example.com", points: 42});
+    prepareMemberList(): void {
+      let memberList = new Map<number, Member>();
+      const memberListJSONStr = sessionStorage.getItem("memberList");
+      if(memberListJSONStr != undefined){
+        const memberListJSON = JSON.parse(memberListJSONStr);
+      }
+      this.memberList = memberList;
     },
-    addMember(member: Member): void {
-      this.memberList.set(member.id, member);
-    }
   },
 });
