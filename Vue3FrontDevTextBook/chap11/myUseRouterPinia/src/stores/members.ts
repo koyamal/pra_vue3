@@ -13,11 +13,20 @@ export const useMembersStore = defineStore({
     };
   },
   getters: {
+    getById: (state) => {
+      return (id: number): Member => {
+        const member = state.memberList.get(id) as Member;
+        return member;
+      }
+    }
   },
   actions: {
     initList(): void {
       this.memberList.set(33456, {id: 33456, name: "Taro", email: "taro@example.com", points: 35, note: "VIP"});
       this.memberList.set(47783, {id: 47783, name: "Jiro", email: "jiro@example.com", points: 42});
     },
+    addMember(member: Member): void {
+      this.memberList.set(member.id, member);
+    }
   },
 });
