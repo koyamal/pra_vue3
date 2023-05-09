@@ -34,25 +34,35 @@ export const useWeatherStore = defineStore({
         name: "Sapporo",
         q: "Sapporo"
       });
+      this.cityList.set("Tokyo",
+      {
+        name: "Tokyo",
+        q: "Tokyo"
+      });
       this.cityList.set("Yokohama",
       {
         name: "Yokohama",
         q: "Yokohama"
+      });
+      this.cityList.set("Nagoya",
+      {
+        name: "Nagoya",
+        q: "Nagoya"
       });
       this.cityList.set("Osaka",
         {
           name: "Osaka",
           q: "Osaka"
         });
-      this.cityList.set("Kobe",
+      this.cityList.set("Hiroshima",
         {
-          name: "Kobe",
-          q: "Kobe"
+          name: "Hiroshima",
+          q: "Hiroshima"
         });
-      this.cityList.set("Himeji",
+      this.cityList.set("Hakata",
         {
-          name: "Himeji",
-          q: "Himeji"
+          name: "Hakata",
+          q: "Fukuoka"
         });
     },
     async recieveWeatherInfo(id: string) {
