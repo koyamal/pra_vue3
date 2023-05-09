@@ -85,10 +85,26 @@ export const useMembersStore = defineStore({
       );
       return promise;
     },
-    insertMember(member: Member): void {
-      this.memberList.set(member.id, member);
-      const memberListJSONStr = JSON.stringify([...this.memberList]);
-      sessionStorage.setItem("memberList", memberListJSONStr);
+    async insertMember(member: Member): Promise<boolean> {
+      const memberAdd: Member = {
+        ...member
+      };
+      const database = await getDatabase();
+      const promise = new Promise<boolean>(
+        (resolve, reject) => {
+          const transaction = database.transaction("members", "readwrite");
+          const objectStore = transaction.objectStore("members");
+          objectStore.put(memberAdd);
+          transaction.oncomplete = () => {
+            resolve(true);
+          };
+          transaction.onerror = (event)  => {
+            console.log("ERROR: Data registration failed");
+            reject(new Error("ERROR: Data registration failed"));
+          };
+        }
+      );
+      return promise;
     }
   },
 });
