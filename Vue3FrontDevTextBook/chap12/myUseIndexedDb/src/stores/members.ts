@@ -5,23 +5,28 @@ interface State {
   memberList: Map<number, Member>;
 }
 
+let _database: IDBDatabase;
 async function getDatabase(): Promise<IDBDatabase> {
   const promise = new Promise<IDBDatabase>(
     (resolve, reject): void => {
-      const request = window.indexedDB.open("asyncdb", 1);
-      request.onupgradeneeded = (event) => {
-        const target = event.target as IDBRequest;
-        const database = target.result as IDBDatabase;
-        database.createObjectStore("members", {keyPath: "id"});
-      }
-      request.onsuccess = (event) => {
-        const target = event.target as IDBRequest;
-        const _database = target.result as IDBDatabase;
-        resolve(_database);
-      };
-      request.onerror = (event) => {
-        console.log("ERROR: DB cannot Open", event);
-        reject(new Error("ERROR: DB cannot Open"));
+      if(_database != undefined){
+        resolve(_database)
+      }else{
+        const request = window.indexedDB.open("asyncdb", 1);
+        request.onupgradeneeded = (event) => {
+          const target = event.target as IDBRequest;
+          const database = target.result as IDBDatabase;
+          database.createObjectStore("members", {keyPath: "id"});
+        }
+        request.onsuccess = (event) => {
+          const target = event.target as IDBRequest;
+          _database = target.result as IDBDatabase;
+          resolve(_database);
+        };
+        request.onerror = (event) => {
+          console.log("ERROR: DB cannot Open", event);
+          reject(new Error("ERROR: DB cannot Open"));
+        };
       }
     }
   );
