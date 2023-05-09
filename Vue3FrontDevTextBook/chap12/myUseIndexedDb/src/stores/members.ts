@@ -54,14 +54,36 @@ export const useMembersStore = defineStore({
     },
   },
   actions: {
-    prepareMemberList(): void {
-      let memberList = new Map<number, Member>();
-      const memberListJSONStr = sessionStorage.getItem("memberList");
-      if(memberListJSONStr != undefined){
-        const memberListJSON = JSON.parse(memberListJSONStr);
-        memberList = new Map<number, Member>(memberListJSON);
-      }
-      this.memberList = memberList;
+    async prepareMemberList(): Promise<boolean> {
+      const database = await getDatabase();
+      const promise = new Promise<boolean>(
+        (resolve, reject) => {
+          const transaction = database.transaction("members", "readonly");
+          const objectStoer = transaction.objectStore("members");
+          const memberList = new Map<number, Member>();
+          const request = objectStoer.openCursor();
+          request.onsuccess = (event) => {
+            const target = event.target as IDBRequest;
+            const cursor = target.result as IDBCursorWithValue;
+            if(cursor){
+              const id = cursor.key as number;
+              const member = cursor.value as Member;
+              memberList.set(id, member);
+              cursor.continue();
+            }
+          };
+          transaction.oncomplete = () => {
+            this.memberList = memberList;
+            this.isLoaing = false;
+            resolve(true);
+          };
+          transaction.onerror = (event) => {
+            console.log("ERROR: Fail to Get Data", event);
+            reject(new Error("ERROR: Fail to Get Data"));
+          };
+        }
+      );
+      return promise;
     },
     insertMember(member: Member): void {
       this.memberList.set(member.id, member);
