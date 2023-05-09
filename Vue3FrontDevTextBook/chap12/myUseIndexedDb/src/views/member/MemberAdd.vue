@@ -16,8 +16,19 @@ const member: Member = reactive(
   }
 );
 const onAdd = (): void => {
-  membersStore.insertMember(member);
-  router.push({name: "MemberDetail", params: {id: member.id}});
+  const promise = membersStore.insertMember(member);
+  promise.then(
+    (result: boolean) => {
+      if(result){
+        router.push({name: "MemberList"});
+      }
+    }
+  );
+  promise.catch(
+    (error) => {
+      console.log("Failed to register data", error);
+    }
+  );
 }
 </script>
 
