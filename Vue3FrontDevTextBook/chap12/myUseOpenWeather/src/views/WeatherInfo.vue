@@ -31,7 +31,7 @@ const weatherDescription = computed(
 <template>
   <p v-if="isLoading">Loading...</p>
   <section v-else>
-    <h2>Weather in {{ selectedCity }}</h2>
+    <h2>Weather in {{ selectedCity.name }}</h2>
     <p>{{ weatherDescription }}</p>
   </section>
   <p>Back to <RouterLink v-bind:to="{name: 'CityList'}">City List</RouterLink></p>
