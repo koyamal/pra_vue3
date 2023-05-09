@@ -17,6 +17,11 @@ const isEmptyList = computed(
     return membersStore.isMemberListEmpty;
   }
 );
+const isLoading = computed(
+  (): boolean => {
+    return membersStore.isLoaing;
+  }
+);
 </script>
 
 <template>
@@ -41,7 +46,8 @@ const isEmptyList = computed(
           here
         </RouterLink>
     </p>
-    <section>
+    <p v-if="isLoading">Loading...</p>
+    <section v-else>
       <ul>
         <li v-if="isEmptyList">Member Not Exist.</li>
         <li
