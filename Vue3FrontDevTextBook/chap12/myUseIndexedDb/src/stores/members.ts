@@ -5,6 +5,24 @@ interface State {
   memberList: Map<number, Member>;
 }
 
+async function getDatabase(): Promise<IDBDatabase> {
+  const promise = new Promise<IDBDatabase>(
+    (resolve, reject): void => {
+      const request = window.indexedDB.open("asyncdb", 1);
+      request.onsuccess = (event) => {
+        const target = event.target as IDBRequest;
+        const _database = target.result as IDBDatabase;
+        resolve(_database);
+      };
+      request.onerror = (event) => {
+        console.log("ERROR: DB cannot Open", event);
+        reject(new Error("ERROR: DB cannot Open"));
+      }
+    }
+  );
+  return promise;
+}
+
 export const useMembersStore = defineStore({
   id: "members",
   state: (): State => {
