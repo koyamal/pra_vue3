@@ -9,8 +9,8 @@ describe(
       "Test of Screen in Initial Input",
       () => {
         const wrapper = mount(App);
-        const actual = wrapper.get("p").text();
-        const expected = "6 / 3 = 2";
+        const actual = wrapper.get(`[data-testid="ans"]`).text();
+        const expected = "2";
         expect(actual).toBe(expected);
       }
     );
