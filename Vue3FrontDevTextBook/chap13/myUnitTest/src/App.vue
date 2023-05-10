@@ -1,21 +1,21 @@
 <script setup lang="ts">
-import {ref, computed} from "vue";
+import {ref} from "vue";
 
-const num1 = ref(6);
-const num2 = ref(3);
-const ans = computed(
-  (): number => {
-    return num1.value / num2.value;
-  }
-);
+const isVisible = ref(false);
+const onShowButtonClick = (): void => {
+  isVisible.value = true;
+}
 </script>
 
 <template>
   <p>
-    <input type="number" data-testid="num1" v-model="num1">
-    /
-    <input type="number" data-testid="num2" v-model="num2">
-    =
-    <span data-testid="ans">{{ ans }}</span>
+    <button
+      data-testid="showButton"
+      v-on:click="onShowButtonClick"
+    >
+      Show
+    </button>
+    hidden areas
   </p>
+  <p v-if="isVisible" data-testid="invisible">Displayed</p>
 </template>
