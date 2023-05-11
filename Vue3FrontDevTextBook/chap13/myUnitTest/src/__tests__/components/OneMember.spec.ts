@@ -60,7 +60,6 @@ describe(
         expect(incrementPointEvent).toHaveLength(1);
         const expectedIncrementPointEvent = [[propsData.id]];
         expect(incrementPointEvent).toEqual(expectedIncrementPointEvent);
-        // expect(incrementPointEvent).toBe(expectedIncrementPointEvent);
       }
     );
   }
