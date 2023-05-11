@@ -22,5 +22,23 @@ describe(
         expect(actualText).toContain(expected);
       }
     );
+    test(
+      "Test of Emit",
+      async () => {
+        const options = {
+          global: {
+            stubs: {
+              OneMember: true,
+            },
+          },
+        };
+        const wrapper = mount(App, options);
+        const oneMemberComponent = wrapper.findComponent(OneMember);
+        await oneMemberComponent.vm.$emit("incrementPoint", 33456);
+        const actualText = wrapper.text();
+        const expected = "Sum of Points: 89";
+        expect(actualText).toContain(expected);
+      }
+    );
   }
 );
