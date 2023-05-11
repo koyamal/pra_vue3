@@ -35,6 +35,7 @@ describe(
         };
         const wrapper = mount(OneMember, {props: propsData});
         const actualText = wrapper.text();
+        console.log(actualText);
         expect(actualText).toContain(String(propsData.id));
         expect(actualText).toContain(propsData.name);
         expect(actualText).toContain(propsData.email);
