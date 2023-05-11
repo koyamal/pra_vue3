@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import {computed} from "vue";
 interface Props{
   id: number;
   name: string;
@@ -7,17 +8,15 @@ interface Props{
   note?: string;
 }
 interface Emits {
-  (event: "update:points", points: number): void;
+  (event: "incrementPoint", id: number): void;
 }
 const props = withDefaults(
   defineProps<Props>(),
   {note: "--"}
 );
 const emit = defineEmits<Emits>();
-const onInput = (event: Event): void => {
-  const element = event.target as HTMLInputElement;
-  const inputPoints = Number(element.value);
-  emit("update:points", inputPoints);
+const pointUp = (): void => {
+  emit("incrementPoint", props.id);
 }
 </script>
 
@@ -30,15 +29,13 @@ const onInput = (event: Event): void => {
       <dt>E-mail</dt>
       <dd>{{ email }}</dd>
       <dt>Point</dt>
-      <dd>
-        <input type="number" v-bind:value="points" v-on:input="onInput">
-      </dd>
+      <dd>{{ points }}</dd>
       <dt>Other</dt>
       <dd>{{ note }}</dd>
     </dl>
+    <button v-on:click="pointUp">Point Up</button>
   </section>
 </template>
-
 <style scoped>
 .box{
   border: green 1px solid;
