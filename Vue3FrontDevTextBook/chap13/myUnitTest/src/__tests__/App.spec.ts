@@ -1,4 +1,4 @@
-import {describe, test, expect} from "vitest";
+import {describe, test, expect,} from "vitest";
 import {mount} from "@vue/test-utils";
 import App from "@/App.vue";
 import OneMember from "@/components/OneMember.vue";
@@ -13,8 +13,8 @@ describe(
           global: {
             stubs: {
               OneMember: true
-            }
-          }
+            },
+          },
         };
         const wrapper = mount(App, options);
         const actualText = wrapper.text();

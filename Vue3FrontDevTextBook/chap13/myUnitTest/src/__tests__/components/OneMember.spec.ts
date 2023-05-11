@@ -1,4 +1,4 @@
-import {describe, test, expect} from "vitest";
+import {describe, test, expect,} from "vitest";
 import {mount} from "@vue/test-utils";
 import OneMember from "@/components/OneMember.vue";
 
