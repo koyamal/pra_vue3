@@ -36,7 +36,7 @@ describe(
         const oneMemberComponent = wrapper.findComponent(OneMember);
         await oneMemberComponent.vm.$emit("incrementPoint", 33456);
         const actualText = wrapper.text();
-        const expected = "Sum of Points: 89";
+        const expected = "Sum of Points: 90";
         expect(actualText).toContain(expected);
       }
     );

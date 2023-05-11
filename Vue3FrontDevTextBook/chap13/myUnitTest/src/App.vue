@@ -17,7 +17,7 @@ const totalPoints = computed(
 const onIncrementPoint = (id: number): void => {
   const member = memberList.value.get(id);
   if(member != undefined){
-    member.points++;
+    member.points = member.points + 2;
   }
 }
 interface Member{
