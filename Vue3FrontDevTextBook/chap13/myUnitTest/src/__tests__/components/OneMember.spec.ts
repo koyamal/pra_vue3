@@ -24,5 +24,23 @@ describe(
         expect(actualText).toContain(propsData.note);
       }
     );
+    test(
+      "Test in Not Exist note value",
+      () => {
+        const propsData = {
+          id: 53632,
+          name: "Shiro",
+          email: "shiro@example.com",
+          points: 123,
+        };
+        const wrapper = mount(OneMember, {props: propsData});
+        const actualText = wrapper.text();
+        expect(actualText).toContain(String(propsData.id));
+        expect(actualText).toContain(propsData.name);
+        expect(actualText).toContain(propsData.email);
+        expect(actualText).toContain(String(propsData.points));
+        expect(actualText).toContain("--");
+      }
+    );
   }
 );
