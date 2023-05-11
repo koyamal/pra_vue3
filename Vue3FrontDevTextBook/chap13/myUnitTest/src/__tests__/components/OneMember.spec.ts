@@ -43,5 +43,24 @@ describe(
         expect(actualText).toContain("--");
       }
     );
+    test(
+      "Test in Clicked [Point Up] Button",
+      async() => {
+        const propsData = {
+          id: 22458,
+          name: "Saburo",
+          email: "sabu@example.com",
+          points: 200,
+          note: "Good",
+        };
+        const wrapper = mount(OneMember, {props: propsData});
+        await wrapper.get("button").trigger("click");
+        const incrementPointEvent = wrapper.emitted("incrementPoint");
+        expect(incrementPointEvent).toHaveLength(1);
+        const expectedIncrementPointEvent = [[propsData.id]];
+        expect(incrementPointEvent).toEqual(expectedIncrementPointEvent);
+        // expect(incrementPointEvent).toBe(expectedIncrementPointEvent);
+      }
+    );
   }
 );
