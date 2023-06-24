@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {ref, computed, reactive} from "vue";
+import {computed, reactive} from "vue";
 
 const data = reactive({
   PI: 3.14,
