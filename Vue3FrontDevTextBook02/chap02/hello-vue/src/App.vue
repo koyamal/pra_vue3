@@ -23,7 +23,7 @@ setInterval(changeTime, 1000);
 
 <template>
   <p>現在時刻：{{ timeStr }}</p>
-  <p>現在時刻(ref)：{{ timeStrRef }}</p>
+  <!-- <p>現在時刻(ref)：{{ timeStrRef }}</p> -->
 </template>
 
 <style scoped>
