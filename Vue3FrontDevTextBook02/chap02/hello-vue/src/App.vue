@@ -1,35 +1,18 @@
 <script setup lang="ts">
 import {ref} from "vue";
 
-const randValue = ref("まだです");
-const randValue2 = ref("まだです");
-const randValue3 = ref("まだです");
-const onButtonClick = (): void => {
-  const rand = Math.round(Math.random() * 10);
-  randValue.value = String(rand);
+const mousePointerX = ref(0);
+const mousePointerY = ref(0);
+const onImgMousemove = (event: MouseEvent): void => {
+  mousePointerX.value = event.offsetX;
+  mousePointerY.value = event.offsetY;
 };
-const onButtonFocusout = (): void => {
-  const rand = Math.round(Math.random() * 10);
-  randValue2.value = String(rand);
-}
-const onButtonMouseout = (): void => {
-  const rand = Math.round(Math.random() * 10);
-  randValue3.value = String(rand);
-}
 </script>
 
 <template>
   <section>
-    <button
-      v-on:click="onButtonClick"
-      v-on:focusout="onButtonFocusout"
-      v-on:mouseout="onButtonMouseout"
-    >
-      クリック
-    </button>
-    <p>onClick：{{randValue}}</p>
-    <p>focusout：{{randValue2}}</p>
-    <p>mouseout：{{randValue3}}</p>
+    <img src="./assets/logo.svg" alt="Vuelog" width="200" v-on:mousemove="onImgMousemove">
+    <p>ポインタの位置: x={{ mousePointerX }};  y={{ mousePointerY }}</p>
   </section>
 </template>
 
