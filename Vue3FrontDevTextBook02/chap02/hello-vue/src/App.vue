@@ -1,19 +1,14 @@
 <script setup lang="ts">
 import {ref} from "vue";
 
-const pBgColor = ref("white");
-const pMsg = ref("No");
-const onPClick = (bgColor: string, event: MouseEvent): void => {
-  pBgColor.value = bgColor;
-  pMsg.value = event.timeStamp.toString();
-};
+const inputNameModel = ref("双方向");
 </script>
 
 <template>
-  <p v-on:click="onPClick('red', $event)" v-bind:style="{backgroundColor: pBgColor, color:'green'}">
-    ここをクリックすると背景色が変わります。
-  </p>
-  <p>{{ pMsg }}</p>
+  <section>
+    <input type="text" v-model="inputNameModel">
+    <p>{{ inputNameModel }}</p>
+  </section>
 </template>
 
 <style scoped>
