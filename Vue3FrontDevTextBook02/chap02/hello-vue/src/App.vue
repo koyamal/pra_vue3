@@ -23,8 +23,8 @@ setInterval(() => {
 </script>
 
 <template>
-  <!-- <p v-bind:style="{color: whiteOrRed}">White? or Red?</p>
-  <p v-bind:style="{color: whiteOrRed, fontSize:textSize}">White? or Red?</p> -->
+  <p v-bind:style="{color: whiteOrRed}">White? or Red?</p>
+  <p v-bind:style="{color: whiteOrRed, fontSize:textSize}">White? or Red?</p>
   <p v-bind:style="{color: whiteOrRed, fontSize:textSizeRef}">White? or Red?</p>
 </template>
 
