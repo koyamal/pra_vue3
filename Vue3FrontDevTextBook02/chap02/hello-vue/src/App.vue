@@ -20,7 +20,13 @@ const onButtonMouseout = (): void => {
 
 <template>
   <section>
-    <button v-on:click="onButtonClick" v-on:focusout="onButtonFocusout" v-on:mouseout="onButtonMouseout">クリック</button>
+    <button
+      v-on:click="onButtonClick"
+      v-on:focusout="onButtonFocusout"
+      v-on:mouseout="onButtonMouseout"
+    >
+      クリック
+    </button>
     <p>onClick：{{randValue}}</p>
     <p>focusout：{{randValue2}}</p>
     <p>mouseout：{{randValue3}}</p>
