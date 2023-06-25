@@ -1,17 +1,18 @@
 <script setup lang="ts">
 import {ref} from "vue";
 
-const inputName2Way = ref("双方向");
-const onInputName2Way = (event: Event): void => {
-  const element = event.target as HTMLInputElement;
-  inputName2Way.value = element.value;
-}
+const inputTextarea = ref("テキストエリアへの入力文字、\n 改行も加えてみる");
+const memberType = ref(1);
+const memberTypeSelect = ref(1);
 </script>
 
 <template>
   <section>
-    <input type="text" v-bind:value="inputName2Way" v-on:input="onInputName2Way">
-    <p>{{ inputName2Way }}</p>
+    <label><input type="radio" name="memberType" value="1" v-model="memberType">通常会員</label>
+    <label><input type="radio" name="memberType" value="2" v-model="memberType">特別会員</label>
+    <label><input type="radio" name="memberType" value="3" v-model="memberType">優良会員</label>
+    <br>
+    <p>選択されたラジオボタン：{{ memberType }}</p>
   </section>
 </template>
 
