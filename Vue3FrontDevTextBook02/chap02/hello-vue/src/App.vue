@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import {ref} from "vue";
 
-const inputTextarea = ref("テキストエリアへの入力文字、\n 改行も加えてみる");
 const memberType = ref(1);
 const memberTypeSelect = ref(1);
 </script>
