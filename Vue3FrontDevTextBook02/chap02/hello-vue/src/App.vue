@@ -25,7 +25,7 @@ const userName = ref("taro");
   </section>
   <section>
     <input type="text" v-model="userName">
-    <p>{{ userName }}</p>
+    <p>user name: {{ userName }}</p>
   </section>
 </template>
 
