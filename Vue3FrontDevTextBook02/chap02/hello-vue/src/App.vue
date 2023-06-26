@@ -3,6 +3,7 @@ import {ref} from "vue";
 
 const memberType = ref(1);
 const memberTypeSelect = ref(1);
+const userName = ref("taro");
 </script>
 
 <template>
@@ -21,6 +22,9 @@ const memberTypeSelect = ref(1);
       <option value="3">優良会員</option>
     </select>
     <p>選択されたリスト：{{ memberTypeSelect }}</p>
+  </section>
+  <section>
+    <p>{{ userName }}</p>
   </section>
 </template>
 
