@@ -22,9 +22,9 @@ const userName = ref("taro");
       <option value="3">優良会員</option>
     </select>
     <p>選択されたリスト：{{ memberTypeSelect }}</p>
-    <input type="text" v-model="userName">
   </section>
   <section>
+    <input type="text" v-model="userName">
     <p>{{ userName }}</p>
   </section>
 </template>
