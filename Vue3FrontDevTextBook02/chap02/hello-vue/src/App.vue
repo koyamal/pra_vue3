@@ -30,6 +30,9 @@ const htmlStr = ref(`<a href="https://vuejs.org//">Vue.jsのTOPページ</a>`);
     <input type="text" v-model="userName">
     <p>user name: {{ userName }}</p>
   </section>
+  <section>
+    <p>Hello, New Branch</p>
+  </section>
 </template>
 
 <style scoped>
