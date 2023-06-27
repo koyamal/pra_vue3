@@ -32,6 +32,7 @@ const htmlStr = ref(`<a href="https://vuejs.org//">Vue.jsのTOPページ</a>`);
   </section>
   <section>
     <p>Hello, New Branch</p>
+    <p>Hello, New Branch 02</p>
   </section>
 </template>
 
