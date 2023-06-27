@@ -4,9 +4,12 @@ import {ref} from "vue";
 const memberType = ref(1);
 const memberTypeSelect = ref(1);
 const userName = ref("taro");
+const htmlStr = ref(`<a href="https://vuejs.org//">Vue.jsのTOPページ</a>`);
 </script>
 
 <template>
+  <section>{{ htmlStr }}</section><br>
+  <section v-html="htmlStr"></section>
   <section>
     <label><input type="radio" name="memberType" value="1" v-model="memberType">通常会員</label>
     <label><input type="radio" name="memberType" value="2" v-model="memberType">特別会員</label>
