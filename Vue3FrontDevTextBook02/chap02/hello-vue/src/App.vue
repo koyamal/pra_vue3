@@ -5,6 +5,7 @@ const memberType = ref(1);
 const memberTypeSelect = ref(1);
 const userName = ref("taro");
 const htmlStr = ref(`<a href="https://vuejs.org//">Vue.jsのTOPページ</a>`);
+const userId = ref(0);
 </script>
 
 <template>
@@ -36,6 +37,9 @@ const htmlStr = ref(`<a href="https://vuejs.org//">Vue.jsのTOPページ</a>`);
     <p>Hello, New Branch 03!</p>
     <p>Hello, New Branch 04</p>
     <p>Hello, New Branch 05</p>
+  </section>
+  <section>
+    <p>User Id: {{ userId }}</p>
   </section>
 </template>
 
