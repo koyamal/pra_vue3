@@ -43,7 +43,7 @@ const onClickCountUp = () => {
     <p>Hello, New Branch 05</p>
   </section>
   <section>
-    <p>User Id: {{ userId }}</p>
+    <p>USER ID: {{ userId }}</p>
     <button v-on:click="onClickCountUp">Count Up</button>
   </section>
 </template>
