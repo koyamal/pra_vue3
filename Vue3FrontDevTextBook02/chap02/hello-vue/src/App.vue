@@ -5,6 +5,11 @@ const memberType = ref(1);
 const memberTypeSelect = ref(1);
 const userName = ref("taro");
 const htmlStr = ref(`<a href="https://vuejs.org//">Vue.jsのTOPページ</a>`);
+const userId = ref(0);
+
+const onClickCountUp = () => {
+  userId.value++;
+}
 </script>
 
 <template>
@@ -36,6 +41,10 @@ const htmlStr = ref(`<a href="https://vuejs.org//">Vue.jsのTOPページ</a>`);
     <p>Hello, New Branch 03!</p>
     <p>Hello, New Branch 04</p>
     <p>Hello, New Branch 05</p>
+  </section>
+  <section>
+    <p>USER ID: {{ userId }}</p>
+    <button v-on:click="onClickCountUp">Count Up</button>
   </section>
 </template>
 
