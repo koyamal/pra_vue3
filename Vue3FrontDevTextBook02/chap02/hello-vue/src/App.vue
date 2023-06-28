@@ -10,6 +10,10 @@ const counter = ref(0);
 const onClickCountUp = () => {
   counter.value++;
 }
+
+const onClickCountDown = () => {
+  counter.value--;
+}
 </script>
 
 <template>
@@ -45,6 +49,7 @@ const onClickCountUp = () => {
   <section>
     <p>Count: {{ counter }}</p>
     <button v-on:click="onClickCountUp">Count Up</button>
+    <button v-on:click="onClickCountDown">Count Down</button>
   </section>
 </template>
 
