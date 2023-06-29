@@ -46,6 +46,7 @@ const onClickCountDown = () => {
     <p>Hello, New Branch 04</p>
     <p>Hello, New Branch 05</p>
     <p>Hello, New Branch 06</p>
+    <p>Hello, New Branch 07</p>
   </section>
   <section>
     <p>Count: {{ counter }}</p>
