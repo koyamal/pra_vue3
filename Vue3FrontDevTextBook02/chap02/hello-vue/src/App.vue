@@ -32,6 +32,7 @@ const onClickCountDown = () => {
       <option value="1">通常会員</option>
       <option value="2">特別会員</option>
       <option value="3">優良会員</option>
+      <option value="4">VIP</option>
     </select>
     <p>選択されたリスト：{{ memberTypeSelect }}</p>
   </section>
