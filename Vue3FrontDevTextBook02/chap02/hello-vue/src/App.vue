@@ -14,6 +14,10 @@ const onClickCountUp = () => {
 const onClickCountDown = () => {
   counter.value--;
 }
+
+const onClickZeroReset = () => {
+  counter.value = 0;
+}
 </script>
 
 <template>
