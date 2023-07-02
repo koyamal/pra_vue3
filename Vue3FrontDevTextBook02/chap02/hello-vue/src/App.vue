@@ -66,7 +66,7 @@ const onClickZeroReset = () => {
     <p>Hello, New Branch 19-02</p>
     <a>Hello, New Branch 20</a>
     <a>Hello, New Branch 21</a>
-    <a>Hello, New Branch 22</a>
+    <a>Hello, New Branch 22-02</a>
   </section>
   <section>
     <p>Count: {{ counter }}</p>
