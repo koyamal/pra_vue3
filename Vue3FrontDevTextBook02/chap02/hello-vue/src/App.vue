@@ -66,10 +66,10 @@ const onClickZeroReset = () => {
     <p>Hello, New Branch 19-02</p>
     <a>Hello, New Branch 20</a>
     <a>Hello, New Branch 21</a>
-    <a>Hello, New Branch 22-02</a>
-    <a>Hello, New Branch 23-02</a>
-    <a>Hello, New Branch 24-02</a>
-    <a>Hello, New Branch 25-02</a>
+    <a>Hello, New Branch 22-02-2</a>
+    <a>Hello, New Branch 23-02-2</a>
+    <a>Hello, New Branch 24-02-2</a>
+    <a>Hello, New Branch 25-02-2</a>
   </section>
   <section>
     <p>Count: {{ counter }}</p>
