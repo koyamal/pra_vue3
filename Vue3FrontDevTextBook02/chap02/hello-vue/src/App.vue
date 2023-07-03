@@ -6,6 +6,7 @@ const memberTypeSelect = ref(1);
 const userName = ref("taro");
 const htmlStr = ref(`<a href="https://vuejs.org//">Vue.jsのTOPページ</a>`);
 const counter = ref(0);
+const userId = ref(0);
 
 const onClickCountUp = () => {
   counter.value++;
@@ -70,6 +71,7 @@ const onClickZeroReset = () => {
     <a>Hello, New Branch 23-02-2</a>
     <a>Hello, New Branch 24-02-2</a>
     <a>Hello, New Branch 25-02-2</a>
+    <p>{{ userId }}</p>
   </section>
   <section>
     <p>Count: {{ counter }}</p>
