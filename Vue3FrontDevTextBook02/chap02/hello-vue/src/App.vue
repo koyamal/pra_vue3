@@ -12,6 +12,11 @@ const dataName = ref("userName");
 const onClickCountUp = () => {
   counter.value++;
 }
+const useSetTimeout = async() => {
+  const data = await fetch("./src/main.ts");
+  console.log(data.ok);
+  return data;
+}
 
 const onClickCountDown = () => {
   counter.value--;
@@ -88,6 +93,16 @@ const useSubstring = () => {
   <section>
     <p>{{ dataName }}</p>
     <button v-on:click="useSubstring">useSubstring</button>
+  </section>
+  <section>
+    <button v-on:click="async()  => {
+      console.log('Strat');
+      await useSetTimeout();
+      // (async() => {
+      //   await useSetTimeout();
+      // })();
+      console.log('Bye');
+    }">Hello</button>
   </section>
 </template>
 
