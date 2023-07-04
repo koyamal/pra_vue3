@@ -97,9 +97,10 @@ const useSubstring = () => {
   <section>
     <button v-on:click="async()  => {
       console.log('Strat');
-      (async() => {
-        await useSetTimeout();
-      })();
+      await useSetTimeout();
+      // (async() => {
+      //   await useSetTimeout();
+      // })();
       console.log('Bye');
     }">Hello</button>
   </section>
