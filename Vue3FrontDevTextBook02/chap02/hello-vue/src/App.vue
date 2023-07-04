@@ -7,6 +7,7 @@ const userName = ref("taro");
 const htmlStr = ref(`<a href="https://vuejs.org//">Vue.jsのTOPページ</a>`);
 const counter = ref(0);
 const userId = ref(0);
+const dataName = ref("userName");
 
 const onClickCountUp = () => {
   counter.value++;
@@ -18,6 +19,11 @@ const onClickCountDown = () => {
 
 const onClickZeroReset = () => {
   counter.value = 0;
+}
+
+const useSubstring = () => {
+  const field = "userName";
+  dataName.value = `${field[0].toUpperCase()}${field.substring(1)}`;
 }
 </script>
 
@@ -78,6 +84,10 @@ const onClickZeroReset = () => {
     <button v-on:click="onClickCountUp">Count Up</button>
     <button v-on:click="onClickCountDown">Count Down</button>
     <button v-on:click="onClickZeroReset">Zero</button>
+  </section>
+  <section>
+    <p>{{ dataName }}</p>
+    <button v-on:click="useSubstring">useSubstring</button>
   </section>
 </template>
 
