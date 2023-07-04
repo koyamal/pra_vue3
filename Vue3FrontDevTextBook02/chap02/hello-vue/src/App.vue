@@ -19,6 +19,12 @@ const onClickCountDown = () => {
 const onClickZeroReset = () => {
   counter.value = 0;
 }
+
+const useSubstring = () => {
+  const field = "userName";
+  const dataName = `current${field[0].toUpperCase()}${field.substring(1)}`;
+  console.log(dataName);
+}
 </script>
 
 <template>
@@ -78,6 +84,7 @@ const onClickZeroReset = () => {
     <button v-on:click="onClickCountUp">Count Up</button>
     <button v-on:click="onClickCountDown">Count Down</button>
     <button v-on:click="onClickZeroReset">Zero</button>
+    <button v-on:click="useSubstring">useSubstring</button>
   </section>
 </template>
 
