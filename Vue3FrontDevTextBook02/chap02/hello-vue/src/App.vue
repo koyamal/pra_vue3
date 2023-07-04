@@ -13,6 +13,10 @@ const onClickCountUp = () => {
   counter.value++;
 }
 
+const useSetTimeout = () => {
+  setTimeout(() => { console.log("See")}, 1000);
+}
+
 const onClickCountDown = () => {
   counter.value--;
 }
@@ -88,6 +92,15 @@ const useSubstring = () => {
   <section>
     <p>{{ dataName }}</p>
     <button v-on:click="useSubstring">useSubstring</button>
+  </section>
+  <section>
+    <button v-on:click="()  => {
+      console.log('Strat');
+      (async() => {
+        await useSetTimeout();
+      })();
+      console.log('Bye');
+    }">Hello</button>
   </section>
 </template>
 
