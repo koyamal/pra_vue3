@@ -88,9 +88,9 @@ const useSubstring = () => {
   </section>
   <section>
     <p>Count: {{ counter }}</p>
-    <button v-on:click="onClickCountUp">Count Up</button>
-    <button v-on:click="onClickCountDown">Count Down</button>
-    <button v-on:click="onClickZeroReset">Zero</button>
+    <button v-on:click="onClickCountUp">Count Up!</button>
+    <button v-on:click="onClickCountDown">Count Down!</button>
+    <button v-on:click="onClickZeroReset">Zero!</button>
   </section>
   <section>
     <p>{{ dataName }}</p>
