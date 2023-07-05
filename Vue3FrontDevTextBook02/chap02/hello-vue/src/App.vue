@@ -104,6 +104,8 @@ const useSubstring = () => {
     }">Hello</button>
   </section>
   <CountUpButton></CountUpButton>
+  <CountUpButton></CountUpButton>
+  <CountDownButton></CountDownButton>
   <CountDownButton></CountDownButton>
 </template>
 
