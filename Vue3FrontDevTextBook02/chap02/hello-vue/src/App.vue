@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import {ref} from "vue";
+import CountUpButton from "./components/CountUpButton.vue";
 
 const memberType = ref(1);
 const memberTypeSelect = ref(1);
@@ -101,6 +102,7 @@ const useSubstring = () => {
       console.log('Bye');
     }">Hello</button>
   </section>
+  <CountUpButton></CountUpButton>
 </template>
 
 <style scoped>
