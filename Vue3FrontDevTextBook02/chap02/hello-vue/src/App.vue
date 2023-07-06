@@ -22,6 +22,7 @@ const useSetTimeout = async() => {
 
 const onClickCountDown = () => {
   counter.value--;
+  counter.value += 2;
 }
 
 const onClickZeroReset = () => {
@@ -84,6 +85,10 @@ const useSubstring = () => {
     <a>Hello, New Branch 23-02-2</a>
     <a>Hello, New Branch 24-02-2</a>
     <a>Hello, New Branch 25-02-2</a>
+    <p>#6512</p>
+    <p>#6512-02</p>
+    <p>#6512-03</p>
+    <p>#6512-04</p>
     <p>{{ userId }}</p>
   </section>
   <section>
