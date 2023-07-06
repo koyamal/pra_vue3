@@ -88,7 +88,7 @@ const useSubstring = () => {
     <p>#6512</p>
     <p>#6512-02</p>
     <p>#6512-03</p>
-    <p>#1234</p>
+    <p>#6512-04</p>
     <p>{{ userId }}</p>
   </section>
   <section>
