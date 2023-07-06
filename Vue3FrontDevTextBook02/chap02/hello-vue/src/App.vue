@@ -22,7 +22,7 @@ const useSetTimeout = async() => {
 
 const onClickCountDown = () => {
   counter.value--;
-  counter.value-= 2;
+  counter.value += 2;
 }
 
 const onClickZeroReset = () => {
