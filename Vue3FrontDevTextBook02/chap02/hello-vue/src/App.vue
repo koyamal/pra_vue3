@@ -65,7 +65,7 @@ const useSubstring = () => {
         <p>Mr. A</p>
       </div>
       <div>
-        <p>Mr. B</p>
+        <p>Ms. B</p>
       </div>
       <div>
         <p>Mr. C</p>
