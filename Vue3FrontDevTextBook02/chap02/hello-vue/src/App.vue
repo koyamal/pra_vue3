@@ -21,8 +21,7 @@ const useSetTimeout = async() => {
 }
 
 const onClickCountDown = () => {
-  counter.value--;
-  counter.value += 2;
+  counter.value -= 4;
 }
 
 const onClickZeroReset = () => {
@@ -58,6 +57,14 @@ const useSubstring = () => {
   <section>
     <input type="text" v-model="userName">
     <p>user name: {{ userName }}</p>
+  </section>
+  <section>
+    <div>
+      <p>Speaker</p>
+      <p>Mr. A</p>
+      <p>Mr. B</p>
+      <p>Mr. C</p>
+    </div>
   </section>
   <section>
     <p>Hello, New Branch</p>
