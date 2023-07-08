@@ -63,7 +63,7 @@ const useSubstring = () => {
       <p>Speaker</p>
       <p>Mr. A</p>
       <p>Mr. B</p>
-      <!-- TODO: 3人目の情報が届き次第記載する。 -->
+      <p>Mr. C</p>
     </div>
   </section>
   <section>
