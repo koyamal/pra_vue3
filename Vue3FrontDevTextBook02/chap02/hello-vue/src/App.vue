@@ -59,6 +59,14 @@ const useSubstring = () => {
     <p>user name: {{ userName }}</p>
   </section>
   <section>
+    <div>
+      <p>Speaker</p>
+      <p>Mr. A</p>
+      <p>Mr. B</p>
+      <p>Mr. C</p>
+    </div>
+  </section>
+  <section>
     <p>Hello, New Branch</p>
     <p>Hello, New Branch 02</p>
     <p>Hello, New Branch 03!</p>
