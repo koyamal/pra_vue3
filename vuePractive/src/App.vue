@@ -12,7 +12,24 @@ export default {
       count: 0,
       ok: false,
       seen: true,
+      author: {
+        name: 'John Doe',
+        books: [
+          'Vue 2 - Advanced Guide',
+          'Vue 3 - Basic Guide',
+          'Vue 4 - The Mystery'
+        ]
+      },
     }
+  },
+
+  computed: {
+    checkAuthorInfo() {
+      return this.author.books.length > 0 ? 'Yes' : 'No'
+    },
+    now() {
+      return Date.now();
+    },
   },
 
   methods: {
@@ -23,6 +40,19 @@ export default {
       this.count++
       await nextTick()
       console.log("fin");
+    },
+    DeleteAuthorInfo() {
+      this.author.books = [];
+    },
+    ResetAuthorInfo() {
+      this.author.books = [
+        'Vue 2 - Advanced Guide',
+        'Vue 3 - Basic Guide',
+        'Vue 4 - The Mystery'
+      ];
+    },
+    nowInMethods() {
+      return Date.now();
     },
   }
 }
@@ -39,4 +69,11 @@ export default {
   <div>
     <button @click="increment">{{ count }}</button>
   </div>
+  <div>
+    <p>Has published books: {{ checkAuthorInfo }}</p>
+    <button @click="DeleteAuthorInfo">Delete</button>
+    <button @click="ResetAuthorInfo">Reset</button>
+  </div>
+  <div>Computed: {{ now }}</div>
+  <div>Method: {{ nowInMethods() }}</div>
 </template>
