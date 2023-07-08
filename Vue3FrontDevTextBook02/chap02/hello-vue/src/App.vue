@@ -21,8 +21,7 @@ const useSetTimeout = async() => {
 }
 
 const onClickCountDown = () => {
-  counter.value--;
-  counter.value += 2;
+  counter.value -= 4;
 }
 
 const onClickZeroReset = () => {
