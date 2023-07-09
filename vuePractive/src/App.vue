@@ -38,6 +38,15 @@ export default {
       dynamicTrueValue: "OK",
       dynamicFalseValue: "No",
       toggle: "",
+      question: "",
+      answer: "Questions usually contain a question mark. ;-)",
+    }
+  },
+  watch: {
+    question(newQuestion, oldQuestion) {
+      if (newQuestion.includes('?')) {
+        this.getAnswer()
+      }
     }
   },
 
@@ -51,6 +60,15 @@ export default {
   },
 
   methods: {
+    async getAnswer() {
+      this.answer = 'Thinking...'
+      try {
+        const res = await fetch('https://yesno.wtf/api')
+        this.answer = (await res.json()).answer
+      } catch (error) {
+        this.answer = 'Error! Could not reach the API. ' + error
+      }
+    },
     switchSeen() {
       this.seen = !this.seen;
     },
@@ -90,15 +108,15 @@ export default {
     },
   },
 
-  mounted() {
-    console.log("mounted");
-  },
-  beforeUpdate() {
-    console.log("beforeUpdate");
-  },
-  updated() {
-    console.log("updated");
-  }
+  // mounted() {
+  //   console.log("mounted");
+  // },
+  // beforeUpdate() {
+  //   console.log("beforeUpdate");
+  // },
+  // updated() {
+  //   console.log("updated");
+  // }
 }
 </script>
 
@@ -167,5 +185,12 @@ export default {
       :true-value="dynamicTrueValue"
       :false-value="dynamicFalseValue" />
       <p>{{ toggle }}</p>
+  </div>
+  <div>
+    <p>
+      Ask a yes/no question:
+      <input v-model="question" />
+    </p>
+    <p>{{ answer }}</p>
   </div>
 </template>
