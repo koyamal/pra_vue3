@@ -2,9 +2,12 @@
 import { nextTick } from "vue";
 
 import MyButton from "./components/atom/Button.vue";
+import ButtonCounter from "./components/atom/ButtonCounter.vue";
+
 export default {
   components: {
-    MyButton
+    MyButton,
+    ButtonCounter,
   },
 
   data() {
@@ -197,5 +200,9 @@ export default {
   <div>
     <input ref="input" v-model="refValue" />
     <p>{{ refValue }}</p>
+  </div>
+  <div>
+    <h1>Here is a child component!</h1>
+    <ButtonCounter />
   </div>
 </template>
