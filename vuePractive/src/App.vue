@@ -88,6 +88,10 @@ export default {
       }
       alert(message);
     },
+  },
+
+  mounted() {
+    console.log(`コンポーネントがマウントされました。`);
   }
 }
 </script>
