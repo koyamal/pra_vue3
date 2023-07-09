@@ -40,6 +40,7 @@ export default {
       toggle: "",
       question: "",
       answer: "Questions usually contain a question mark. ;-)",
+      refValue: "",
     }
   },
   watch: {
@@ -108,9 +109,9 @@ export default {
     },
   },
 
-  // mounted() {
-  //   console.log("mounted");
-  // },
+  mounted() {
+    this.$refs.input.focus()
+  },
   // beforeUpdate() {
   //   console.log("beforeUpdate");
   // },
@@ -192,5 +193,9 @@ export default {
       <input v-model="question" />
     </p>
     <p>{{ answer }}</p>
+  </div>
+  <div>
+    <input ref="input" v-model="refValue" />
+    <p>{{ refValue }}</p>
   </div>
 </template>
