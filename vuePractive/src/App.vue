@@ -91,7 +91,13 @@ export default {
   },
 
   mounted() {
-    console.log(`コンポーネントがマウントされました。`);
+    console.log("mounted");
+  },
+  beforeUpdate() {
+    console.log("beforeUpdate");
+  },
+  updated() {
+    console.log("updated");
   }
 }
 </script>
