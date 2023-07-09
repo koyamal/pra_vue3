@@ -40,6 +40,7 @@ export default {
       toggle: "",
       question: "",
       answer: "Questions usually contain a question mark. ;-)",
+      refValue: "",
     }
   },
   watch: {
@@ -194,6 +195,7 @@ export default {
     <p>{{ answer }}</p>
   </div>
   <div>
-    <input ref="input" />
+    <input ref="input" v-model="refValue" />
+    <p>{{ refValue }}</p>
   </div>
 </template>
