@@ -108,9 +108,9 @@ export default {
     },
   },
 
-  // mounted() {
-  //   console.log("mounted");
-  // },
+  mounted() {
+    this.$refs.input.focus()
+  },
   // beforeUpdate() {
   //   console.log("beforeUpdate");
   // },
@@ -192,5 +192,8 @@ export default {
       <input v-model="question" />
     </p>
     <p>{{ answer }}</p>
+  </div>
+  <div>
+    <input ref="input" />
   </div>
 </template>
