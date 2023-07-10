@@ -43,7 +43,7 @@ export default {
       toggle: "",
       question: "",
       answer: "Questions usually contain a question mark. ;-)",
-      refValue: "hello!!!!",
+      refValue: "hello!!!!???",
     }
   },
   watch: {
