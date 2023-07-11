@@ -1,0 +1,21 @@
+<script>
+export default {
+  data() {
+    return {
+      count: 0
+    }
+  },
+  props: ['title', 'content'],
+}
+</script>
+
+<template>
+  <div>
+    <p>title</p>
+    <p>{{ title }}</p>
+  </div>
+  <div>
+    <p>content</p>
+    <p>{{ content }}</p>
+  </div>
+</template>
