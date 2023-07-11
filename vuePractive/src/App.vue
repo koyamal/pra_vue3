@@ -50,7 +50,8 @@ export default {
         {title: "No.1", content: "This is No.1"},
         {title: "No.2", content: "This is No.2"},
         {title: "No.3", content: "This is No.3"}
-      ]
+      ],
+      articleFontSize: 1
     }
   },
   watch: {
@@ -132,8 +133,15 @@ export default {
 </script>
 
 <template>
-  <DisplayData v-for="article in articles" :title="article.title" :content="article.content"/>
-  <DisplayData title="Hello World" content="This is Hello world class"/>
+  <DisplayData
+    v-for="article in articles"
+    :title="article.title"
+    :content="article.content"
+  />
+  <div :style="{ fontSize: articleFontSize + 'em' }">
+    <DisplayData title="Hello World" content="This is Hello world class" @enlarge-text="articleFontSize += 0.1"/>
+  </div>
+
   <MyButton></MyButton>
   <MyButton></MyButton>
   <p>{{ ok? "Yes": "No" }}</p>
