@@ -139,7 +139,7 @@ export default {
     :content="article.content"
   />
   <div :style="{ fontSize: articleFontSize + 'em' }">
-    <DisplayData title="Hello World" content="This is Hello world class" @enlarge-text="articleFontSize += 0.1"/>
+    <DisplayData title="Hello World!!!!" content="This is Hello world class" @enlarge-text="articleFontSize += 0.1"/>
   </div>
 
   <MyButton></MyButton>
