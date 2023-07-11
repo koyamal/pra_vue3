@@ -3,11 +3,13 @@ import { nextTick } from "vue";
 
 import MyButton from "./components/atom/Button.vue";
 import ButtonCounter from "./components/atom/ButtonCounter.vue";
+import DisplayData from "./components/atom/DisplayData.vue";
 
 export default {
   components: {
     MyButton,
     ButtonCounter,
+    DisplayData,
   },
 
   data() {
@@ -125,6 +127,7 @@ export default {
 </script>
 
 <template>
+  <DisplayData title="Hello World" content="This is Hello world class"/>
   <MyButton></MyButton>
   <MyButton></MyButton>
   <p>{{ ok? "Yes": "No" }}</p>
