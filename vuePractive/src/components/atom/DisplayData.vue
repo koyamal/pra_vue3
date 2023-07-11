@@ -20,5 +20,7 @@ export default {
   <div>
     <p>content</p>
     <p>{{ content }}</p>
+    <button @click="$emit('enlarge-text')">Large</button>
   </div>
+
 </template>
