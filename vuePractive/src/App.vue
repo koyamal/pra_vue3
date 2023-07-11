@@ -46,6 +46,11 @@ export default {
       question: "",
       answer: "Questions usually contain a question mark. ;-)",
       refValue: "hello!!!!???!!!!!",
+      articles: [
+        {title: "No.1", content: "This is No.1"},
+        {title: "No.2", content: "This is No.2"},
+        {title: "No.3", content: "This is No.3"}
+      ]
     }
   },
   watch: {
@@ -127,6 +132,7 @@ export default {
 </script>
 
 <template>
+  <DisplayData v-for="article in articles" :title="article.title" :content="article.content"/>
   <DisplayData title="Hello World" content="This is Hello world class"/>
   <MyButton></MyButton>
   <MyButton></MyButton>
