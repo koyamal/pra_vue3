@@ -1,7 +1,9 @@
 <template>
   <div class="alert-box">
     <strong>This is an Error for Demo Purposes</strong>
-      <slot class="bigbig" />
+    <div class="bigbig">
+      <slot />
+    </div>
   </div>
 </template>
   
