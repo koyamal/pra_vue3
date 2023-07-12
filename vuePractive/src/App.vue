@@ -5,6 +5,9 @@ import MyButton from "./components/atom/Button.vue";
 import ButtonCounter from "./components/atom/ButtonCounter.vue";
 import DisplayData from "./components/atom/DisplayData.vue";
 import AlertBox from "./components/atom/AlertBox.vue";
+import A from "./components/atom/A.vue";
+import B from "./components/atom/B.vue";
+import C from "./components/atom/C.vue";
 
 export default {
   components: {
@@ -12,6 +15,9 @@ export default {
     ButtonCounter,
     DisplayData,
     AlertBox,
+    A,
+    B,
+    C,
   },
 
   data() {
@@ -135,6 +141,7 @@ export default {
 </script>
 
 <template>
+  <component is="C"></component>
   <AlertBox>Hello</AlertBox>
   <DisplayData
     v-for="article in articles"
