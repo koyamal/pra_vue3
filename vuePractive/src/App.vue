@@ -4,12 +4,14 @@ import { nextTick } from "vue";
 import MyButton from "./components/atom/Button.vue";
 import ButtonCounter from "./components/atom/ButtonCounter.vue";
 import DisplayData from "./components/atom/DisplayData.vue";
+import AlertBox from "./components/atom/AlertBox.vue";
 
 export default {
   components: {
     MyButton,
     ButtonCounter,
     DisplayData,
+    AlertBox,
   },
 
   data() {
@@ -133,6 +135,7 @@ export default {
 </script>
 
 <template>
+  <AlertBox>Hello</AlertBox>
   <DisplayData
     v-for="article in articles"
     :title="article.title"
