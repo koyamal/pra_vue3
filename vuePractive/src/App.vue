@@ -59,7 +59,8 @@ export default {
         {title: "No.2", content: "This is No.2"},
         {title: "No.3", content: "This is No.3"}
       ],
-      articleFontSize: 1
+      articleFontSize: 1,
+      useThreeFlag: "Three",
     }
   },
   watch: {
@@ -130,6 +131,7 @@ export default {
 
   mounted() {
     this.$refs.input.focus()
+    this.useThreeFlag = "four"
   },
   // beforeUpdate() {
   //   console.log("beforeUpdate");
