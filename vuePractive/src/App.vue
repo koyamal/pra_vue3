@@ -131,7 +131,7 @@ export default {
 
   mounted() {
     this.$refs.input.focus()
-    this.useTowQuestion = null ?? 'Hello'
+    this.useTowQuestion = '' ?? 'Hello'
   },
   // beforeUpdate() {
   //   console.log("beforeUpdate");
