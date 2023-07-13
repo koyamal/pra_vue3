@@ -61,6 +61,7 @@ export default {
       ],
       articleFontSize: 1,
       useTowQuestion: undefined,
+      useTowbar: undefined,
     }
   },
   watch: {
@@ -132,6 +133,7 @@ export default {
   mounted() {
     this.$refs.input.focus()
     this.useTowQuestion = 0 ?? 'Hello'
+    this.useTowbar = 10 || 1
   },
   // beforeUpdate() {
   //   console.log("beforeUpdate");
@@ -143,6 +145,9 @@ export default {
 </script>
 
 <template>
+  <div>
+    <p>useTowbar: {{ useTowbar }}</p>
+  </div>
   <div>
     <p>useTowQuestion: {{ useTowQuestion }}</p>
   </div>
