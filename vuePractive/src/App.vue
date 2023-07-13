@@ -133,7 +133,7 @@ export default {
   mounted() {
     this.$refs.input.focus()
     this.useTowQuestion = 0 ?? 'Hello'
-    this.useTowbar = 10 || 1
+    this.useTowbar = 0 || 1
   },
   // beforeUpdate() {
   //   console.log("beforeUpdate");
