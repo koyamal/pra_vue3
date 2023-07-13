@@ -59,7 +59,9 @@ export default {
         {title: "No.2", content: "This is No.2"},
         {title: "No.3", content: "This is No.3"}
       ],
-      articleFontSize: 1
+      articleFontSize: 1,
+      useTowQuestion: undefined,
+      useTowbar: undefined,
     }
   },
   watch: {
@@ -126,10 +128,20 @@ export default {
       }
       alert(message);
     },
+    func1() {
+      console.log("func1");
+      return 0
+    },
+    func2() {
+      console.log("func2");
+      return null
+    }
   },
 
   mounted() {
     this.$refs.input.focus()
+    this.useTowQuestion = 0 ?? 'Hello'
+    this.useTowbar = this.func1() || this.func2()
   },
   // beforeUpdate() {
   //   console.log("beforeUpdate");
@@ -141,6 +153,12 @@ export default {
 </script>
 
 <template>
+  <div>
+    <p>useTowbar: {{ useTowbar }}</p>
+  </div>
+  <div>
+    <p>useTowQuestion: {{ useTowQuestion }}</p>
+  </div>
   <component is="C"></component>
   <AlertBox>Hello</AlertBox>
   <DisplayData
