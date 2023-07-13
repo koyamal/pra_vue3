@@ -63,6 +63,7 @@ export default {
       useTowQuestion: undefined,
       useTowbar: undefined,
       switchFlag: 4,
+      useThreeFlag: "Three",
     }
   },
   watch: {
@@ -158,6 +159,7 @@ export default {
         console.log("flag: Other");
         break;
     }
+    this.useThreeFlag = "four"
   },
   // beforeUpdate() {
   //   console.log("beforeUpdate");
