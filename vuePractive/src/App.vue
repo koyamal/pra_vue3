@@ -62,6 +62,7 @@ export default {
       articleFontSize: 1,
       useTowQuestion: undefined,
       useTowbar: undefined,
+      switchFlag: 4,
     }
   },
   watch: {
@@ -142,6 +143,21 @@ export default {
     this.$refs.input.focus()
     this.useTowQuestion = 0 ?? 'Hello'
     this.useTowbar = this.func1() || this.func2()
+
+    switch(this.switchFlag) {
+      case 1:
+        console.log("flag: 1");
+        break;
+      case 2:
+        console.log("flag: 2");
+        break;
+      case 3:
+        console.log("flag: 3");
+        break;
+      default:
+        console.log("flag: Other");
+        break;
+    }
   },
   // beforeUpdate() {
   //   console.log("beforeUpdate");
