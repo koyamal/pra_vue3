@@ -128,12 +128,20 @@ export default {
       }
       alert(message);
     },
+    func1() {
+      console.log("func1");
+      return 0
+    },
+    func2() {
+      console.log("func2");
+      return null
+    }
   },
 
   mounted() {
     this.$refs.input.focus()
     this.useTowQuestion = 0 ?? 'Hello'
-    this.useTowbar = 0 || 1
+    this.useTowbar = this.func1() || this.func2()
   },
   // beforeUpdate() {
   //   console.log("beforeUpdate");
