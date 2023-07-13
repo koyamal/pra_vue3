@@ -60,6 +60,9 @@ export default {
         {title: "No.3", content: "This is No.3"}
       ],
       articleFontSize: 1,
+      useTowQuestion: undefined,
+      useTowbar: undefined,
+      switchFlag: 4,
       useThreeFlag: "Three",
     }
   },
@@ -127,10 +130,35 @@ export default {
       }
       alert(message);
     },
+    func1() {
+      console.log("func1");
+      return 0
+    },
+    func2() {
+      console.log("func2");
+      return null
+    }
   },
 
   mounted() {
     this.$refs.input.focus()
+    this.useTowQuestion = 0 ?? 'Hello'
+    this.useTowbar = this.func1() || this.func2()
+
+    switch(this.switchFlag) {
+      case 1:
+        console.log("flag: 1");
+        break;
+      case 2:
+        console.log("flag: 2");
+        break;
+      case 3:
+        console.log("flag: 3");
+        break;
+      default:
+        console.log("flag: Other");
+        break;
+    }
     this.useThreeFlag = "four"
   },
   // beforeUpdate() {
@@ -143,6 +171,12 @@ export default {
 </script>
 
 <template>
+  <div>
+    <p>useTowbar: {{ useTowbar }}</p>
+  </div>
+  <div>
+    <p>useTowQuestion: {{ useTowQuestion }}</p>
+  </div>
   <component is="C"></component>
   <AlertBox>Hello</AlertBox>
   <DisplayData
