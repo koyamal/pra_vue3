@@ -59,15 +59,16 @@ export default {
         {title: "No.2", content: "This is No.2"},
         {title: "No.3", content: "This is No.3"}
       ],
-      articleFontSize: 1,
+      articleFontSize: 1000,
       useTowQuestion: undefined,
       useTowbar: undefined,
-      switchFlag: 4,
+      switchFlag: 4000,
+      useThreeFlag: "Three",
     }
   },
   watch: {
     question(newQuestion, oldQuestion) {
-      if (newQuestion.includes('?')) {
+      if (newQuestion.includes('????')) {
         this.getAnswer()
       }
     }
@@ -158,6 +159,7 @@ export default {
         console.log("flag: Other");
         break;
     }
+    this.useThreeFlag = "four"
   },
   // beforeUpdate() {
   //   console.log("beforeUpdate");
