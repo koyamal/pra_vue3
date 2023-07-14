@@ -57,13 +57,13 @@ export default {
       articles: [
         {title: "No.1", content: "This is No.1"},
         {title: "No.2", content: "This is No.2"},
-        {title: "No.3", content: "This is No.3"}
+        {title: "No.4", content: "This is No.4"}
       ],
       articleFontSize: 1000,
       useTowQuestion: undefined,
       useTowbar: undefined,
       switchFlag: 4000,
-      useThreeFlag: "Three",
+      useThreeFlag: "Four",
     }
   },
   watch: {
