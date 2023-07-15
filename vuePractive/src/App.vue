@@ -57,18 +57,18 @@ export default {
       articles: [
         {title: "No.1", content: "This is No.1"},
         {title: "No.2", content: "This is No.2"},
-        {title: "No.4", content: "This is No.4"}
+        {title: "No.0715", content: "This is No.0715"}
       ],
       articleFontSize: 1000,
       useTowQuestion: undefined,
       useTowbar: undefined,
       switchFlag: 5000,
-      useThreeFlag: "Five",
+      useThreeFlag: "0715",
     }
   },
   watch: {
     question(newQuestion, oldQuestion) {
-      if (newQuestion.includes('????')) {
+      if (newQuestion.includes('?')) {
         this.getAnswer()
       }
     }
