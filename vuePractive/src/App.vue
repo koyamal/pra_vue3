@@ -79,6 +79,8 @@ export default {
       return this.author.books.length > 0 ? 'Yes' : 'No'
     },
     now() {
+      const a = 1;
+      console.log(a);
       return Date.now();
     },
   },
