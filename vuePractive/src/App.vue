@@ -62,8 +62,8 @@ export default {
       articleFontSize: 1000,
       useTowQuestion: undefined,
       useTowbar: undefined,
-      switchFlag: 4000,
-      useThreeFlag: "Four",
+      switchFlag: 5000,
+      useThreeFlag: "Five",
     }
   },
   watch: {
