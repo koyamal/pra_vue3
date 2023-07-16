@@ -64,6 +64,7 @@ export default {
       useTowbar: undefined,
       switchFlag: 5000,
       useThreeFlag: "0715",
+      useFlag: "002",
     }
   },
   watch: {
