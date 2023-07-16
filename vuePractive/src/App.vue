@@ -84,6 +84,9 @@ export default {
       console.log(a);
       return Date.now();
     },
+    function001() {
+      console.log("Hello, this is function 001");
+    }
   },
 
   methods: {
