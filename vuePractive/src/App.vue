@@ -34,7 +34,7 @@ export default {
           'Vue develop - The Three Books'
         ]
       },
-      isActive: false,
+      isActive: true,
       hasError: false,
       items: [
         {message: "Hello", time: "AM"},
@@ -47,7 +47,7 @@ export default {
       },
       name: "taro",
       text: "",
-      checked: false,
+      checked: true,
       picked: "",
       dynamicTrueValue: "OK",
       dynamicFalseValue: "No",
