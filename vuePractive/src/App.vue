@@ -86,6 +86,7 @@ export default {
       return Date.now();
     },
     function001() {
+      this.hasError = true;
       console.log("Hello, this is function 001");
     },
     function001002() {
