@@ -61,8 +61,8 @@ export default {
         {title: "No.0715", content: "This is No.0715"}
       ],
       articleFontSize: 1000,
-      useTowQuestion: undefined,
-      useTowbar: undefined,
+      useTowQuestion: null,
+      useTowbar: null,
       switchFlag: 5000,
       useThreeFlag: "0715",
       useFlag: "002",
