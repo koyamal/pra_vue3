@@ -143,6 +143,7 @@ export default {
     },
     func1() {
       console.log("func1");
+      console.log("Hello, func1");
       return 0
     },
     func2() {
