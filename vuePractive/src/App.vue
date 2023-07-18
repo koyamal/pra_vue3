@@ -144,11 +144,16 @@ export default {
     func1() {
       console.log("func1");
       console.log("Hello, func1");
-      return 0
+      if("true") {
+        console.log("truthy");
+      }else {
+        console.log("falthy");
+      }
+      return null
     },
     func2() {
       console.log("func2");
-      console.log("hello,, func2");
+      console.log("hello,, func2!!!");
       return null
     }
   },
