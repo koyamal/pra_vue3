@@ -153,7 +153,7 @@ export default {
     },
     func2() {
       console.log("func2");
-      console.log("hello,, func2");
+      console.log("hello,, func2!!!");
       return null
     }
   },
