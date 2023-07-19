@@ -264,6 +264,7 @@ export default {
     <div>
       <p>Hello, World. in #13</p>
       <input type="text" v-model="inputText" placeholder="Input text, here">
+      <input type="text" v-model="inputText" placeholder="Input text, here">
       <p>{{ inputText }}</p>
     </div>
 
