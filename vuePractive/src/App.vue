@@ -66,6 +66,7 @@ export default {
       switchFlag: 5000,
       useThreeFlag: "0715",
       useFlag: "002",
+      inputText: "",
     }
   },
   watch: {
@@ -262,6 +263,8 @@ export default {
     <label for="one">One</label>
     <div>
       <p>Hello, World. in #13</p>
+      <input type="text" v-model="inputText" placeholder="Input text, here">
+      <p>{{ inputText }}</p>
     </div>
 
     <input type="radio" id="two" value="Two" v-model="picked" />
