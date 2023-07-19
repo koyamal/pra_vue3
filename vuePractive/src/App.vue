@@ -260,6 +260,9 @@ export default {
 
     <input type="radio" id="one" value="One" v-model="picked" />
     <label for="one">One</label>
+    <div>
+      <p>Hello, World. in #13</p>
+    </div>
 
     <input type="radio" id="two" value="Two" v-model="picked" />
     <label for="two">Two</label>
