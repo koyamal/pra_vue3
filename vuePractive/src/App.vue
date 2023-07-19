@@ -133,6 +133,7 @@ export default {
     },
     sayText(message) {
       console.log(message);
+      console.log("Hello" + message);
     },
     warn(message, event) {
       if (event) {
