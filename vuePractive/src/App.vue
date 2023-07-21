@@ -8,6 +8,7 @@ import AlertBox from "./components/atom/AlertBox.vue";
 import A from "./components/atom/A.vue";
 import B from "./components/atom/B.vue";
 import C from "./components/atom/C.vue";
+import D from "./components/atom/D.vue";
 
 export default {
   components: {
@@ -18,6 +19,7 @@ export default {
     A,
     B,
     C,
+    D,
   },
 
   data() {
@@ -197,7 +199,7 @@ export default {
   <div>
     <p>useTowQuestion: {{ useTowQuestion }}</p>
   </div>
-  <component is="C"></component>
+  <component is="D"></component>
   <AlertBox>Hello</AlertBox>
   <DisplayData
     v-for="article in articles"
