@@ -171,6 +171,9 @@ export default {
       console.log("hello,, func2!!!");
       this.toggle = "false";
       return null
+    },
+    clickDesign() {
+      this.design = ["hello", "Bye"];
     }
   },
 
@@ -205,6 +208,9 @@ export default {
 </script>
 
 <template>
+  <div>
+    <button @click="clickDesign">Design</button>
+  </div>
   <div>
     <p>useTowbar: {{ useTowbar }}</p>
   </div>
