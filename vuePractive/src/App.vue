@@ -41,6 +41,8 @@ export default {
       items: [
         {message: "Hello", time: "AM"},
         {message: "Bye", time: "PM"},
+        {message: "Nice", time: "PM 10:00"},
+        {message: "Good", time: "PM 11:00"},
       ],
       itemsObject: {
         name: "Taro",
@@ -69,6 +71,11 @@ export default {
       useThreeFlag: "0715",
       useFlag: "002",
       inputText: "",
+      design: [
+        {a: "a", b: "b", c: "c"},
+        {a: "aa", b: "bb", c: "cc"},
+        {a: "aaa", b: "bbb", c: "ccc"}
+      ],
     }
   },
   watch: {
