@@ -41,6 +41,8 @@ export default {
       items: [
         {message: "Hello", time: "AM"},
         {message: "Bye", time: "PM"},
+        {message: "Nice", time: "PM 10:00"},
+        {message: "Good", time: "PM 11:00"},
       ],
       itemsObject: {
         name: "Taro",
