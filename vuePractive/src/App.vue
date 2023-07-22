@@ -64,7 +64,7 @@ export default {
         {title: "No.2", content: "This is No.2"},
         {title: "No.0715", content: "This is No.0715"}
       ],
-      articleFontSize: 1000,
+      articleFontSize: 10,
       useTowQuestion: null,
       useTowbar: null,
       switchFlag: 5000,
