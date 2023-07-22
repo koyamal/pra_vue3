@@ -71,6 +71,11 @@ export default {
       useThreeFlag: "0715",
       useFlag: "002",
       inputText: "",
+      design: [
+        {a: "a", b: "b", c: "c"},
+        {a: "aa", b: "bb", c: "cc"},
+        {a: "aaa", b: "bbb", c: "ccc"}
+      ],
     }
   },
   watch: {
