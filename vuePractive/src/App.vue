@@ -83,6 +83,10 @@ export default {
       if (newQuestion.includes('?')) {
         this.getAnswer()
       }
+    },
+    design(newDesign, oldDesign) {
+      console.log(newDesign);
+      console.log(oldDesign);
     }
   },
 
