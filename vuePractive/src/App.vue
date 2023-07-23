@@ -110,7 +110,7 @@ export default {
       console.log("Hello, this is function 001-002");
     },
     function001003() {
-      console.log("Hello, bamboo..")
+      console.log("Hello, bamboo..");
     }
   },
 
@@ -214,6 +214,8 @@ export default {
 </script>
 
 <template>
+  <E />
+  <E />
   <E />
   <div>
     <button @click="clickDesign">Design</button>
