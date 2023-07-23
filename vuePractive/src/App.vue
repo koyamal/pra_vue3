@@ -9,6 +9,7 @@ import A from "./components/atom/A.vue";
 import B from "./components/atom/B.vue";
 import C from "./components/atom/C.vue";
 import D from "./components/atom/D.vue";
+import E from "./components/atom/E.vue";
 
 export default {
   components: {
@@ -20,6 +21,7 @@ export default {
     B,
     C,
     D,
+    E,
   },
 
   data() {
@@ -48,6 +50,7 @@ export default {
         name: "Taro",
         age: 21,
         countory: "USA",
+        language: "English",
       },
       name: "taro",
       text: "",
@@ -208,6 +211,7 @@ export default {
 </script>
 
 <template>
+  <E />
   <div>
     <button @click="clickDesign">Design</button>
   </div>
