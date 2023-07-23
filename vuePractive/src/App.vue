@@ -48,6 +48,7 @@ export default {
         name: "Taro",
         age: 21,
         countory: "USA",
+        language: "English",
       },
       name: "taro",
       text: "",
