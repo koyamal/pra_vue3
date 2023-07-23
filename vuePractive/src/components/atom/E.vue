@@ -11,6 +11,6 @@ export default {
 <template>
   <div>
     <p>{{ count }}</p>
-    <button @click="() => count += 'T'"></button>
+    <button @click="() => count += 'E'">Add E</button>
   </div>
 </template>
