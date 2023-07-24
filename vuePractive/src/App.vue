@@ -108,6 +108,9 @@ export default {
     },
     function001002() {
       console.log("Hello, this is function 001-002");
+    },
+    function001003() {
+      console.log("Hello, bamboo..")
     }
   },
 
