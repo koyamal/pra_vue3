@@ -35,7 +35,8 @@ export default {
           'Vue 2 - Advanced Guide',
           'Vue 3 - Basic Guide',
           'Vue 4 - The Mystery',
-          'Vue develop - The Three Books'
+          'Vue develop - The Three Books',
+          'Vue 5 - Too much'
         ]
       },
       isActive: true,
