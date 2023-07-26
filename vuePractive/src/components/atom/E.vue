@@ -2,7 +2,9 @@
 export default {
   data() {
     return {
-      count: "Text"
+      count: "Text",
+      useData: 3,
+      highPreasure: "Goal",
     }
   }
 }
@@ -10,7 +12,7 @@ export default {
 
 <template>
   <div>
-    <p>{{ count }}</p>
+    <p>{{ count }} : {{ useDate }} = {{ highPreasure }}</p>
     <button @click="() => count += 'E'">Add E</button>
   </div>
 </template>
