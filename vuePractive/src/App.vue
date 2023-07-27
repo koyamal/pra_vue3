@@ -225,7 +225,7 @@ export default {
   <E />
   <E />
   <div>
-    <p v-for="userInfo in userInfoTable">{{ userInfo }}</p>
+    <p v-for="userInfo in userInfoTable">{{ userInfo.name }}: {{ userInfo.age }}</p>
   </div>
   <div>
     <button @click="clickDesign">Design</button>
