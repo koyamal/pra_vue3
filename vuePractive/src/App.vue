@@ -225,6 +225,9 @@ export default {
   <E />
   <E />
   <div>
+    <p v-for="userInfo in userInfoTable">{{ userInfo }}</p>
+  </div>
+  <div>
     <button @click="clickDesign">Design</button>
   </div>
   <div>
