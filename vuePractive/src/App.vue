@@ -80,6 +80,11 @@ export default {
         {a: "aa", b: "bb", c: "cc"},
         {a: "aaa", b: "bbb", c: "ccc"}
       ],
+      userInfoTable: [
+        {name: "taro", age: 18},
+        {name: "jiro", age: 32},
+        {name: "John", age: 42},
+      ]
     }
   },
   watch: {
