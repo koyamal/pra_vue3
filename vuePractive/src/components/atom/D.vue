@@ -5,6 +5,7 @@ export default {
       viewData: "2023:04:05 13:23:53",
       useData: 3,
       highPreasure: "Goal",
+      textData: "Hello",
     }
   }
 }
@@ -15,5 +16,7 @@ export default {
   <div>
     <p>{{ viewData }}</p>
     <p>Hello D component</p>
+    <p>{{ textData }}</p>
+    <button @click="() => textData = 'ConCon'">Click</button>
   </div>
 </template>
