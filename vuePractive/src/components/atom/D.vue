@@ -24,5 +24,6 @@ export default {
     <input type="text" v-model="inputData">
     <p>{{ inputData }}</p>
     <button @click="() => inputData = ''">Clear</button>
+    <button @click="() => inputData = 'Done'">Done</button>
   </div>
 </template>
