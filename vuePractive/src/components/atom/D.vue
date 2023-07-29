@@ -6,6 +6,7 @@ export default {
       useData: 3,
       highPreasure: "Goal",
       textData: "Hello",
+      inputData: "Input Area",
     }
   }
 }
@@ -18,5 +19,11 @@ export default {
     <p>Hello D component</p>
     <p>{{ textData }}</p>
     <button @click="() => textData = 'ConCon'">Click</button>
+  </div>
+  <div>
+    <input type="text" v-model="inputData">
+    <p>{{ inputData }}</p>
+    <button @click="() => inputData = ''">Clear</button>
+    <button @click="() => inputData = 'Done'">Done</button>
   </div>
 </template>
