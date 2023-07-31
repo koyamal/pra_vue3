@@ -8,7 +8,7 @@ export default {
   methods: {
     addContent() {
       const content = {
-        id: Math.random(),
+        id: String(Math.random()).split('.')[1],
         title: 'XYZ'.repeat(this.contentBox.length + 1),
       }
       this.contentBox.push(content);
