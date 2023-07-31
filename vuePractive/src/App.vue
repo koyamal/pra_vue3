@@ -221,6 +221,7 @@ export default {
 
 <template>
   <A />
+  <B />
   <D />
   <E />
   <E />

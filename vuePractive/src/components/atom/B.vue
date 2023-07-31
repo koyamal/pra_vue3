@@ -9,7 +9,7 @@ export default {
     addContent() {
       const content = {
         id: Math.random(),
-        title: 'XYZ' * (this.contentBox.length + 1),
+        title: 'XYZ'.repeat(this.contentBox.length + 1),
       }
       this.contentBox.push(content);
     },
