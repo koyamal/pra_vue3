@@ -19,5 +19,6 @@ export default {
 <template>
   <div>This is B</div>
   <button @click="addContent">Add</button>
+  <button @click="() => contentBox = []">Delete</button>
   <p>{{ contentBox }}</p>
 </template>
