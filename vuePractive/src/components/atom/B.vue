@@ -21,6 +21,7 @@ export default {
   <button @click="addContent">Add</button>
   <button @click="() => contentBox = []">Delete</button>
   <p v-for="content in contentBox">
-    ID: {{content.id}} Title: {{ content.title }}
+    <h3>Title: {{ content.title }}</h3>
+    <h5>ID: {{ content.id }}</h5>
   </p>
 </template>
