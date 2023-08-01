@@ -20,6 +20,5 @@ export default {
   <div>This is B</div>
   <button @click="addContent">Add</button>
   <button @click="() => contentBox = []">Delete</button>
-  <p>{{ contentBox }}</p>
   <p v-for="content in contentBox">{{ content }}</p>
 </template>
