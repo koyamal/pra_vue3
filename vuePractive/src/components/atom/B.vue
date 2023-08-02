@@ -18,10 +18,11 @@ export default {
 </script>
 <template>
   <div>This is B</div>
-  <button @click="addContent">Add</button>
-  <button @click="() => contentBox = []">Delete</button>
+  <button @click="addContent">Add!!!</button>
+  <button @click="() => contentBox = []">Delete!!!</button>
   <p v-for="content in contentBox">
     <h3>Title: {{ content.title }}</h3>
     <h5>ID: {{ content.id }}</h5>
+    <h6>Hello</h6>
   </p>
 </template>
