@@ -9,6 +9,9 @@ export default {
   methods: {
     sayHello: () => {
       console.log("Say hello");
+    },
+    sayBye: () => {
+      console.log("Say bye");
     }
   }
 }
