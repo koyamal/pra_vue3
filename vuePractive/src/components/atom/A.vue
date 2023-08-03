@@ -5,6 +5,11 @@ export default {
       dataA: "This is A",
       listData: ["A", "B", "C", "D"],
     }
+  },
+  methods: {
+    sayHello: () => {
+      console.log("Say hello");
+    }
   }
 }
 </script>
