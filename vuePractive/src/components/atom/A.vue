@@ -12,6 +12,7 @@ export default {
     },
     sayBye: () => {
       console.log("Say bye");
+      alert("Bye");
     }
   }
 }
@@ -21,4 +22,5 @@ export default {
   <p>{{ dataA }}</p>
   <button @click="() => dataA = dataA + 'A'">Add A</button>
   <div v-for="data in listData">{{ data }}</div>
+  <button @click="sayBye">Bye</button>
 </template>
