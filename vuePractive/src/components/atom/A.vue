@@ -29,4 +29,5 @@ export default {
   <div v-for="data in listData">{{ data }}</div>
   <button @click="sayBye">Bye</button>
   <button @click="countUp">Up</button>
+  <p>{{ counter }}</p>
 </template>
