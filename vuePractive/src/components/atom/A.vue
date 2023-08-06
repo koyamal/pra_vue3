@@ -4,7 +4,7 @@ export default {
     return {
       dataA: "This is A",
       listData: ["A", "B", "C", "D"],
-      counter: 10,
+      counter: 0,
     }
   },
   methods: {
