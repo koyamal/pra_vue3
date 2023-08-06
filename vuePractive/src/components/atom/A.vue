@@ -8,16 +8,15 @@ export default {
     }
   },
   methods: {
-    sayHello: () => {
+    sayHello() {
       console.log("Say hello");
     },
-    sayBye: () => {
+    sayBye() {
       console.log("Say bye");
       alert("Bye");
     },
-    contUp: () => {
-      console.log("Count Up");
-      counter ++;
+    countUp() {
+      this.counter = this.counter + 1;
     }
   }
 }
@@ -28,6 +27,7 @@ export default {
   <button @click="() => dataA = dataA + 'A'">Add A</button>
   <div v-for="data in listData">{{ data }}</div>
   <button @click="sayBye">Bye</button>
-  <button @click="countUp">Up</button>
+  <button @click="countUp">Up!</button>
   <p>{{ counter }}</p>
+  <button @click="() => counter = 0">Zero</button>
 </template>
