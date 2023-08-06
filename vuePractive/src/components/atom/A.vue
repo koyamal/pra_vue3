@@ -24,7 +24,7 @@ export default {
 <template>
   <div>This is A</div>
   <p>{{ dataA }}</p>
-  <button @click="() => dataA = dataA + 'A'">Add A</button>
+  <button @click="() => dataA = dataA + 'AAA'">Add A</button>
   <div v-for="data in listData">{{ data }}</div>
   <button @click="sayBye">Bye</button>
   <button @click="countUp">Up!</button>
