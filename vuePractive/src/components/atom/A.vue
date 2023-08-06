@@ -8,10 +8,10 @@ export default {
     }
   },
   methods: {
-    sayHello: () => {
+    sayHello() {
       console.log("Say hello");
     },
-    sayBye: () => {
+    sayBye() {
       console.log("Say bye");
       alert("Bye");
     },
