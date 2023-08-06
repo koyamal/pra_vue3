@@ -16,9 +16,7 @@ export default {
       alert("Bye");
     },
     countUp() {
-      console.log("Count Up");
-      console.log(this.counter);
-      // this.counter = this.counter + 1;
+      this.counter = this.counter + 1;
     }
   }
 }
