@@ -30,4 +30,5 @@ export default {
     <h5>ID: {{ content.id }}</h5>
     <h6>Hello</h6>
   </p>
+  <button @click="consoleLog">Log</button>
 </template>
