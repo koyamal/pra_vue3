@@ -13,6 +13,11 @@ export default {
       }
       this.contentBox.push(content);
     },
+    consoleLog(msg) {
+      console.log("=========");
+      console.log(msg);
+      console.log("=========");
+    }
   },
 }
 </script>
