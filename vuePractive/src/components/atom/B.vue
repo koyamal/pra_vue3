@@ -13,6 +13,11 @@ export default {
       }
       this.contentBox.push(content);
     },
+    consoleLog(msg) {
+      console.log("=========");
+      console.log(msg);
+      console.log("=========");
+    }
   },
 }
 </script>
@@ -25,4 +30,5 @@ export default {
     <h5>ID: {{ content.id }}</h5>
     <h6>Hello</h6>
   </p>
+  <button @click="consoleLog">Log</button>
 </template>
