@@ -39,4 +39,7 @@ export default {
     <h6>Hello</h6>
   </p>
   <button @click="consoleLog">Log</button>
+  <button @click="toggleFlag">toggle</button>
+  <button @click="setData">set</button>
+  <p>{{ checkStatus }}</p>
 </template>
