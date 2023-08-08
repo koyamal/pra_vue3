@@ -23,6 +23,9 @@ export default {
     setData() {
       this.checkStatus = this.checkFlag? "hello": "bye";
     },
+    toggleFlag() {
+      this.checkFlag = !this.checkFlag;
+    },
   },
 }
 </script>
