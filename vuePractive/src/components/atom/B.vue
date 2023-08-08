@@ -3,6 +3,8 @@ export default {
   data() {
     return {
       contentBox: [],
+      checkStatus: '',
+      checkFlag: false,
     }
   },
   methods: {
@@ -17,7 +19,10 @@ export default {
       console.log("=========");
       console.log(msg);
       console.log("=========");
-    }
+    },
+    setData() {
+      this.checkStatus = this.checkFlag? "hello": "bye";
+    },
   },
 }
 </script>
