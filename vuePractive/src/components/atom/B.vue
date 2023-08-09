@@ -51,4 +51,5 @@ export default {
     <button @click="setData">set</button>
     <p>{{ checkStatus }}</p>
   </p>
+  <p>{{ checkHistries }}</p>
 </template>
