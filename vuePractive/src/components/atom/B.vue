@@ -5,6 +5,13 @@ export default {
       contentBox: [],
       checkStatus: '',
       checkFlag: false,
+      numCheck: 1,
+      checkHistries: {
+        [numCheck]: {
+          hello: "this",
+          world: "that",
+        }
+      }
     }
   },
   methods: {
