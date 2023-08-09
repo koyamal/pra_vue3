@@ -7,7 +7,7 @@ export default {
       checkFlag: false,
       numCheck: 1,
       checkHistries: {
-        [numCheck]: {
+        [this.numCheck]: {
           hello: "this",
           world: "that",
         }
