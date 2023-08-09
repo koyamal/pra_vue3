@@ -5,6 +5,13 @@ export default {
       contentBox: [],
       checkStatus: '',
       checkFlag: false,
+      numCheck: 1,
+      checkHistries: {
+        [this.numCheck]: {
+          hello: "this",
+          world: "that",
+        }
+      }
     }
   },
   methods: {
@@ -44,4 +51,5 @@ export default {
     <button @click="setData">set</button>
     <p>{{ checkStatus }}</p>
   </p>
+  <p>{{ checkHistries }}</p>
 </template>
