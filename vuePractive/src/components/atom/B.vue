@@ -18,6 +18,12 @@ export default {
     }
   },
   methods: {
+    doneCheck() {
+      this.checkHistries[this.numCheck] = {
+        hello: "this",
+        world: "that",
+      }
+    },
     contUpnumCheck() {
       this.numCheck += 1;
       this.checkHistries[this.numCheck] = {
