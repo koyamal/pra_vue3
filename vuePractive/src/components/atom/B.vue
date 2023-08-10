@@ -18,6 +18,9 @@ export default {
     }
   },
   methods: {
+    contUpnumCheck() {
+      console.log("hello")
+    },
     addContent() {
       const content = {
         id: String(Math.random()).split('.')[1],
@@ -55,4 +58,5 @@ export default {
     <p>{{ checkStatus }}</p>
   </p>
   <p>{{ checkHistries }}</p>
+  <button @click="contUpnumCheck">contUpnumCheck</button>
 </template>
