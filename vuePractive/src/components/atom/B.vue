@@ -5,7 +5,7 @@ export default {
       contentBox: [],
       checkStatus: '',
       checkFlag: false,
-      numCheck: 1,
+      numCheck: 0,
       checkHistries: {},
       showCheckhello: '',
       showCheckworld: '',
