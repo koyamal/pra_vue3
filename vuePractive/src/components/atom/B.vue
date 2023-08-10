@@ -6,12 +6,15 @@ export default {
       checkStatus: '',
       checkFlag: false,
       numCheck: 1,
-      checkHistries: {
-        [this.numCheck]: {
+      checkHistries: {},
+    }
+  },
+  mounted() {
+    this.checkHistries = {
+      [this.numCheck]: {
           hello: "this",
           world: "that",
         }
-      }
     }
   },
   methods: {
