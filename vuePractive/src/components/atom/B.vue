@@ -63,4 +63,6 @@ export default {
   </p>
   <p>{{ checkHistries }}</p>
   <button @click="contUpnumCheck">contUpnumCheck</button>
+  <input type="number" v-model="numCheck">
+  <button @click="doneCheck">Done</button>
 </template>
