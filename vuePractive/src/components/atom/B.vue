@@ -5,7 +5,7 @@ export default {
       contentBox: [],
       checkStatus: '',
       checkFlag: false,
-      numCheck: 1,
+      numCheck: 0,
       checkHistries: {},
       showCheckhello: '',
       showCheckworld: '',
@@ -34,7 +34,6 @@ export default {
       this.numCheck += 1;
       const helloValue = "this".repeat(this.numCheck);
       const worldValue = "that".repeat(this.numCheck);
-      console.log(worldValue)
 
       this.checkHistries[this.numCheck] = {
         hello: helloValue,
