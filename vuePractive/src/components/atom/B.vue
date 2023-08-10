@@ -7,6 +7,8 @@ export default {
       checkFlag: false,
       numCheck: 1,
       checkHistries: {},
+      showCheckhello: '',
+      showCheckworld: '',
     }
   },
   mounted() {
@@ -19,7 +21,8 @@ export default {
   },
   methods: {
     pickUpCheck() {
-
+      this.showCheckhello = this.checkHistries[this.numCheck].hello;
+      this.showCheckworld = this.checkHistries[this.numCheck].world;
     },
     doneCheck() {
       this.checkHistries[this.numCheck] = {
@@ -29,9 +32,13 @@ export default {
     },
     contUpnumCheck() {
       this.numCheck += 1;
+      const helloValue = "this".repeat(this.numCheck);
+      const worldValue = "that".repeat(this.numCheck);
+      console.log(worldValue)
+
       this.checkHistries[this.numCheck] = {
-        hello: "this",
-        world: "that",
+        hello: helloValue,
+        world: worldValue,
       }
     },
     addContent() {
@@ -71,6 +78,11 @@ export default {
     <p>{{ checkStatus }}</p>
   </p>
   <p>{{ checkHistries }}</p>
+  <p>
+    PickUp:
+    <p>{{ showCheckhello }}</p>
+    <p>{{ showCheckworld }}</p>
+  </p>
   <button @click="contUpnumCheck">contUpnumCheck</button>
   <input type="number" v-model="numCheck">
   <button @click="doneCheck">Done</button>
