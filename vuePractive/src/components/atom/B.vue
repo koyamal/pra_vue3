@@ -19,7 +19,11 @@ export default {
   },
   methods: {
     contUpnumCheck() {
-      console.log("hello")
+      this.numCheck += 1;
+      this.checkHistries[this.numCheck] = {
+        hello: "this",
+        world: "that",
+      }
     },
     addContent() {
       const content = {
