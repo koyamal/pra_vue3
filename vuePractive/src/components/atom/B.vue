@@ -18,6 +18,9 @@ export default {
     }
   },
   methods: {
+    pickUpCheck() {
+
+    },
     doneCheck() {
       this.checkHistries[this.numCheck] = {
         hello: "this",
@@ -71,4 +74,5 @@ export default {
   <button @click="contUpnumCheck">contUpnumCheck</button>
   <input type="number" v-model="numCheck">
   <button @click="doneCheck">Done</button>
+  <button @click="pickUpCheck">PickUp</button>
 </template>
