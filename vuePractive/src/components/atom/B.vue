@@ -7,8 +7,8 @@ export default {
       checkFlag: false,
       numCheck: 0,
       checkHistries: {},
-      showCheckhello: '',
-      showCheckworld: '',
+      showCheckhello: '---',
+      showCheckworld: '---',
     }
   },
   mounted() {
