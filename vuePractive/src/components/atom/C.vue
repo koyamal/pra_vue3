@@ -11,6 +11,9 @@
     editAndShowNumberList() {
       const copyNumberList = numberList;
       const spreadNumberList = [...numberList];
+      copyNumberList[1] = 2;
+      console.log(copyNumberList);
+      console.log(numberList);
     }
   }
   }
