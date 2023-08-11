@@ -8,6 +8,11 @@
     }
   },
   methods: {
+    reset() {
+      this.numberList = [
+        1, 3, 3, 4, 5
+      ];
+    },
     editAndShowNumberList() {
       const copyNumberList = this.numberList;
       const spreadNumberList = [...this.numberList];
@@ -21,4 +26,5 @@
 <template>
   <div>This is C</div>
   <button @click="editAndShowNumberList">List</button>
+  <button @click="reset">Reset</button>
 </template>
