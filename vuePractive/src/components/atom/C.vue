@@ -15,7 +15,6 @@
     },
     editAndShowNumberList() {
       const copyNumberList = this.numberList;
-      const spreadNumberList = [...this.numberList];
       copyNumberList[1] = 2;
       console.log(copyNumberList);
       console.log(this.numberList);
