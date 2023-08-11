@@ -19,6 +19,12 @@
       copyNumberList[1] = 2;
       console.log(copyNumberList);
       console.log(this.numberList);
+    },
+    editSpreadNumberList() {
+      const spreadNumberList = [...this.numberList];
+      spreadNumberList[1] = 2;
+      console.log(spreadNumberList);
+      console.log(this.numberList);
     }
   }
   }
