@@ -6,6 +6,18 @@ export default {
       useData: 3,
       highPreasure: "Goal",
     }
+  },
+  methods: {
+    callCenter() {
+      console.log("Call Center");
+    },
+    getInfo() {
+      const data = {
+        a: { userName: '', updateDate: ''},
+        b: { userName: '', updateDate: ''},
+      }
+      return data;
+    }
   }
 }
 </script>
