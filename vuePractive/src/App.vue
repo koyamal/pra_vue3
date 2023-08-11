@@ -220,6 +220,7 @@ export default {
 </script>
 
 <template>
+  <C />
   <A />
   <B />
   <D />
