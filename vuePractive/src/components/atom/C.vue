@@ -7,6 +7,12 @@
       ]
     }
   },
+  methods: {
+    editAndShowNumberList() {
+      const copyNumberList = numberList;
+      const spreadNumberList = [...numberList];
+    }
+  }
   }
 </script>
 <template>
