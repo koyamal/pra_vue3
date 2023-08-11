@@ -6,6 +6,11 @@ export default {
       useData: 3,
       highPreasure: "Goal",
     }
+  },
+  methods: {
+    callCenter() {
+      console.log("Call Center");
+    }
   }
 }
 </script>
