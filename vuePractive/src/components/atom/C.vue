@@ -25,7 +25,13 @@
       spreadNumberList[1] = 2;
       console.log(spreadNumberList);
       console.log(this.numberList);
-    }
+    },
+    editSpliceNumberList() {
+      const spliceNumberList = this.numberList.splice();
+      spliceNumberList[1] = 2;
+      console.log(spliceNumberList);
+      console.log(this.numberList);
+    },
   }
   }
 </script>
