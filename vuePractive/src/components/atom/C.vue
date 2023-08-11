@@ -25,7 +25,13 @@
       spreadNumberList[1] = 2;
       console.log(spreadNumberList);
       console.log(this.numberList);
-    }
+    },
+    editSliceNumberList() {
+      const sliceNumberList = this.numberList.slice();
+      sliceNumberList[1] = 2;
+      console.log(sliceNumberList);
+      console.log(this.numberList);
+    },
   }
   }
 </script>
@@ -33,5 +39,6 @@
   <div>This is C</div>
   <button @click="editAndShowNumberList">List</button>
   <button @click="editSpreadNumberList">SpreadList</button>
+  <button @click="editSliceNumberList">SliceList</button>
   <button @click="reset">Reset</button>
 </template>
