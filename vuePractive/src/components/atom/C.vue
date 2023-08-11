@@ -32,5 +32,6 @@
 <template>
   <div>This is C</div>
   <button @click="editAndShowNumberList">List</button>
+  <button @click="editSpreadNumberList">SpreadList</button>
   <button @click="reset">Reset</button>
 </template>
