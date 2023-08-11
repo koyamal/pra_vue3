@@ -10,6 +10,13 @@ export default {
   methods: {
     callCenter() {
       console.log("Call Center");
+    },
+    getInfo() {
+      const data = {
+        a: { userName: '', updateDate: ''},
+        b: { userName: '', updateDate: ''},
+      }
+      return data;
     }
   }
 }
