@@ -4,7 +4,14 @@
     return {
       numberList: [
         1, 3, 3, 4, 5
-      ]
+      ],
+      checkHistories: [
+        {
+          draft: { userName: '', updateDate: '' },
+          checked: { userName: '', updateDate: '' },
+          approved: { userName: '', updateDate: '' },
+        },
+      ],
     }
   },
   methods: {
@@ -12,6 +19,13 @@
       this.numberList = [
         1, 3, 3, 4, 5
       ];
+      this.checkHistories = [
+        {
+          draft: { userName: '', updateDate: '' },
+          checked: { userName: '', updateDate: '' },
+          approved: { userName: '', updateDate: '' },
+        },
+      ]
     },
     editAndShowNumberList() {
       const copyNumberList = this.numberList;
@@ -31,6 +45,13 @@
       console.log(sliceNumberList);
       console.log(this.numberList);
     },
+    editNomal() {
+      const copyCheckHistoriesDraft = this.checkHistories[0].draft;
+      copyCheckHistoriesDraft.userName = 'Bob';
+      console.log(copyCheckHistoriesDraft.userName);
+      console.log(this.checkHistories[0].draft.userName);
+
+    }
   }
   }
 </script>
@@ -40,4 +61,8 @@
   <button @click="editSpreadNumberList">SpreadList</button>
   <button @click="editSliceNumberList">SliceList</button>
   <button @click="reset">Reset</button>
+  <p>
+    <button @click="editNomal">Normal</button>
+    <button @click="reset">Reset</button>
+  </p>
 </template>
