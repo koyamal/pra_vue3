@@ -4,7 +4,14 @@
     return {
       numberList: [
         1, 3, 3, 4, 5
-      ]
+      ],
+      checkHistories: [
+        {
+          draft: { userName: '', updateDate: '' },
+          checked: { userName: '', updateDate: '' },
+          approved: { userName: '', updateDate: '' },
+        },
+      ],
     }
   },
   methods: {
