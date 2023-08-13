@@ -50,8 +50,13 @@
       copyCheckHistoriesDraft.userName = 'Bob';
       console.log(copyCheckHistoriesDraft.userName);
       console.log(this.checkHistories[0].draft.userName);
-
-    }
+    },
+    editSpreadNomal() {
+      const copyCheckHistoriesDraft = {...this.checkHistories[0].draft};
+      copyCheckHistoriesDraft.userName = 'Bob';
+      console.log(copyCheckHistoriesDraft.userName);
+      console.log(this.checkHistories[0].draft.userName);
+    },
   }
   }
 </script>
@@ -63,6 +68,7 @@
   <button @click="reset">Reset</button>
   <p>
     <button @click="editNomal">Normal</button>
+    <button @click="editSpreadNomal">Spread</button>
     <button @click="reset">Reset</button>
   </p>
 </template>
