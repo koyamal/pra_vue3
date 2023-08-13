@@ -38,6 +38,13 @@
       console.log(sliceNumberList);
       console.log(this.numberList);
     },
+    editNomal() {
+      const copyCheckHistoriesDraft = this.checkHistories.draft;
+      copyCheckHistoriesDraft.userName = 'Bob';
+      console.log(copyCheckHistoriesDraft);
+      console.log(this.checkHistories.draft);
+
+    }
   }
   }
 </script>
@@ -47,4 +54,7 @@
   <button @click="editSpreadNumberList">SpreadList</button>
   <button @click="editSliceNumberList">SliceList</button>
   <button @click="reset">Reset</button>
+  <p>
+    <button @click="editNomal">Normal</button>
+  </p>
 </template>
