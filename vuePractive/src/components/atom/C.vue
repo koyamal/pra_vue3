@@ -57,6 +57,12 @@
       console.log(copyCheckHistoriesDraft.userName);
       console.log(this.checkHistories[0].draft.userName);
     },
+    editSliceNomal() {
+      const copyCheckHistoriesDraft = this.checkHistories.slice();
+      copyCheckHistoriesDraft[0].draft.userName = 'Bob';
+      console.log(copyCheckHistoriesDraft[0].draft.userName);
+      console.log(this.checkHistories[0].draft.userName);
+    },
   }
   }
 </script>
@@ -69,6 +75,7 @@
   <p>
     <button @click="editNomal">Normal</button>
     <button @click="editSpreadNomal">Spread</button>
+    <button @click="editSliceNomal">Slice</button>
     <button @click="reset">Reset</button>
   </p>
 </template>
