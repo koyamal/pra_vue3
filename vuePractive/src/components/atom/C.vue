@@ -75,6 +75,7 @@
   <p>
     <button @click="editNomal">Normal</button>
     <button @click="editSpreadNomal">Spread</button>
+    <button @click="editSplitNomal">Split</button>
     <button @click="reset">Reset</button>
   </p>
 </template>
