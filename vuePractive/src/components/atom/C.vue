@@ -58,9 +58,9 @@
       console.log(this.checkHistories[0].draft.userName);
     },
     editSplitNomal() {
-      const copyCheckHistoriesDraft = this.checkHistories[0].draft.split();
-      copyCheckHistoriesDraft.userName = 'Bob';
-      console.log(copyCheckHistoriesDraft.userName);
+      const copyCheckHistoriesDraft = this.checkHistories.slice();
+      copyCheckHistoriesDraft[0].draft.userName = 'Bob';
+      console.log(copyCheckHistoriesDraft[0].draft.userName);
       console.log(this.checkHistories[0].draft.userName);
     },
   }
