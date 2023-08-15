@@ -48,8 +48,11 @@
     editNomal() {
       const copyCheckHistoriesDraft = this.checkHistories[0].draft;
       copyCheckHistoriesDraft.userName = 'Bob';
+      copyCheckHistoriesDraft.updateDate = '20330821 23:59';
       console.log(copyCheckHistoriesDraft.userName);
       console.log(this.checkHistories[0].draft.userName);
+      console.log(copyCheckHistoriesDraft.updateDate);
+      console.log(this.checkHistories[0].draft.updateDate);
     },
     editSpreadNomal() {
       const copyCheckHistoriesDraft = {...this.checkHistories[0].draft};
