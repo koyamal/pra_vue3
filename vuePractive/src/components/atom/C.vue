@@ -7,7 +7,7 @@
       ],
       checkHistories: [
         {
-          draft: { userName: '', updateDate: '' },
+          draft: { userName: 'tom', updateDate: '' },
           checked: { userName: '', updateDate: '' },
           approved: { userName: '', updateDate: '' },
         },
@@ -21,7 +21,7 @@
       ];
       this.checkHistories = [
         {
-          draft: { userName: '', updateDate: '' },
+          draft: { userName: 'tom', updateDate: '' },
           checked: { userName: '', updateDate: '' },
           approved: { userName: '', updateDate: '' },
         },
