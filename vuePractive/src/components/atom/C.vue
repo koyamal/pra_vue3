@@ -25,7 +25,7 @@
           checked: { userName: '', updateDate: '' },
           approved: { userName: '', updateDate: '' },
         },
-      ]
+      ];
     },
     editAndShowNumberList() {
       const copyNumberList = this.numberList;
