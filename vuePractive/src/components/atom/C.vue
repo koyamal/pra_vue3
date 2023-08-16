@@ -12,6 +12,7 @@
           approved: { userName: '', updateDate: '' },
         },
       ],
+      changeText: 'Jhon'
     }
   },
   methods: {
@@ -25,7 +26,7 @@
           checked: { userName: '', updateDate: '' },
           approved: { userName: '', updateDate: '' },
         },
-      ]
+      ];
     },
     editAndShowNumberList() {
       const copyNumberList = this.numberList;
@@ -66,6 +67,12 @@
       console.log(copyCheckHistoriesDraft[0].draft.userName);
       console.log(this.checkHistories[0].draft.userName);
     },
+    editSpreadText(text) {
+      const copyCheckHistoriesDraft = {...this.checkHistories[0].draft};
+      copyCheckHistoriesDraft.userName = text;
+      console.log(copyCheckHistoriesDraft.userName);
+      console.log(this.checkHistories[0].draft.userName);
+    }
   }
   }
 </script>
@@ -79,6 +86,7 @@
     <button @click="editNomal">Normal</button>
     <button @click="editSpreadNomal">Spread</button>
     <button @click="editSliceNomal">Slice</button>
+    <button @click="() => editSpreadText(changeText)">SpreadText</button>
     <button @click="reset">Reset</button>
   </p>
 </template>
