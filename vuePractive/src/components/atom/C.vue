@@ -12,7 +12,7 @@
           approved: { userName: '', updateDate: '' },
         },
       ],
-      changeText: 'Jhon'
+      changeText: '',
     }
   },
   methods: {
@@ -86,6 +86,10 @@
     <button @click="editNomal">Normal</button>
     <button @click="editSpreadNomal">Spread</button>
     <button @click="editSliceNomal">Slice</button>
+    <button @click="reset">Reset</button>
+  </p>
+  <p>
+    <input type="text" v-model="changeText">
     <button @click="() => editSpreadText(changeText)">SpreadText</button>
     <button @click="reset">Reset</button>
   </p>
