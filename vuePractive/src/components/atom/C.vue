@@ -85,6 +85,7 @@
     <button @click="editNomal">Normal</button>
     <button @click="editSpreadNomal">Spread</button>
     <button @click="editSliceNomal">Slice</button>
+    <button @click="() => editSpreadText('This')">SpreadText</button>
     <button @click="reset">Reset</button>
   </p>
 </template>
