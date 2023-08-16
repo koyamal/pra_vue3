@@ -12,7 +12,7 @@
           approved: { userName: '', updateDate: '' },
         },
       ],
-      changeText: 'Jhon'
+      changeText: '',
     }
   },
   methods: {
