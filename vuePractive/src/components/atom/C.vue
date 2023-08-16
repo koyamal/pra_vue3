@@ -66,6 +66,12 @@
       console.log(copyCheckHistoriesDraft[0].draft.userName);
       console.log(this.checkHistories[0].draft.userName);
     },
+    editSpreadText(text) {
+      const copyCheckHistoriesDraft = {...this.checkHistories[0].draft};
+      copyCheckHistoriesDraft.userName = text;
+      console.log(copyCheckHistoriesDraft.userName);
+      console.log(this.checkHistories[0].draft.userName);
+    }
   }
   }
 </script>
