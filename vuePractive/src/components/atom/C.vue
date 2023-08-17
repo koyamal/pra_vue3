@@ -3,7 +3,7 @@
   data() {
     return {
       numberList: [
-        1, 3, 3, 4, 5
+        1, 3, 3, 4, 5, 6, 7, 8
       ],
       checkHistories: [
         {
@@ -13,6 +13,7 @@
         },
       ],
       changeText: '',
+      vIfFlag: true,
     }
   },
   methods: {
@@ -41,7 +42,6 @@
       console.log(this.numberList);
     },
     editSliceNumberList() {
-      // const sliceNumberList = this.numberList.slice();
       const sliceNumberList = this.numberList.slice(0, 3);
       sliceNumberList[1] = 2;
       console.log(sliceNumberList);
@@ -84,6 +84,7 @@
   <button @click="editSliceNumberList">SliceList</button>
   <button @click="reset">Reset</button>
   <p>
+    <p v-if="vIfFlag">Hello, World!!!</p>
     <button @click="editNomal">Normal</button>
     <button @click="editSpreadNomal">Spread</button>
     <button @click="editSliceNomal">Slice</button>
