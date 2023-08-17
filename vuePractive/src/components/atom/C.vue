@@ -86,6 +86,7 @@
   <p>
     <div>
       <p v-if="vIfFlag">Hello, World!!!</p>
+      <button @click="() => vIfFlag = !vIfFlag">Change</button>
     </div>
     <button @click="editNomal">Normal</button>
     <button @click="editSpreadNomal">Spread</button>
