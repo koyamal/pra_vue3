@@ -84,7 +84,9 @@
   <button @click="editSliceNumberList">SliceList</button>
   <button @click="reset">Reset</button>
   <p>
-    <p v-if="vIfFlag">Hello, World!!!</p>
+    <div>
+      <p v-if="vIfFlag">Hello, World!!!</p>
+    </div>
     <button @click="editNomal">Normal</button>
     <button @click="editSpreadNomal">Spread</button>
     <button @click="editSliceNomal">Slice</button>
