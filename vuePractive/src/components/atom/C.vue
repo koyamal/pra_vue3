@@ -41,7 +41,6 @@
       console.log(this.numberList);
     },
     editSliceNumberList() {
-      // const sliceNumberList = this.numberList.slice();
       const sliceNumberList = this.numberList.slice(0, 3);
       sliceNumberList[1] = 2;
       console.log(sliceNumberList);
