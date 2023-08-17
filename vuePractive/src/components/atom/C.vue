@@ -13,6 +13,7 @@
         },
       ],
       changeText: '',
+      vIfFlag: true,
     }
   },
   methods: {
@@ -83,7 +84,7 @@
   <button @click="editSliceNumberList">SliceList</button>
   <button @click="reset">Reset</button>
   <p>
-    <p v-if="true">Hello, World!!!</p>
+    <p v-if="vIfFlag">Hello, World!!!</p>
     <button @click="editNomal">Normal</button>
     <button @click="editSpreadNomal">Spread</button>
     <button @click="editSliceNomal">Slice</button>
