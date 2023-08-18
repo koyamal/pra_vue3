@@ -17,6 +17,11 @@ export default {
         b: { userName: '', updateDate: ''},
       }
       return data;
+    },
+    useApuluplus() {
+      let a = 1;
+      console.log(a++);
+      console.log(a);
     }
   }
 }
@@ -26,5 +31,6 @@ export default {
   <div>
     <p>{{ count }} : {{ useDate }} = {{ highPreasure }}</p>
     <button @click="() => count += 'E'">Add E</button>
+    <button @click="useApuluplus">useApuluplus</button>
   </div>
 </template>
