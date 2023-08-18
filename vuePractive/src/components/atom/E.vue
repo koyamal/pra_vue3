@@ -37,6 +37,10 @@ export default {
       console.log(data);
       delete data.updateDate;
       console.log(data);
+    },
+    useVoid() {
+      const output = void 100;
+      console.log(output);
     }
   }
 }
@@ -49,5 +53,6 @@ export default {
     <button @click="useApuluplus">useApuluplus</button>
     <button @click="usepuluplusA">usepuluplusA</button>
     <button @click="useDelete">useDelete</button>
+    <button @click="useVoid">useVoid</button>
   </div>
 </template>
