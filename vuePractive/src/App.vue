@@ -190,7 +190,7 @@ export default {
   },
 
   mounted() {
-    this.$refs.input.focus()
+    // this.$refs.input.focus()
     this.useTowQuestion = 0 ?? 'Hello'
     this.useTowbar = this.func1() || this.func2()
 
@@ -228,7 +228,7 @@ export default {
   <!-- <E /> -->
   <!-- <E /> -->
   <!-- <E /> -->
-  <div>
+  <!-- <div>
     <p v-for="userInfo in userInfoTable">Name: {{ userInfo.name }}, Age: {{ userInfo.age }}</p>
   </div>
   <div>
@@ -336,5 +336,5 @@ export default {
   <div>
     <h1>Here is a child component!</h1>
     <ButtonCounter />
-  </div>
+  </div> -->
 </template>

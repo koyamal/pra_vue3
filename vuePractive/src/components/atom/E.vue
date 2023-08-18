@@ -22,6 +22,11 @@ export default {
       let a = 1;
       console.log(a++);
       console.log(a);
+    },
+    usepuluplusA() {
+      let a = 1;
+      console.log(++a);
+      console.log(a);
     }
   }
 }
@@ -32,5 +37,6 @@ export default {
     <p>{{ count }} : {{ useDate }} = {{ highPreasure }}</p>
     <button @click="() => count += 'E'">Add E</button>
     <button @click="useApuluplus">useApuluplus</button>
+    <button @click="usepuluplusA">usepuluplusA</button>
   </div>
 </template>
