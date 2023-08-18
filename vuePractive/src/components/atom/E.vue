@@ -41,6 +41,10 @@ export default {
     useVoid() {
       const output = void 100;
       console.log(output);
+
+      if(!void(0)) {
+        console.log('False');
+      }
     }
   }
 }
