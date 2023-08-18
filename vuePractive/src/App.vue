@@ -220,13 +220,14 @@ export default {
 </script>
 
 <template>
-  <C />
-  <A />
-  <B />
-  <D />
   <E />
-  <E />
-  <E />
+  <!-- <C /> -->
+  <!-- <A /> -->
+  <!-- <B /> -->
+  <!-- <D /> -->
+  <!-- <E /> -->
+  <!-- <E /> -->
+  <!-- <E /> -->
   <div>
     <p v-for="userInfo in userInfoTable">Name: {{ userInfo.name }}, Age: {{ userInfo.age }}</p>
   </div>
