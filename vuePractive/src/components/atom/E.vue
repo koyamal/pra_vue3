@@ -27,6 +27,16 @@ export default {
       let a = 1;
       console.log(++a);
       console.log(a);
+    },
+    useDelete() {
+      const data = {
+        userName: 'Bob',
+        updateDate: '20230818',
+        checkFlag: false,
+      };
+      console.log(data);
+      delete data.updateDate;
+      console.log(data);
     }
   }
 }
@@ -38,5 +48,6 @@ export default {
     <button @click="() => count += 'E'">Add E</button>
     <button @click="useApuluplus">useApuluplus</button>
     <button @click="usepuluplusA">usepuluplusA</button>
+    <button @click="useDelete">useDelete</button>
   </div>
 </template>
