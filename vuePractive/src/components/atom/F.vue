@@ -19,10 +19,15 @@
             resolve('end B');
           }, 500);
         });
+      },
+      async execFuncAB() {
+        const a = await Promise.all([
+          this.funcA(), this.funcB()
+        ]);
       }
     }
   }
 </script>
 <template>
-  <button @click="funcA">funcA</button>
+  <button @click="execFuncAB">execFuncAB</button>
 </template>
