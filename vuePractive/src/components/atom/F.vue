@@ -7,14 +7,27 @@
       funcA() {
         new Promise((resolve, reject) => {
           setTimeout(() => {
-            console.log('hello');
-            resolve('end');
+            console.log('funcA');
+            resolve('end A');
           }, 500);
         });
+      },
+      funcB() {
+        new Promise((resolve, reject) => {
+          setTimeout(() => {
+            console.log('funcB');
+            resolve('end B');
+          }, 500);
+        });
+      },
+      async execFuncAB() {
+        const a = await Promise.all([
+          this.funcA(), this.funcB()
+        ]);
       }
     }
   }
 </script>
 <template>
-  <button @click="funcA">funcA</button>
+  <button @click="execFuncAB">execFuncAB</button>
 </template>
