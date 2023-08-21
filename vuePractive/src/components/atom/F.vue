@@ -28,9 +28,17 @@
           }, 500);
         });
       },
+      funcD() {
+        new Promise((resolve, reject) => {
+          setTimeout(() => {
+            console.log('funcD');
+            resolve('end D');
+          }, 500);
+        });
+      },
       async execFuncAB() {
         const a = await Promise.all([
-          this.funcA(), this.funcB(), this.funcC()
+          this.funcA(), this.funcB(), this.funcC(), this.funcD()
         ]);
       }
     }
@@ -38,4 +46,5 @@
 </script>
 <template>
   <button @click="execFuncAB">execFuncAB</button>
+  <button @click="funcC">funcC</button>
 </template>
