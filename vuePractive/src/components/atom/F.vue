@@ -46,4 +46,5 @@
 </script>
 <template>
   <button @click="execFuncAB">execFuncAB</button>
+  <button @click="funcC">funcC</button>
 </template>
