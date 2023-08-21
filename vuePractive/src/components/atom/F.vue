@@ -38,7 +38,7 @@
       },
       async execFuncAB() {
         const a = await Promise.all([
-          this.funcA(), this.funcB(), this.funcC()
+          this.funcA(), this.funcB(), this.funcC(), this.funcD()
         ]);
       }
     }
