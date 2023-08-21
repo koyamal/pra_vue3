@@ -28,6 +28,14 @@
           }, 500);
         });
       },
+      funcD() {
+        new Promise((resolve, reject) => {
+          setTimeout(() => {
+            console.log('funcD');
+            resolve('end D');
+          }, 500);
+        });
+      },
       async execFuncAB() {
         const a = await Promise.all([
           this.funcA(), this.funcB(), this.funcC()
