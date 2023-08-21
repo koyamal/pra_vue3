@@ -39,7 +39,8 @@
       async execFuncAB() {
         const a = await Promise.all([
           this.funcA(), this.funcB(), this.funcC(), this.funcD()
-        ]);
+        ]).then(() => console.log('Done'));
+        console.log('Done!');
       }
     }
   }
@@ -47,4 +48,5 @@
 <template>
   <button @click="execFuncAB">execFuncAB</button>
   <button @click="funcC">funcC</button>
+  <button @click="funcD">funcD</button>
 </template>
