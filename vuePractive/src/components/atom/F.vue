@@ -24,7 +24,7 @@
         new Promise((resolve, reject) => {
           setTimeout(() => {
             console.log('funcC');
-            reject('end C');
+            resolve('end C');
           }, 500);
         });
       },
@@ -40,6 +40,7 @@
         const a = await Promise.all([
           this.funcA(), this.funcB(), this.funcC(), this.funcD()
         ]).then(() => console.log('Done'));
+        console.log(a);
         console.log('Done!');
       }
     }
