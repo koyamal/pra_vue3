@@ -44,17 +44,17 @@
         console.log('Done!');
       },
       async sleep30ms() {
-        await sleep(30);
+        await setTimeout(3000, () => {console.log("hello")});
         console.log('sleep 30ms');
         return '30s Done';
       },
       async sleep60ms() {
-        await sleep(60);
+        await setTimeout(60);
         console.log('sleep 60ms');
         return '60s Done';
       },
       async sleep90ms() {
-        await sleep(90);
+        await setTimeout(90);
         console.log('sleep 90ms');
         return '90s Done';
       },
@@ -65,4 +65,5 @@
   <button @click="execFuncAB">execFuncAB</button>
   <button @click="funcC">funcC</button>
   <button @click="funcD">funcD</button>
+  <button @click="sleep30ms">30ms</button>
 </template>
