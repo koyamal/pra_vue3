@@ -42,7 +42,12 @@
         ]).then(() => console.log('Done'));
         console.log(a);
         console.log('Done!');
-      }
+      },
+      async sleep30s() {
+        await sleep(30);
+        console.log('sleep 30s');
+        return '30s Done';
+      },
     }
   }
 </script>
