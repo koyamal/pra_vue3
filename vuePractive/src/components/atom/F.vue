@@ -43,10 +43,15 @@
         console.log(a);
         console.log('Done!');
       },
-      async sleep30s() {
+      async sleep30ms() {
         await sleep(30);
-        console.log('sleep 30s');
+        console.log('sleep 30ms');
         return '30s Done';
+      },
+      async sleep60ms() {
+        await sleep(60);
+        console.log('sleep 60ms');
+        return '60s Done';
       },
     }
   }
