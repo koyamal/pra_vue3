@@ -42,7 +42,22 @@
         ]).then(() => console.log('Done'));
         console.log(a);
         console.log('Done!');
-      }
+      },
+      async sleep30ms() {
+        await setTimeout(3000, () => {console.log("hello")});
+        console.log('sleep 30ms');
+        return '30s Done';
+      },
+      async sleep60ms() {
+        await setTimeout(60);
+        console.log('sleep 60ms');
+        return '60s Done';
+      },
+      async sleep90ms() {
+        await setTimeout(90);
+        console.log('sleep 90ms');
+        return '90s Done';
+      },
     }
   }
 </script>
@@ -50,4 +65,5 @@
   <button @click="execFuncAB">execFuncAB</button>
   <button @click="funcC">funcC</button>
   <button @click="funcD">funcD</button>
+  <button @click="sleep30ms">30ms</button>
 </template>
