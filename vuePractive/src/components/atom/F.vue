@@ -53,6 +53,11 @@
         console.log('sleep 60ms');
         return '60s Done';
       },
+      async sleep90ms() {
+        await sleep(90);
+        console.log('sleep 90ms');
+        return '90s Done';
+      },
     }
   }
 </script>
