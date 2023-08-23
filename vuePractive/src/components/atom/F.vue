@@ -9,7 +9,7 @@
           setTimeout(() => {
             console.log('funcA');
             resolve('end A');
-          }, 500);
+          }, 300);
         });
       },
       funcB() {
@@ -17,7 +17,7 @@
           setTimeout(() => {
             console.log('funcB');
             resolve('end B');
-          }, 500);
+          }, 400);
         });
       },
       funcC() {
@@ -33,7 +33,7 @@
           setTimeout(() => {
             console.log('funcD');
             resolve('end D');
-          }, 500);
+          }, 600);
         });
       },
       async execFuncAB() {
