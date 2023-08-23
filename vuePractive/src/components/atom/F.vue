@@ -24,7 +24,7 @@
         return new Promise((resolve, reject) => {
           setTimeout(() => {
             console.log('funcC');
-            reject('end C');
+            reject('error: C');
           }, 500);
         });
       },
