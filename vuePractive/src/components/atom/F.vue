@@ -29,7 +29,7 @@
         });
       },
       funcD() {
-        new Promise((resolve, reject) => {
+        return new Promise((resolve, reject) => {
           setTimeout(() => {
             console.log('funcD');
             resolve('end D');
