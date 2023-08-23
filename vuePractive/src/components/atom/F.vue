@@ -32,7 +32,7 @@
         return new Promise((resolve, reject) => {
           setTimeout(() => {
             console.log('funcD');
-            resolve('end D');
+            reject('end D');
           }, 500);
         });
       },
