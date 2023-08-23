@@ -39,7 +39,7 @@
       async execFuncAB() {
         const a = await Promise.all([
           this.funcA(), this.funcB(), this.funcC(), this.funcD()
-        ]).then(() => console.log('Done'));
+        ]);
         console.log(a);
         console.log('Done!');
       },
