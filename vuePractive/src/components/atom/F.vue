@@ -5,7 +5,7 @@
     },
     methods: {
       funcA() {
-        new Promise((resolve, reject) => {
+        return new Promise((resolve, reject) => {
           setTimeout(() => {
             console.log('funcA');
             resolve('end A');
@@ -13,7 +13,7 @@
         });
       },
       funcB() {
-        new Promise((resolve, reject) => {
+        return new Promise((resolve, reject) => {
           setTimeout(() => {
             console.log('funcB');
             resolve('end B');
@@ -21,7 +21,7 @@
         });
       },
       funcC() {
-        new Promise((resolve, reject) => {
+        return new Promise((resolve, reject) => {
           setTimeout(() => {
             console.log('funcC');
             resolve('end C');
@@ -29,7 +29,7 @@
         });
       },
       funcD() {
-        new Promise((resolve, reject) => {
+        return new Promise((resolve, reject) => {
           setTimeout(() => {
             console.log('funcD');
             resolve('end D');
