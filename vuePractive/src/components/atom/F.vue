@@ -3,6 +3,9 @@
     data() {
       return {}
     },
+    computed: {
+
+    },
     methods: {
       funcA() {
         return new Promise((resolve, reject) => {
