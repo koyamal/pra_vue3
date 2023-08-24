@@ -59,5 +59,6 @@
   <button @click="funcD">funcD</button>
   <div>
     <p>{{ showMessage }}</p>
+    <button @click="() => isWriter = !isWriter">Toggle</button>
   </div>
 </template>
