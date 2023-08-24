@@ -1,10 +1,14 @@
 <script>
   export default {
     data() {
-      return {}
+      return {
+        isWriter: false,
+      }
     },
     computed: {
-
+      showMessage() {
+        return this.isWriter? 'Writer': 'No writer';
+      },
     },
     methods: {
       funcA() {
