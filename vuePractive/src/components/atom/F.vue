@@ -57,4 +57,8 @@
   <button @click="execFuncAB">execFuncAB</button>
   <button @click="funcC">funcC</button>
   <button @click="funcD">funcD</button>
+  <div>
+    <p>{{ showMessage }}</p>
+    <button @click="() => isWriter = !isWriter">Toggle</button>
+  </div>
 </template>
