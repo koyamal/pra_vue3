@@ -9,6 +9,13 @@
       showMessage() {
         return this.isWriter? 'Writer': 'No writer';
       },
+      getAllDoc() {
+        if(true) {
+          return 'true';
+        } else {
+          return 'false';
+        }
+      }
     },
     methods: {
       funcA() {
