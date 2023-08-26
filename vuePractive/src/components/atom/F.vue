@@ -10,10 +10,10 @@
         return this.isWriter? 'Writer': 'No writer';
       },
       getAllDoc() {
-        if(true) {
-          return 'true';
-        } else {
+        if(false) {
           return 'false';
+        } else {
+          return 'true';
         }
       },
     },
@@ -68,5 +68,5 @@
     <p>{{ showMessage }}</p>
     <button @click="() => isWriter = !isWriter">Toggle</button>
   </div>
-  <p>{{ getAllDoc ? 'Hello': 'World' }}</p>
+  <p>{{ getAllDoc ? 'Hello??': 'World!!!' }}</p>
 </template>
