@@ -68,5 +68,5 @@
     <p>{{ showMessage }}</p>
     <button @click="() => isWriter = !isWriter">Toggle</button>
   </div>
-  <p>{{ getAllDoc }}</p>
+  <p>{{ getAllDoc ? 'Hello': 'World' }}</p>
 </template>
