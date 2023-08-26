@@ -15,7 +15,7 @@
         } else {
           return 'false';
         }
-      }
+      },
     },
     methods: {
       funcA() {
@@ -68,4 +68,5 @@
     <p>{{ showMessage }}</p>
     <button @click="() => isWriter = !isWriter">Toggle</button>
   </div>
+  <p>{{ getAllDoc }}</p>
 </template>
