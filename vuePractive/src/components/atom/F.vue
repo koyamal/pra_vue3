@@ -3,6 +3,7 @@
     data() {
       return {
         isWriter: false,
+        isGetAllData: true,
       }
     },
     computed: {
@@ -10,10 +11,10 @@
         return this.isWriter? 'Writer': 'No writer';
       },
       getAllDoc() {
-        if(true) {
-          return 'true';
+        if(this.isGetAllData) {
+          return 'Get All Data';
         } else {
-          return 'false';
+          return 'Get Limit Data';
         }
       },
     },
@@ -68,5 +69,5 @@
     <p>{{ showMessage }}</p>
     <button @click="() => isWriter = !isWriter">Toggle</button>
   </div>
-  <p>{{ getAllDoc ? 'Hello': 'World' }}</p>
+  <p>{{ getAllDoc }}</p>
 </template>
