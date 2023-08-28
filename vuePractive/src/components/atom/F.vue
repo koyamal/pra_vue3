@@ -71,6 +71,6 @@
   </div>
   <p>
     {{ getAllDoc }}
-    <button @Click="() => true">GET?</button>
+    <button @click="() => isGetAllData = !isGetAllData">GET?</button>
   </p>
 </template>
