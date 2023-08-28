@@ -3,6 +3,7 @@
     data() {
       return {
         isWriter: false,
+        isGetAllData: true,
       }
     },
     computed: {
@@ -10,10 +11,10 @@
         return this.isWriter? 'Writer': 'No writer';
       },
       getAllDoc() {
-        if(false) {
-          return 'false';
+        if(this.isGetAllData) {
+          return 'Get All Data';
         } else {
-          return 'true';
+          return 'Get Limit Data';
         }
       },
     },
