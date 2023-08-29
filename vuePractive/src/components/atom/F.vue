@@ -17,6 +17,9 @@
           return 'Get Limit Data';
         }
       },
+      getOneDoc() {
+        return ['Doc', 'Id'];
+      }
     },
     methods: {
       funcA() {
