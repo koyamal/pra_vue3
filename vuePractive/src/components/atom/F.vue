@@ -74,6 +74,10 @@
   </div>
   <p>
     {{ getAllDoc }}
+    {{ getOneDoc.forEach(doc => {
+      return doc;
+    }) }}
+    {{ getOneDoc }}
     <button @click="() => isGetAllData = !isGetAllData">GET?</button>
   </p>
 </template>
