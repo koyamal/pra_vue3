@@ -78,6 +78,9 @@
       return doc;
     }) }}
     {{ getOneDoc }}
+    <p v-for="doc in getOneDoc">
+      {{ doc }}
+    </p>
     <button @click="() => isGetAllData = !isGetAllData">GET?</button>
   </p>
 </template>
