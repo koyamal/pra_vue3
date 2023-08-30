@@ -79,7 +79,7 @@
     }) }}
     {{ getOneDoc }}
     <p v-for="doc in getOneDoc">
-      {{ doc }}
+      cats: {{ doc }} dog:
     </p>
     <button @click="() => isGetAllData = !isGetAllData">GET?</button>
   </p>
