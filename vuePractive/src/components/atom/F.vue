@@ -26,7 +26,7 @@
         return new Promise((resolve, reject) => {
           setTimeout(() => {
             console.log('funcA');
-            resolve('end A');
+            resolve('end funcA.');
           }, 300);
         });
       },
@@ -34,7 +34,7 @@
         return new Promise((resolve, reject) => {
           setTimeout(() => {
             console.log('funcB');
-            resolve('end B');
+            resolve('end funcB.');
           }, 400);
         });
       },
@@ -79,7 +79,7 @@
     }) }}
     {{ getOneDoc }}
     <p v-for="doc in getOneDoc">
-      {{ doc }}
+      cats: {{ doc }} dog:
     </p>
     <button @click="() => isGetAllData = !isGetAllData">GET?</button>
   </p>
