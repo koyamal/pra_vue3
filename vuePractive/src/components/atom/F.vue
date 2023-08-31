@@ -13,8 +13,10 @@
       getAllDoc() {
         if(this.isGetAllData) {
           return 'Get All Data';
-        } else {
+        } else if(false) {
           return 'Get Limit Data';
+        } else {
+          return 'Check Limit Data';
         }
       },
       getOneDoc() {
