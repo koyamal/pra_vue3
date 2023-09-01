@@ -13,7 +13,7 @@
       getAllDoc() {
         if(this.isGetAllData) {
           return 'Get All Data';
-        } else if(false) {
+        } else if(!false && this.isGetAllData) {
           return 'Get Limit Data';
         } else {
           return 'Check Limit Data';
