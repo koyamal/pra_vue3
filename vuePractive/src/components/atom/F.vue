@@ -4,17 +4,21 @@
       return {
         isWriter: false,
         isGetAllData: true,
-        isAdmin: false,
+        adminFlag: false,
       }
     },
     computed: {
+      isAdmin() {
+        if (this.adminFlag) return true;
+        return false;
+      },
       showMessage() {
         return this.isWriter? 'Writer': 'No writer';
       },
       getAllDoc() {
         if(this.isGetAllData) {
           return 'Get All Data';
-        } else if(!false && this.isGetAllData) {
+        } else if(isAdmin) {
           return 'Get Limit Data';
         } else {
           return 'Check Limit Data';
