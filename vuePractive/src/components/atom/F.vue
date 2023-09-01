@@ -4,6 +4,7 @@
       return {
         isWriter: false,
         isGetAllData: true,
+        isAdmin: false,
       }
     },
     computed: {
