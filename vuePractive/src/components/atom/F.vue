@@ -4,10 +4,14 @@
       return {
         isWriter: false,
         isGetAllData: true,
-        isAdmin: false,
+        adminFlag: false,
       }
     },
     computed: {
+      isAdmin() {
+        if (this.adminFlag) return true;
+        return false;
+      },
       showMessage() {
         return this.isWriter? 'Writer': 'No writer';
       },
