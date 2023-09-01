@@ -18,7 +18,7 @@
       getAllDoc() {
         if(this.isGetAllData) {
           return 'Get All Data';
-        } else if(!false && this.isGetAllData) {
+        } else if(isAdmin) {
           return 'Get Limit Data';
         } else {
           return 'Check Limit Data';
