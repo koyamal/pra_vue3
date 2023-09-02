@@ -49,10 +49,9 @@
           this.userInfo.auth = 'user';
         }
         this.setIsAdmin();
-        console.log('fin');
       },
       funcA() {
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve) => {
           setTimeout(() => {
             console.log('funcA');
             resolve('end funcA.');
@@ -60,7 +59,7 @@
         });
       },
       funcB() {
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve) => {
           setTimeout(() => {
             console.log('funcB');
             resolve('end funcB.');
@@ -76,7 +75,7 @@
         });
       },
       funcD() {
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve) => {
           setTimeout(() => {
             console.log('funcD');
             resolve('end D');
