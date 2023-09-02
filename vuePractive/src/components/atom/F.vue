@@ -5,6 +5,10 @@
         isWriter: false,
         isGetAllData: true,
         adminFlag: false,
+        userInfo: {
+          name: '',
+          auth: '',
+        },
       }
     },
     computed: {
@@ -29,6 +33,11 @@
       }
     },
     methods: {
+      setIsAdmin() {
+        if(this.userInfo.auth === 'admin') {
+          this.adminFlag = true;
+        }
+      },
       funcA() {
         return new Promise((resolve, reject) => {
           setTimeout(() => {
