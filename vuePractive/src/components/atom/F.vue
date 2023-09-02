@@ -38,6 +38,14 @@
           this.adminFlag = true;
         }
       },
+      setUserAuth() {
+        const numRand = Math.random();
+        if (numRand > 0.3) {
+          this.userInfo.auth = 'admin';
+        } else {
+          this.userInfo.auth = 'user';
+        }
+      },
       funcA() {
         return new Promise((resolve, reject) => {
           setTimeout(() => {
