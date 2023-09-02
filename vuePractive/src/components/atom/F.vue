@@ -47,6 +47,7 @@
         } else {
           this.userInfo.auth = 'user';
         }
+        this.setIsAdmin();
       },
       funcA() {
         return new Promise((resolve, reject) => {
