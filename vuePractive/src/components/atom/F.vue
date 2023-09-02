@@ -9,6 +9,7 @@
           name: '',
           auth: '',
         },
+        thValue: 0.3,
       }
     },
     computed: {
@@ -42,11 +43,12 @@
       },
       setUserAuth() {
         const numRand = Math.random();
-        if (numRand > 0.3) {
+        if (numRand > this.thValue) {
           this.userInfo.auth = 'admin';
         } else {
           this.userInfo.auth = 'user';
         }
+        this.setIsAdmin();
       },
       funcA() {
         return new Promise((resolve, reject) => {
