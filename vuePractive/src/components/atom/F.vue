@@ -36,6 +36,8 @@
       setIsAdmin() {
         if(this.userInfo.auth === 'admin') {
           this.adminFlag = true;
+        } else {
+          this.adminFlag = false;
         }
       },
       setUserAuth() {
@@ -110,5 +112,6 @@
   <div>
     <p v-if="isAdmin">Admin !!</p>
     <button @click="setIsAdmin">Admin?</button>
+    <button @click="setUserAuth">setUserAuth</button>
   </div>
 </template>
