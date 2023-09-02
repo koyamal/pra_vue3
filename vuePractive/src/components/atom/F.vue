@@ -99,4 +99,8 @@
     </p>
     <button @click="() => isGetAllData = !isGetAllData">GET?</button>
   </p>
+  <div>
+    <p v-if="isAdmin">Admin !!</p>
+    <button @click="setIsAdmin">Admin?</button>
+  </div>
 </template>
