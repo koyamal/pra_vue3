@@ -36,6 +36,16 @@
       setIsAdmin() {
         if(this.userInfo.auth === 'admin') {
           this.adminFlag = true;
+        } else {
+          this.adminFlag = false;
+        }
+      },
+      setUserAuth() {
+        const numRand = Math.random();
+        if (numRand > 0.3) {
+          this.userInfo.auth = 'admin';
+        } else {
+          this.userInfo.auth = 'user';
         }
       },
       funcA() {
@@ -99,4 +109,9 @@
     </p>
     <button @click="() => isGetAllData = !isGetAllData">GET?</button>
   </p>
+  <div>
+    <p v-if="isAdmin">Admin !!</p>
+    <button @click="setIsAdmin">Admin?</button>
+    <button @click="setUserAuth">setUserAuth</button>
+  </div>
 </template>
