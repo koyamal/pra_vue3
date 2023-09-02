@@ -5,6 +5,10 @@
         isWriter: false,
         isGetAllData: true,
         adminFlag: false,
+        userInfo: {
+          name: '',
+          auth: '',
+        },
       }
     },
     computed: {
@@ -29,6 +33,9 @@
       }
     },
     methods: {
+      setIsAdmin() {
+        if()
+      }
       funcA() {
         return new Promise((resolve, reject) => {
           setTimeout(() => {
