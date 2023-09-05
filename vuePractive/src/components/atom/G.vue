@@ -8,8 +8,16 @@
     computed: {
     },
     methods: {
-      async execFunctions() {
-        const a = await asyncFunctions(1000, 'hello', 'world');
+      async execFunctions(waitTime, logMsg, rsvMsg) {
+        const a = await asyncFunctions(waitTime, logMsg, rsvMsg);
+        console.log(a);
+      },
+      async execPromiseAll() {
+        const a = Promise.all([
+          this.execFunctions(1000 ,'Hello', 'World'),
+          this.execFunctions(2000 ,'Hello2', 'World2'),
+          this.execFunctions(3000 ,'Hello3', 'World3'),
+        ]);
         console.log(a);
       }
   },
