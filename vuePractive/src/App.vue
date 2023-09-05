@@ -11,6 +11,7 @@ import C from "./components/atom/C.vue";
 import D from "./components/atom/D.vue";
 import E from "./components/atom/E.vue";
 import F from "./components/atom/F.vue";
+import G from "./components/atom/G.vue";
 
 export default {
   components: {
@@ -24,6 +25,7 @@ export default {
     D,
     E,
     F,
+    G,
   },
 
   data() {
@@ -222,7 +224,8 @@ export default {
 </script>
 
 <template>
-  <F />
+  <G />
+  <!-- <F /> -->
   <!-- <E /> -->
   <!-- <C /> -->
   <!-- <A /> -->
