@@ -8,8 +8,9 @@
     computed: {
     },
     methods: {
-      execFunctions() {
-        asyncFunctions(100, 'hello', 'world');
+      async execFunctions() {
+        const a = await asyncFunctions(1000, 'hello', 'world');
+        console.log(a);
       }
   },
 }
