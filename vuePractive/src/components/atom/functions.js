@@ -1,4 +1,4 @@
-export default asyncFunctions = function(waitTime, logMsg, rsvMsg) {
+const asyncFunctions = function(waitTime, logMsg, rsvMsg) {
   return new Promise((resolve) => {
     setTimeout(() => {
       console.log(logMsg);
@@ -6,3 +6,6 @@ export default asyncFunctions = function(waitTime, logMsg, rsvMsg) {
     }, waitTime);
   });
 }
+
+
+export default asyncFunctions;
