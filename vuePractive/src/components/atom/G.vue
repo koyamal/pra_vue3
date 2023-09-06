@@ -36,6 +36,13 @@
         ]);
         return a;
       },
+      async manyPromiseAll() {
+        const a = await Promise.all([
+          this.execPromiseAll(),
+          this.execPromiseAll2(),
+          this.execPromiseAll3(),
+        ]);
+      }
   },
 }
 </script>
