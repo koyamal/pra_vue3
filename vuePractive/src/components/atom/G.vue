@@ -22,9 +22,9 @@
       },
       async execPromiseAll2() {
         const a = await Promise.all([
-          this.execFunctions(1000 ,'Hello', 'World'),
-          this.execFunctions(2000 ,'Hello2', 'World2'),
-          this.execFunctions(3000 ,'Hello3', 'World3'),
+          this.execFunctions(1000 ,'Hello2-1', 'World2-1'),
+          this.execFunctions(2000 ,'Hello2-2', 'World2-2'),
+          this.execFunctions(3000 ,'Hello2-3', 'World2-3'),
         ]);
       }
 
