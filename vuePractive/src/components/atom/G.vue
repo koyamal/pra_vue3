@@ -18,7 +18,7 @@
           this.execFunctions(2000 ,'Hello2', 'World2'),
           this.execFunctions(3000 ,'Hello3', 'World3'),
         ]);
-        console.log(a);
+        return a;
       },
       async execPromiseAll2() {
         const a = await Promise.all([
@@ -26,6 +26,7 @@
           this.execFunctions(2000 ,'Hello2-2', 'World2-2'),
           this.execFunctions(3000 ,'Hello2-3', 'World2-3'),
         ]);
+        return a;
       },
       async execPromiseAll3() {
         const a = await Promise.all([
@@ -33,6 +34,7 @@
           this.execFunctions(2000 ,'Hello3-2', 'World2-2'),
           this.execFunctions(3000 ,'Hello3-3', 'World3-3'),
         ]);
+        return a;
       },
   },
 }
