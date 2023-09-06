@@ -26,8 +26,7 @@
           this.execFunctions(2000 ,'Hello2-2', 'World2-2'),
           this.execFunctions(3000 ,'Hello2-3', 'World2-3'),
         ]);
-      }
-
+      },
   },
 }
 </script>
