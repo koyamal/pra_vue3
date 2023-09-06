@@ -42,10 +42,12 @@
           this.execPromiseAll2(),
           this.execPromiseAll3(),
         ]);
+        console.log(a);
       }
   },
 }
 </script>
 <template>
   <button @click="execPromiseAll">Do</button>
+  <button @click="manyPromiseAll">3 Promise All</button>
 </template>
