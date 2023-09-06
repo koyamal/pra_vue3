@@ -19,7 +19,15 @@
           this.execFunctions(3000 ,'Hello3', 'World3'),
         ]);
         console.log(a);
+      },
+      async execPromiseAll2() {
+        const a = await Promise.all([
+          this.execFunctions(1000 ,'Hello', 'World'),
+          this.execFunctions(2000 ,'Hello2', 'World2'),
+          this.execFunctions(3000 ,'Hello3', 'World3'),
+        ]);
       }
+
   },
 }
 </script>
