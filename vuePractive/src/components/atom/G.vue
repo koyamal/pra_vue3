@@ -10,7 +10,8 @@
     methods: {
       async execFunctions(waitTime, logMsg, rsvMsg) {
         const a = await asyncFunctions(waitTime, logMsg, rsvMsg);
-        return a;
+        const b = await asyncFunctions(waitTime, logMsg, rsvMsg);
+        return b;
       },
       async execPromiseAll() {
         const a = await Promise.all([
@@ -43,6 +44,7 @@
           this.execPromiseAll3(),
         ]);
         console.log(a);
+        return a;
       }
   },
 }
