@@ -43,6 +43,7 @@
           this.execPromiseAll3(),
         ]);
         console.log(a);
+        return a;
       }
   },
 }
