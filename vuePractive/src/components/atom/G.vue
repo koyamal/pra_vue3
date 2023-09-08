@@ -59,4 +59,7 @@
   <button @click="execPromiseAll">Do</button>
   <button @click="manyPromiseAll">3 Promise All</button>
   <button @click="getResult">getResult</button>
+  <div v-for="data in resultPromise">
+    <p>{{data}}</p>
+  </div>
 </template>
