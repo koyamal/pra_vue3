@@ -5,9 +5,19 @@
       return {
         isStatus: 'progress',
         resultPromise: [],
+        finFlag: false,
       }
     },
     computed: {
+    },
+    watch: {
+      resultPromise(newVal, oldVal) {
+        if(newVal.length > 0) {
+          this.finFlag = true;
+        } else {
+          this.finFlag = false;
+        }
+      }
     },
     methods: {
       async execFunctions(waitTime, logMsg, rsvMsg) {
