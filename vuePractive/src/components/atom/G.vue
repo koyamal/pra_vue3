@@ -46,6 +46,9 @@
         ]);
         console.log(a);
         return a;
+      },
+      async getResult() {
+        const a = await manyPromiseAll();
       }
   },
 }
