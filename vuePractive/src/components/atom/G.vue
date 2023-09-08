@@ -4,6 +4,7 @@
     data() {
       return {
         isStatus: 'progress',
+        resultPromise: [],
       }
     },
     computed: {
@@ -49,8 +50,8 @@
       },
       async getResult() {
         const a = await this.manyPromiseAll();
-        console.log(a);
-      }
+        this.resultPromise = a;
+      },
   },
 }
 </script>
