@@ -4,6 +4,7 @@
     data() {
       return {
         isStatus: 'progress',
+        resultPromise: [],
       }
     },
     computed: {
