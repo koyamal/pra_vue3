@@ -48,7 +48,8 @@
         return a;
       },
       async getResult() {
-        const a = await manyPromiseAll();
+        const a = await this.manyPromiseAll();
+        console.log(a);
       }
   },
 }
@@ -56,4 +57,5 @@
 <template>
   <button @click="execPromiseAll">Do</button>
   <button @click="manyPromiseAll">3 Promise All</button>
+  <button @click="getResult">getResult</button>
 </template>
