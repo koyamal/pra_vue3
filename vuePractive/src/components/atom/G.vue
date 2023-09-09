@@ -73,11 +73,11 @@
   <button @click="manyPromiseAll">3 Promise All</button>
   <button @click="getResult">getResult</button>
   <button @click="reset">Reset</button>
-  <div v-show="finFlag">
-     finFlag is true
-  </div>
-  <div v-for="data in resultPromise">
-    <p>{{data}}</p>
-  </div>
   <p>{{ finFlag }}</p>
+  <div v-show="finFlag">
+    finFlag is true
+    <div v-for="data in resultPromise">
+       <p>{{data}}</p>
+    </div>
+  </div>
 </template>
