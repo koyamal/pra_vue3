@@ -62,6 +62,9 @@
         const a = await this.manyPromiseAll();
         this.resultPromise = a;
       },
+      reset() {
+        this.resultPromise = [];
+      }
   },
 }
 </script>
@@ -69,8 +72,9 @@
   <button @click="execPromiseAll">Do</button>
   <button @click="manyPromiseAll">3 Promise All</button>
   <button @click="getResult">getResult</button>
+  <button @click="reset">Reset</button>
   <div v-show="finFlag">
-     Hello !!!
+     finFlag is true
   </div>
   <div v-for="data in resultPromise">
     <p>{{data}}</p>
