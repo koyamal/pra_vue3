@@ -72,4 +72,5 @@
   <div v-for="data in resultPromise">
     <p>{{data}}</p>
   </div>
+  <p>{{ finFlag }}</p>
 </template>
