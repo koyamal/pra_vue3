@@ -8,8 +8,9 @@ const asyncFunctions = function(waitTime, logMsg, rsvMsg) {
 }
 
 export const asyncFunctionsTwice = async function(listInput) {
-
-  await asyncFunctions(list);
+  for(data in listInput) {
+    await asyncFunctions(data['waitTime'], data['logMsg'], data['rsvMsg']);
+  }
 }
 
 
