@@ -7,5 +7,10 @@ const asyncFunctions = function(waitTime, logMsg, rsvMsg) {
   });
 }
 
+export const asyncFunctionsTwice = async function(listInput) {
+
+  await asyncFunctions(list);
+}
+
 
 export default asyncFunctions;
