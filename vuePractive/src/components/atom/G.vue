@@ -22,11 +22,13 @@
     },
     methods: {
       async useasyncFunctionsTwice() {
-        asyncFunctionsTwice([
+        const a = await asyncFunctionsTwice([
           {waitTime: 1000, logMsg: 'First', rsvMsg: '01'},
           {waitTime: 1000, logMsg: 'Second', rsvMsg: '02'},
           {waitTime: 1000, logMsg: 'Third', rsvMsg: '03'}
         ]);
+        console.log(a);
+        return a;
       },
       async execFunctions(waitTime, logMsg, rsvMsg) {
         const a = await asyncFunctions(waitTime, logMsg, rsvMsg);
@@ -88,4 +90,5 @@
        <p>{{data}}</p>
     </div>
   </div>
+  <button @click="useasyncFunctionsTwice">useasyncFunctionsTwice</button>
 </template>
