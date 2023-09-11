@@ -1,5 +1,6 @@
 <script>
   import asyncFunctions from './functions';
+  import {asyncFunctionsTwice} from './functions';
   export default {
     data() {
       return {
