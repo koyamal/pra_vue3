@@ -21,6 +21,13 @@
       }
     },
     methods: {
+      async useasyncFunctionsTwice() {
+        asyncFunctionsTwice([
+          {waitTime: 1000, logMsg: 'First', rsvMsg: '01'},
+          {waitTime: 1000, logMsg: 'Second', rsvMsg: '02'},
+          {waitTime: 1000, logMsg: 'Third', rsvMsg: '03'}
+        ]);
+      },
       async execFunctions(waitTime, logMsg, rsvMsg) {
         const a = await asyncFunctions(waitTime, logMsg, rsvMsg);
         const b = await asyncFunctions(waitTime, logMsg, rsvMsg);
