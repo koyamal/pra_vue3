@@ -25,7 +25,8 @@
         const a = await asyncFunctionsTwice([
           {waitTime: 1000, logMsg: 'First', rsvMsg: '01'},
           {waitTime: 1000, logMsg: 'Second', rsvMsg: '02'},
-          {waitTime: 1000, logMsg: 'Third', rsvMsg: '03'}
+          {waitTime: 1000, logMsg: 'Third', rsvMsg: '03'},
+          {waitTime: 1100, logMsg: '4th', rsvMsg: '04'},
         ]);
         console.log(a);
         return a;

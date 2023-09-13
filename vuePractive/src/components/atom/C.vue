@@ -14,6 +14,8 @@
       ],
       changeText: '',
       vIfFlag: true,
+      isAdmin: false,
+      userStatus: 'nomal',
     }
   },
   methods: {
