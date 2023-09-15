@@ -10,6 +10,7 @@
           draft: { userName: 'tom', updateDate: '20230815 20:00' },
           checked: { userName: '', updateDate: '' },
           approved: { userName: '', updateDate: '' },
+          allOK: {},
         },
       ],
       changeText: '',
