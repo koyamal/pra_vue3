@@ -20,7 +20,9 @@
     }
   },
   watch: {
+    userStatus: (oldStatus, newStatus) => {
 
+    }
   },
   methods: {
     reset() {
