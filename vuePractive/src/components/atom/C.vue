@@ -19,6 +19,9 @@
       userStatus: 'nomal',
     }
   },
+  watch: {
+
+  },
   methods: {
     reset() {
       this.numberList = [
