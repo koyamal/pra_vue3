@@ -23,8 +23,10 @@
     userStatus: (oldStatus, newStatus) => {
       if(oldStatus === 'nomal' && newStatus === 'admin') {
         console.log('Change admin');
+      } else if (newStatus === 'admin') {
+        console.log('Admin');
       }
-      console.log('No Change');
+      console.log('Normal');
     }
   },
   methods: {
@@ -108,5 +110,8 @@
     <input type="text" v-model="changeText">
     <button @click="() => editSpreadText(changeText)">SpreadText</button>
     <button @click="reset">Reset</button>
+  </p>
+  <p>
+    <button @click="() => this.userStatus = 'admin'">Admin</button>
   </p>
 </template>
