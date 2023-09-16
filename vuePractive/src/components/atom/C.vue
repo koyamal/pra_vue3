@@ -23,8 +23,10 @@
     userStatus: (oldStatus, newStatus) => {
       if(oldStatus === 'nomal' && newStatus === 'admin') {
         console.log('Change admin');
+      } else if (newStatus === 'admin') {
+        console.log('Admin');
       }
-      console.log('No Change');
+      console.log('Normal');
     }
   },
   methods: {
