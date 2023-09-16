@@ -20,7 +20,12 @@
     }
   },
   watch: {
-
+    userStatus: (oldStatus, newStatus) => {
+      if(oldStatus === 'nomal' && newStatus === 'admin') {
+        console.log('Change admin');
+      }
+      console.log('No Change');
+    }
   },
   methods: {
     reset() {
