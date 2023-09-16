@@ -111,4 +111,7 @@
     <button @click="() => editSpreadText(changeText)">SpreadText</button>
     <button @click="reset">Reset</button>
   </p>
+  <p>
+    <button @click="() => this.userStatus = 'admin'">Admin</button>
+  </p>
 </template>
