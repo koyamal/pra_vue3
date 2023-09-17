@@ -20,13 +20,16 @@
     }
   },
   watch: {
-    userStatus: (oldStatus, newStatus) => {
+    userStatus: (newStatus, oldStatus) => {
       if(oldStatus === 'nomal' && newStatus === 'admin') {
         console.log('Change admin');
       } else if (newStatus === 'admin') {
         console.log('Admin');
+      } else if (oldStatus === 'nomal') {
+        console.log('nomal');
+      } else {
+        console.log('Normal');
       }
-      console.log('Normal');
     }
   },
   methods: {
