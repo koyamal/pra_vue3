@@ -27,8 +27,9 @@
         console.log('Admin');
       } else if (oldStatus === 'nomal') {
         console.log('nomal');
+      } else {
+        console.log('Normal');
       }
-      console.log('Normal');
     }
   },
   methods: {
