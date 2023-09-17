@@ -24,9 +24,9 @@
       if(oldStatus === 'nomal' && newStatus === 'admin') {
         console.log('Change admin');
       } else if (newStatus === 'admin') {
-        console.log('Admin');
+        console.log('new is Admin');
       } else if (oldStatus === 'nomal') {
-        console.log('nomal');
+        console.log('old is nomal');
       } else {
         console.log('Normal');
       }
