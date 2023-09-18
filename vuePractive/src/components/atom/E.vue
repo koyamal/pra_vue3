@@ -5,10 +5,12 @@ export default {
       count: "Text",
       useData: 3,
       highPreasure: "Goal",
+      statusLevel: 3100,
     }
   },
   methods: {
     callCenter() {
+      console.log(this.statusLevel);
       console.log("Call Center");
     },
     getInfo() {
