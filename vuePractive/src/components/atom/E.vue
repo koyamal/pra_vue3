@@ -12,8 +12,10 @@ export default {
     callCenter() {
       console.log(this.statusLevel);
       console.log("Call Center");
+      let a = 0;
       for(let i = 0; i < 5; i ++) {
-        console.log(i);
+        a += i;
+        console.log(i + 2);
       }
     },
     getInfo() {
