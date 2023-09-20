@@ -45,6 +45,8 @@
         const nowDate = new Date();
         console.log(nowDate.getSeconds());
         console.log(nowDate.getHours());
+        const sunMoon = (nowDate.getHours < 3 || nowDate.getHours > 18) ? 'sun': 'moon';
+        console.log(sunMoon);
       },
       setUserAuth() {
         const numRand = Math.random();
