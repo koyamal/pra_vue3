@@ -225,7 +225,7 @@ export default {
 
 <template>
   <G />
-  <!-- <F /> -->
+  <F />
   <!-- <E /> -->
   <C />
   <!-- <A /> -->
