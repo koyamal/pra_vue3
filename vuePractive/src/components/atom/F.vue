@@ -41,6 +41,9 @@
           this.adminFlag = false;
         }
       },
+      sunOrMoon(){
+        console.log(new Date());
+      },
       setUserAuth() {
         const numRand = Math.random();
         if (numRand > this.thValue) {
@@ -115,5 +118,8 @@
     <p v-if="isAdmin">Admin !!</p>
     <button @click="setIsAdmin">Admin?</button>
     <button @click="setUserAuth">setUserAuth</button>
+  </div>
+  <div>
+    <button @click="sunOrMoon">sunOrMoon</button>
   </div>
 </template>
