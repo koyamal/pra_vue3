@@ -43,7 +43,7 @@
       },
       sunOrMoon(){
         const nowDate = new Date();
-        console.log(nowDate);
+        console.log(nowDate.getSeconds());
       },
       setUserAuth() {
         const numRand = Math.random();
