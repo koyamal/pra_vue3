@@ -42,7 +42,7 @@
         }
       },
       sunOrmoon(){
-
+        console.log(new Date());
       },
       setUserAuth() {
         const numRand = Math.random();
@@ -118,5 +118,8 @@
     <p v-if="isAdmin">Admin !!</p>
     <button @click="setIsAdmin">Admin?</button>
     <button @click="setUserAuth">setUserAuth</button>
+  </div>
+  <div>
+    <button @click="sunOrmoon">sunOrMoon</button>
   </div>
 </template>
