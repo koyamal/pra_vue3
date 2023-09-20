@@ -41,7 +41,7 @@
           this.adminFlag = false;
         }
       },
-      sunOrmoon(){
+      sunOrMoon(){
         console.log(new Date());
       },
       setUserAuth() {
@@ -120,6 +120,6 @@
     <button @click="setUserAuth">setUserAuth</button>
   </div>
   <div>
-    <button @click="sunOrmoon">sunOrMoon</button>
+    <button @click="sunOrMoon">sunOrMoon</button>
   </div>
 </template>
