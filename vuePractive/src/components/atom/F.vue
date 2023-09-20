@@ -44,6 +44,7 @@
       sunOrMoon(){
         const nowDate = new Date();
         console.log(nowDate.getSeconds());
+        console.log(nowDate.getHours());
       },
       setUserAuth() {
         const numRand = Math.random();
