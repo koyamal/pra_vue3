@@ -41,6 +41,9 @@
           this.adminFlag = false;
         }
       },
+      sunOrmoon(){
+
+      },
       setUserAuth() {
         const numRand = Math.random();
         if (numRand > this.thValue) {
