@@ -42,7 +42,8 @@
         }
       },
       sunOrMoon(){
-        console.log(new Date());
+        const nowDate = new Date();
+        console.log(nowDate.getSeconds());
       },
       setUserAuth() {
         const numRand = Math.random();
