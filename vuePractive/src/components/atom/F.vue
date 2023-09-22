@@ -49,6 +49,9 @@
         console.log(sunMoon);
         return sunMoon;
       },
+      judgeSunMoon() {
+        const judgeFlag = this.sunOrMoon();
+      },
       setUserAuth() {
         const numRand = Math.random();
         if (numRand > this.thValue) {
