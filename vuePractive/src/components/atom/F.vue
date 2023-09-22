@@ -51,6 +51,9 @@
       },
       judgeSunMoon() {
         const judgeFlag = this.sunOrMoon();
+        if(judgeFlag === 'sun'){
+          console.log('This is sun');
+        }
       },
       setUserAuth() {
         const numRand = Math.random();
