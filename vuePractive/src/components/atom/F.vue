@@ -47,6 +47,10 @@
         console.log(nowDate.getHours());
         const sunMoon = (nowDate.getHours < 3 || nowDate.getHours > 18) ? 'moon': 'sun';
         console.log(sunMoon);
+        return sunMoon;
+      },
+      judgeSunMoon() {
+        const judgeFlag = this.sunOrMoon();
       },
       setUserAuth() {
         const numRand = Math.random();
