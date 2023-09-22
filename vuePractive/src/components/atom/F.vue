@@ -55,6 +55,8 @@
           console.log('This is sun');
         }else if(judgeFlag === 'moon') {
           console.log('This is moon');
+        } else {
+          console.log('This is not sun/moon');
         }
       },
       setUserAuth() {
