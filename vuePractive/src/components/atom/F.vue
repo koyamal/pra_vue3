@@ -51,6 +51,11 @@
       },
       judgeSunMoon() {
         const judgeFlag = this.sunOrMoon();
+        if(judgeFlag === 'sun'){
+          console.log('This is sun');
+        }else if(judgeFlag === 'moon') {
+          console.log('This is moon');
+        }
       },
       setUserAuth() {
         const numRand = Math.random();
