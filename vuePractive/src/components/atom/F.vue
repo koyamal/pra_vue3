@@ -58,6 +58,8 @@
         } else {
           console.log('This is not sun/moon');
         }
+
+        return judgeFlag? 'Hello': 'Bye';
       },
       setUserAuth() {
         const numRand = Math.random();
