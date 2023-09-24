@@ -17,6 +17,7 @@
       vIfFlag: true,
       isAdmin: false,
       userStatus: 'nomal',
+      penColor: 'Blue',
     }
   },
   watch: {
