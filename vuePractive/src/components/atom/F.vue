@@ -57,6 +57,8 @@
           console.log('This is moon');
         } else {
           console.log('This is not sun/moon');
+          console.log('This is not sun/moon');
+          console.log('This is not sun/moon');
         }
 
         return judgeFlag? 'Hello': 'Bye';
