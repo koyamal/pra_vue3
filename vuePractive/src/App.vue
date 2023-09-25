@@ -8,6 +8,10 @@ import AlertBox from "./components/atom/AlertBox.vue";
 import A from "./components/atom/A.vue";
 import B from "./components/atom/B.vue";
 import C from "./components/atom/C.vue";
+import D from "./components/atom/D.vue";
+import E from "./components/atom/E.vue";
+import F from "./components/atom/F.vue";
+import G from "./components/atom/G.vue";
 
 export default {
   components: {
@@ -18,6 +22,10 @@ export default {
     A,
     B,
     C,
+    D,
+    E,
+    F,
+    G,
   },
 
   data() {
@@ -30,23 +38,28 @@ export default {
         books: [
           'Vue 2 - Advanced Guide',
           'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
+          'Vue 4 - The Mystery',
+          'Vue develop - The Three Books',
+          'Vue 5 - Too much'
         ]
       },
-      isActive: false,
+      isActive: true,
       hasError: false,
       items: [
         {message: "Hello", time: "AM"},
         {message: "Bye", time: "PM"},
+        {message: "Nice", time: "PM 10:00"},
+        {message: "Good", time: "PM 11:00"},
       ],
       itemsObject: {
         name: "Taro",
         age: 21,
         countory: "USA",
+        language: "English",
       },
       name: "taro",
       text: "",
-      checked: false,
+      checked: true,
       picked: "",
       dynamicTrueValue: "OK",
       dynamicFalseValue: "No",
@@ -59,12 +72,23 @@ export default {
         {title: "No.2", content: "This is No.2"},
         {title: "No.0715", content: "This is No.0715"}
       ],
-      articleFontSize: 1000,
-      useTowQuestion: undefined,
-      useTowbar: undefined,
+      articleFontSize: 10,
+      useTowQuestion: null,
+      useTowbar: null,
       switchFlag: 5000,
       useThreeFlag: "0715",
       useFlag: "002",
+      inputText: "",
+      design: [
+        {a: "a", b: "b", c: "c"},
+        {a: "aa", b: "bb", c: "cc"},
+        {a: "aaa", b: "bbb", c: "ccc"}
+      ],
+      userInfoTable: [
+        {name: "taro", age: 18},
+        {name: "jiro", age: 32},
+        {name: "John", age: 42},
+      ]
     }
   },
   watch: {
@@ -72,6 +96,10 @@ export default {
       if (newQuestion.includes('?')) {
         this.getAnswer()
       }
+    },
+    design(newDesign, oldDesign) {
+      console.log(newDesign);
+      console.log(oldDesign);
     }
   },
 
@@ -84,6 +112,16 @@ export default {
       console.log(a);
       return Date.now();
     },
+    function001() {
+      this.hasError = true;
+      console.log("Hello, this is function 001");
+    },
+    function001002() {
+      console.log("Hello, this is function 001-002");
+    },
+    function001003() {
+      console.log("Hello, bamboo..");
+    }
   },
 
   methods: {
@@ -125,6 +163,7 @@ export default {
     },
     sayText(message) {
       console.log(message);
+      console.log("Hello" + message);
     },
     warn(message, event) {
       if (event) {
@@ -135,16 +174,27 @@ export default {
     },
     func1() {
       console.log("func1");
-      return 0
+      console.log("Hello, func1");
+      if("true") {
+        console.log("truthy");
+      }else {
+        console.log("falthy");
+      }
+      return null
     },
     func2() {
       console.log("func2");
+      console.log("hello,, func2!!!");
+      this.toggle = "false";
       return null
+    },
+    clickDesign() {
+      this.design = ["hello", "Bye"];
     }
   },
 
   mounted() {
-    this.$refs.input.focus()
+    // this.$refs.input.focus()
     this.useTowQuestion = 0 ?? 'Hello'
     this.useTowbar = this.func1() || this.func2()
 
@@ -174,13 +224,29 @@ export default {
 </script>
 
 <template>
+  <G />
+  <F />
+  <!-- <E /> -->
+  <C />
+  <!-- <A /> -->
+  <!-- <B /> -->
+  <!-- <D /> -->
+  <!-- <E /> -->
+  <!-- <E /> -->
+  <!-- <E /> -->
+  <!-- <div>
+    <p v-for="userInfo in userInfoTable">Name: {{ userInfo.name }}, Age: {{ userInfo.age }}</p>
+  </div>
+  <div>
+    <button @click="clickDesign">Design</button>
+  </div>
   <div>
     <p>useTowbar: {{ useTowbar }}</p>
   </div>
   <div>
     <p>useTowQuestion: {{ useTowQuestion }}</p>
   </div>
-  <component is="C"></component>
+  <component is="D"></component>
   <AlertBox>Hello</AlertBox>
   <DisplayData
     v-for="article in articles"
@@ -244,6 +310,12 @@ export default {
 
     <input type="radio" id="one" value="One" v-model="picked" />
     <label for="one">One</label>
+    <div>
+      <p>Hello, World. in #13</p>
+      <input type="text" v-model="inputText" placeholder="Input text, here">
+      <input type="text" v-model="inputText" placeholder="Input text, here">
+      <p>{{ inputText }}</p>
+    </div>
 
     <input type="radio" id="two" value="Two" v-model="picked" />
     <label for="two">Two</label>
@@ -270,5 +342,5 @@ export default {
   <div>
     <h1>Here is a child component!</h1>
     <ButtonCounter />
-  </div>
+  </div> -->
 </template>
