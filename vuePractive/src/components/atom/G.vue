@@ -7,6 +7,8 @@
         isStatus: 'progress',
         resultPromise: [],
         finFlag: false,
+        penColor: 'black',
+        penWidth: 32,
       }
     },
     computed: {
@@ -21,6 +23,9 @@
       }
     },
     methods: {
+      outputPenInfo() {
+        console.log(this.penColor);
+      },
       async useasyncFunctionsTwice() {
         const a = await asyncFunctionsTwice([
           {waitTime: 1000, logMsg: 'First', rsvMsg: '01'},
