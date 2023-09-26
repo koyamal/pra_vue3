@@ -17,6 +17,7 @@
       vIfFlag: true,
       isAdmin: false,
       userStatus: 'nomal',
+      penColor: 'Blue',
     }
   },
   watch: {
@@ -33,6 +34,9 @@
     }
   },
   methods: {
+    penInfoOutput() {
+      console.log(this.penColor);
+    },
     reset() {
       this.numberList = [
         1, 3, 3, 4, 5
