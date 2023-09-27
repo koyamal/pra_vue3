@@ -9,6 +9,8 @@ export default {
       checkHistries: {},
       showCheckhello: '---',
       showCheckworld: '---',
+      penLenght: 18,
+      penWeight: 12,
     }
   },
   mounted() {
