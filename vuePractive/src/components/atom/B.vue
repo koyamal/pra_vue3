@@ -11,6 +11,7 @@ export default {
       showCheckworld: '---',
       penLenght: 18,
       penWeight: 12,
+      dryRowCondition: 'Good',
     }
   },
   mounted() {
