@@ -97,4 +97,8 @@ export default {
   <input type="number" v-model="numCheck">
   <button @click="doneCheck">Done</button>
   <button @click="pickUpCheck">PickUp</button>
+  <div>
+    <p>{{ dryRowCondition }}</p>
+    <button @click="changeCondition">Change</button>
+  </div>
 </template>
