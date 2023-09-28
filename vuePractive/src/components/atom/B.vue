@@ -11,6 +11,7 @@ export default {
       showCheckworld: '---',
       penLenght: 18,
       penWeight: 12,
+      dryRowCondition: 'Good',
     }
   },
   mounted() {
@@ -22,6 +23,14 @@ export default {
     }
   },
   methods: {
+    changeCondition() {
+      const randVal = Math.random();
+      if(randVal < 0.5) {
+        this.dryRowCondition = 'Best';
+      } else {
+        this.dryRowCondition = 'Good';
+      }
+    },
     pickUpCheck() {
       this.showCheckhello = this.checkHistries[this.numCheck].hello;
       this.showCheckworld = this.checkHistries[this.numCheck].world;
