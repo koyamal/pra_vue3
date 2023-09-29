@@ -100,5 +100,6 @@ export default {
   <div>
     <p>{{ dryRowCondition }}</p>
     <button @click="changeCondition">Change</button>
+    <button @click="() => console.log('hello')">hello</button>
   </div>
 </template>
