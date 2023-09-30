@@ -19,6 +19,8 @@ export default {
       this.counter = this.counter + 1;
       if(this.counter > 20) {
         this.counter = 0;
+      } else {
+        console.log('count up');
       }
     }
   }
