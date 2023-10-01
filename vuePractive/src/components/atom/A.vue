@@ -16,7 +16,12 @@ export default {
       alert("Bye");
     },
     sayHelloAndBye() {
+      const nowDate = new Date();
+      if(nowDate.getHours() > 12) {
 
+      } else {
+
+      }
     },
     countUp() {
       this.counter = this.counter + 1;
