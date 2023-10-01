@@ -15,6 +15,9 @@ export default {
       console.log("Say bye");
       alert("Bye");
     },
+    sayHelloAndBye() {
+
+    },
     countUp() {
       this.counter = this.counter + 1;
       if(this.counter > 20) {
