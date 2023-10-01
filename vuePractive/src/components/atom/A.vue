@@ -18,9 +18,9 @@ export default {
     sayHelloAndBye() {
       const nowDate = new Date();
       if(nowDate.getHours() > 12) {
-
+        this.sayHello();
       } else {
-
+        this.sayBye();
       }
     },
     countUp() {
