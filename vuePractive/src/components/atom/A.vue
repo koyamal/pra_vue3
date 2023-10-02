@@ -43,4 +43,5 @@ export default {
   <button @click="countUp">Up!</button>
   <p>{{ counter }}</p>
   <button @click="() => counter = 0">Zero</button>
+  <button @click="sayHelloAndBye">Hello</button>
 </template>
