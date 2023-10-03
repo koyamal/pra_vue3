@@ -12,6 +12,7 @@ export default {
       penLenght: 18,
       penWeight: 12,
       dryRowCondition: 'Good',
+      goHomeAway: 'Twodays',
     }
   },
   mounted() {
@@ -23,6 +24,9 @@ export default {
     }
   },
   methods: {
+    checkgoHomeAway() {
+      console.log(this.goHomeAway);
+    },
     changeCondition() {
       const randVal = Math.random();
       if(randVal < 0.5) {
