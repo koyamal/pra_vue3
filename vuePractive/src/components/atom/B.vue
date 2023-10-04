@@ -20,6 +20,8 @@ export default {
       [this.numCheck]: {
           hello: "this",
           world: "that",
+          second: 'gear',
+          third: 'top',
         }
     }
   },
