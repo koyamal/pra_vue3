@@ -51,7 +51,9 @@ export default {
       this.numCheck += 1;
       const helloValue = "this".repeat(this.numCheck);
       const worldValue = "that".repeat(this.numCheck);
-
+      if(this.numCheck > 1 && helloValue === 'thisthis') {
+        this.addContent();
+      }
       this.checkHistries[this.numCheck] = {
         hello: helloValue,
         world: worldValue,
