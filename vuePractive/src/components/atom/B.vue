@@ -71,6 +71,8 @@ export default {
 
       } else if (b > 1) {
 
+      } else {
+
       }
     },
     consoleLog(msg) {
