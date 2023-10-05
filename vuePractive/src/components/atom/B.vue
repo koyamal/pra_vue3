@@ -68,11 +68,11 @@ export default {
       const a = 0;
       const b = 1;
       if(a > 1) {
-
+        return a;
       } else if (b > 1) {
-
+        return a === b;
       } else {
-
+        return a > b;
       }
     },
     consoleLog(msg) {
