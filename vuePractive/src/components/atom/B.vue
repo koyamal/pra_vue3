@@ -69,6 +69,8 @@ export default {
       const b = 1;
       if(a > 1) {
 
+      } else if (b > 1) {
+
       }
     },
     consoleLog(msg) {
