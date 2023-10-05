@@ -65,6 +65,11 @@ export default {
         title: 'XYZ'.repeat(this.contentBox.length + 1),
       }
       this.contentBox.push(content);
+      const a = 0;
+      const b = 1;
+      if(a > 1) {
+
+      }
     },
     consoleLog(msg) {
       console.log("=========");
