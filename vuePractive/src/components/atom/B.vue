@@ -68,7 +68,7 @@ export default {
       const a = 0;
       const b = 1;
       if(a > 1) {
-        return a;
+        return a < b;
       } else if (b > 1) {
         return a === b;
       } else {
