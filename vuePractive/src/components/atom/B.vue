@@ -75,6 +75,9 @@ export default {
         return a > b;
       }
     },
+    deleteAddContent() {
+
+    },
     consoleLog(msg) {
       console.log("=========");
       console.log(msg);
