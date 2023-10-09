@@ -6,6 +6,10 @@
     </div>
     <div>
       <p>AlertBox</p>
+      <p>This is Box</p>
+      <div>
+        <p>AlertBox</p>
+      </div>
     </div>
   </div>
 </template>
