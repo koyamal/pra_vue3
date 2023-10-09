@@ -9,6 +9,7 @@
       <p>This is Box</p>
       <div>
         <p>AlertBox</p>
+        <input type="text">
       </div>
     </div>
   </div>
