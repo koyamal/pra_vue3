@@ -9,7 +9,7 @@
       <p>This is Box</p>
       <div>
         <p>AlertBox.</p>
-        <div>
+        <div class="alert-box2">
           <p>AlertBox.</p>
           <input type="radio">
         </div>
@@ -26,5 +26,9 @@
 }
 .bigbig {
   font-size: 60px;
+}
+.alert-box2 {
+  color: red;
+  font-size: 32px;
 }
 </style>
