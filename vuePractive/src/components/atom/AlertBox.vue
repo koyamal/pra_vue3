@@ -8,7 +8,10 @@
       <p>AlertBox</p>
       <p>This is Box</p>
       <div>
-        <p>AlertBox</p>
+        <p>AlertBox.</p>
+        <div>
+          <input type="text">
+        </div>
         <input type="radio">
       </div>
     </div>
