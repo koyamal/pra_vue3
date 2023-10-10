@@ -28,7 +28,7 @@
   font-size: 60px;
 }
 .alert-box2 {
-  color: red;
-  font-size: 32px;
+  color: blue;
+  font-size: 42px;
 }
 </style>
