@@ -10,7 +10,8 @@
       <div>
         <p>AlertBox.</p>
         <div>
-          <input type="text">
+          <p>AlertBox.</p>
+          <input type="radio">
         </div>
         <input type="radio">
       </div>
