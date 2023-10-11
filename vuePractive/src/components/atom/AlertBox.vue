@@ -4,7 +4,7 @@
     <div class="bigbig">
       <slot />
     </div>
-    <div>
+    <div class="alert-box3">
       <p>AlertBox</p>
       <p>This is Box</p>
       <div>
@@ -28,6 +28,10 @@
   font-size: 60px;
 }
 .alert-box2 {
+  color: blue;
+  font-size: 42px;
+}
+.alert-box3 {
   color: blue;
   font-size: 42px;
 }
