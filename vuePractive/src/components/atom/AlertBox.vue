@@ -32,7 +32,7 @@
   font-size: 42px;
 }
 .alert-box3 {
-  color: blue;
+  color: yellowgreen;
   font-size: 42px;
 }
 </style>
