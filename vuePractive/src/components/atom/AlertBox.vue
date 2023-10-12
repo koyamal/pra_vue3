@@ -11,6 +11,7 @@
       </p>
       <div>
         <h1>H1</h1>
+        <h2>H2</h2>
       </div>
       <p>This is Box</p>
       <div>
