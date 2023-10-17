@@ -23,6 +23,13 @@
       }
     },
     methods: {
+      useMap() {
+        const docs = ["a", "b", "c"];
+        const a = docs.map(doc => {
+          return doc + 'hello';
+        });
+        console.log(a);
+      },
       outputPenInfo() {
         console.log(this.penColor);
       },
@@ -85,6 +92,7 @@
 }
 </script>
 <template>
+  <button @click="useMap">useMap</button>
   <button @click="execPromiseAll">Do</button>
   <button @click="manyPromiseAll">3 Promise All</button>
   <button @click="getResult">getResult</button>
