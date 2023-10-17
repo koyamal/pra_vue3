@@ -33,6 +33,7 @@
         await Promise.all(functions.map(fn => {
           return fn();
         }));
+        console.log('Success');
       },
       useMap() {
         const docs = ["a", "b", "c"];
@@ -103,6 +104,7 @@
 }
 </script>
 <template>
+  <button @click="useMapPromiseAll">useMapPromiseAll</button>
   <button @click="useMap">useMap</button>
   <button @click="execPromiseAll">Do</button>
   <button @click="manyPromiseAll">3 Promise All</button>
