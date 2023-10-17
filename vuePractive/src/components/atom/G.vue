@@ -1,6 +1,7 @@
 <script>
   import asyncFunctions from './functions';
   import {asyncFunctionsTwice} from './functions';
+  import {makeFunc} from './functions';
   export default {
     data() {
       return {
@@ -23,6 +24,13 @@
       }
     },
     methods: {
+      useMapPromiseAll() {
+        const functions = [
+        makeFunc(1000 ,'Hello', 'World'),
+        makeFunc(2000 ,'Hello2', 'World2'),
+        makeFunc(3000 ,'Hello3', 'World3'),
+        ];
+      },
       useMap() {
         const docs = ["a", "b", "c"];
         const a = docs.map(doc => {
