@@ -24,12 +24,15 @@
       }
     },
     methods: {
-      useMapPromiseAll() {
+      async useMapPromiseAll() {
         const functions = [
-        makeFunc(1000 ,'Hello', 'World'),
-        makeFunc(2000 ,'Hello2', 'World2'),
-        makeFunc(3000 ,'Hello3', 'World3'),
+          makeFunc(1000 ,'Hello', 'World'),
+          makeFunc(2000 ,'Hello2', 'World2'),
+          makeFunc(3000 ,'Hello3', 'World3'),
         ];
+        await Promise.all(functions.map(fn => {
+          return fn();
+        }));
       },
       useMap() {
         const docs = ["a", "b", "c"];
