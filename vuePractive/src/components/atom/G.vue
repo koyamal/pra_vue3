@@ -92,6 +92,7 @@
 }
 </script>
 <template>
+  <button @click="useMap">useMap</button>
   <button @click="execPromiseAll">Do</button>
   <button @click="manyPromiseAll">3 Promise All</button>
   <button @click="getResult">getResult</button>
