@@ -1,6 +1,7 @@
 <script>
   import asyncFunctions from './functions';
   import {asyncFunctionsTwice} from './functions';
+  import {makeFunc} from './functions';
   export default {
     data() {
       return {
@@ -23,6 +24,28 @@
       }
     },
     methods: {
+      async useForEach() {
+        const functions = [
+          makeFunc(1000 ,'Hello', 'World'),
+          makeFunc(2000 ,'Hello2', 'World2'),
+          makeFunc(3000 ,'Hello3', 'World3'),
+        ];
+        functions.forEach(async (fn) => {
+          await fn();
+        });
+        console.log('Success');
+      },
+      async useMapPromiseAll() {
+        const functions = [
+          makeFunc(1000 ,'Hello', 'World'),
+          makeFunc(2000 ,'Hello2', 'World2'),
+          makeFunc(3000 ,'Hello3', 'World3'),
+        ];
+        await Promise.all(functions.map(fn => {
+          return fn();
+        }));
+        console.log('Success');
+      },
       useMap() {
         const docs = ["a", "b", "c"];
         const a = docs.map(doc => {
@@ -92,6 +115,8 @@
 }
 </script>
 <template>
+  <button @click="useForEach">useForEach</button>
+  <button @click="useMapPromiseAll">useMapPromiseAll</button>
   <button @click="useMap">useMap</button>
   <button @click="execPromiseAll">Do</button>
   <button @click="manyPromiseAll">3 Promise All</button>
