@@ -26,7 +26,7 @@
       useMap() {
         const docs = ["a", "b", "c"];
         const a = docs.map(doc => {
-          return doc * 2;
+          return doc + 'hello';
         });
         console.log(a);
       },
