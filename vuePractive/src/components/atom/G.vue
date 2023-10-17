@@ -23,6 +23,13 @@
       }
     },
     methods: {
+      useMap() {
+        const docs = ["a", "b", "c"];
+        const a = docs.map(doc => {
+          return doc * 2;
+        });
+        console.log(a);
+      },
       outputPenInfo() {
         console.log(this.penColor);
       },
