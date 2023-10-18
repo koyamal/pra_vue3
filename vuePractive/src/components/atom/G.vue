@@ -37,6 +37,7 @@
         console.log('Success');
       },
       async useMapPromiseAll() {
+        console.log("Start");
         const functions = [
           makeFunc(1000 ,'Hello', 'World'),
           makeFunc(2000 ,'Hello2', 'World2'),
