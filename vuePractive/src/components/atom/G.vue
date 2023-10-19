@@ -43,6 +43,7 @@
           makeFunc(1000 ,'Hello', 'World'),
           makeFunc(2000 ,'Hello2', 'World2'),
           makeFunc(3000 ,'Hello3', 'World3'),
+          makeFunc(4000 ,'Hello4', 'World4'),
         ];
         await Promise.all(functions.map(fn => {
           return fn();
