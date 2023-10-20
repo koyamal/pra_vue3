@@ -49,6 +49,9 @@
           return fn();
         }));
         console.log('Success');
+        for(let i = 0; i > 10; i++) {
+          console.log(i);
+        }
       },
       useMap() {
         const docs = ["a", "b", "c"];
