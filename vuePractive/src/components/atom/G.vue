@@ -51,6 +51,10 @@
         console.log('Success');
         for(let i = 0; i > 10; i++) {
           console.log(i);
+          let bumbBox = [];
+          if(i % 2 === 1) {
+            bumbBox = [1, 3, 5];
+          }
         }
       },
       useMap() {
