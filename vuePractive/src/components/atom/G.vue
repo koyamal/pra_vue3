@@ -54,9 +54,14 @@
           let bumbBox = [];
           if(i % 2 === 1) {
             bumbBox = [1, 3, 5];
+            console.log(ans);
           } else {
             bumbBox = [2, 4, 6];
           }
+          let ans = 0;
+          bumbBox.forEach((bumb) => {
+            ans += bumb;
+          });
         }
       },
       useMap() {
