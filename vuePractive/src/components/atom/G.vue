@@ -54,6 +54,8 @@
           let bumbBox = [];
           if(i % 2 === 1) {
             bumbBox = [1, 3, 5];
+          } else {
+            bumbBox = [2, 4, 6];
           }
         }
       },
