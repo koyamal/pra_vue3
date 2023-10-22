@@ -62,6 +62,9 @@
           bumbBox.forEach((bumb) => {
             ans += bumb;
           });
+          bumbBox.map((bumb) => {
+            return bumb * 2;
+          })
         }
       },
       useMap() {
