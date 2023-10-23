@@ -90,6 +90,11 @@
       async execFunctions(waitTime, logMsg, rsvMsg) {
         const a = await asyncFunctions(waitTime, logMsg, rsvMsg);
         const b = await asyncFunctions(waitTime, logMsg, rsvMsg);
+        if(b === 0) {
+          console.log('b is zero');
+        } else {
+          console.log('b is not zero');
+        }
         return b;
       },
       async execPromiseAll() {
