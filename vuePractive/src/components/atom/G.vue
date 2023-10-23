@@ -97,6 +97,7 @@
         } else {
           console.log('b is not zero');
         }
+        console.log('before return');
         return b;
       },
       async execPromiseAll() {
