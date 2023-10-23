@@ -88,7 +88,9 @@
         return a;
       },
       async execFunctions(waitTime, logMsg, rsvMsg) {
+        console.log('Start execFunctions');
         const a = await asyncFunctions(waitTime, logMsg, rsvMsg);
+        console.log('After A');
         const b = await asyncFunctions(waitTime, logMsg, rsvMsg);
         if(b === 0) {
           console.log('b is zero');
