@@ -34,6 +34,12 @@
     }
   },
   methods: {
+    processCheck() {
+      // const processValue = 'dev';
+      const processValue = 'prod';
+      const backupName = processValue === 'dev' ? '_fromDev': '';
+      console.log(backupName);
+    },
     penInfoOutput() {
       console.log(this.penColor);
     },
@@ -98,6 +104,7 @@
   }
 </script>
 <template>
+  <button @click="processCheck">processCheck</button>
   <div>This is C</div>
   <button @click="editAndShowNumberList">List</button>
   <button @click="editSpreadNumberList">SpreadList</button>
