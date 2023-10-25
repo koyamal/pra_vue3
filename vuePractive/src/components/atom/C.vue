@@ -40,6 +40,7 @@
       const backupName = processValue === 'dev' ? '_fromDev': '';
       console.log(backupName);
       if(processValue === 'dev') return 0;
+      if(processValue === 'prod') return 0;
     },
     penInfoOutput() {
       console.log(this.penColor);
