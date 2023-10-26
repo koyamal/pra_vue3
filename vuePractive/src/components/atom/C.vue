@@ -41,6 +41,7 @@
       console.log(backupName);
       if(processValue === 'dev') return 0;
       if(processValue === 'prod') return 0;
+      if('a' === 'b') return 1;
     },
     penInfoOutput() {
       console.log(this.penColor);
