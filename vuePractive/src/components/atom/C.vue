@@ -45,6 +45,8 @@
     },
     penInfoOutput() {
       console.log(this.penColor);
+      const b = 0;
+      if(b > 1) return 1;
     },
     reset() {
       this.numberList = [
