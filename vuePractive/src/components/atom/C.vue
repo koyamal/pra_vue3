@@ -41,13 +41,17 @@
       console.log(backupName);
       if(processValue === 'dev') return 0;
       if(processValue === 'prod') return 0;
+      if('a' === 'b') return 1;
     },
     penInfoOutput() {
       console.log(this.penColor);
+      const b = 0;
+      if(b > 1) return 1;
+      if(b < 1) return 1;
     },
     reset() {
       this.numberList = [
-        1, 3, 3, 4, 5
+        1, 3, 3, 4, 5, 6
       ];
       this.checkHistories = [
         {
