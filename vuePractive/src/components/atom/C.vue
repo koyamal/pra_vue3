@@ -53,6 +53,9 @@
       this.numberList = [
         1, 3, 3, 4, 5, 6
       ];
+      for(num of this.numberList) {
+        console.log(num);
+      }
       this.checkHistories = [
         {
           draft: { userName: 'tom', updateDate: '20230815 20:00' },
