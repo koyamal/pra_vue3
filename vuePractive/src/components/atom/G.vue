@@ -45,7 +45,7 @@
           makeFunc(3000 ,'Hello3', 'World3'),
           makeFunc(4000 ,'Hello4', 'World4'),
         ];
-        for(fn of functions) {
+        for(const fn of functions) {
           await fn();
         };
         console.log('Success');
