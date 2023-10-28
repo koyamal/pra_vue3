@@ -157,6 +157,7 @@
 }
 </script>
 <template>
+  <button @click="useForOf">useForOf</button>
   <button @click="useForEach">useForEach</button>
   <button @click="useMapPromiseAll">useMapPromiseAll</button>
   <button @click="useMap">useMap</button>
