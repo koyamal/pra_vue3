@@ -37,6 +37,9 @@
         });
         console.log('Success');
       },
+      async useForOf() {
+
+      },
       async useMapPromiseAll() {
         console.log("Start");
         const functions = [
