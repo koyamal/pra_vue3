@@ -49,6 +49,9 @@
           await fn();
         };
         console.log('Success');
+        for(const fn of functions) {
+          await fn();
+        };
       },
       async useMapPromiseAll() {
         console.log("Start");
