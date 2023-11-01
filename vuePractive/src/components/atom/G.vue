@@ -48,6 +48,7 @@
         ];
         for(const fn of functions) {
           await fn();
+          console.log('fn()');
         };
         console.log('Success');
         for(const fn of functions) {
