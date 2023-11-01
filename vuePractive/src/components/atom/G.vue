@@ -44,6 +44,7 @@
           makeFunc(2000 ,'Hello2', 'World2'),
           makeFunc(3000 ,'Hello3', 'World3'),
           makeFunc(4000 ,'Hello4', 'World4'),
+          makeFunc(5000 ,'Hello5', 'World5'),
         ];
         for(const fn of functions) {
           await fn();
