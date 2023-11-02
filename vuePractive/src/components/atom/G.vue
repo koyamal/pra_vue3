@@ -55,7 +55,12 @@
           await fn();
         };
       },
-      async judgelength() {},
+      async judgelength() {
+        const nonRead = [1, 3, 5, 6];
+        if(nonRead.length === 0) return;
+        const a = 0;
+        return a;
+      },
       async useMapPromiseAll() {
         console.log("Start");
         const functions = [
