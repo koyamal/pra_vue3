@@ -54,6 +54,11 @@
         for(const fn of functions) {
           await fn();
         };
+        for(const fn of functions) {
+          console.log('start');
+          await fn();
+          console.log('end');
+        }
       },
       async judgelength() {
         const nonRead = [1, 3, 5, 6];
