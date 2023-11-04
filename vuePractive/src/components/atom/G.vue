@@ -61,9 +61,13 @@
         }
       },
       async judgelength() {
-        const nonRead = [1, 3, 5, 6];
+        const nonRead = [1, 3, 5, 6, 12, 15];
         if(nonRead.length === 0) return;
         const a = 0;
+        nonRead.forEach((non) => {
+          if(a === non) return;
+          console.log(non);
+        });
         return a;
       },
       async useMapPromiseAll() {
