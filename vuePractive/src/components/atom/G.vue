@@ -57,6 +57,7 @@
         for(const fn of functions) {
           console.log('start');
           await fn();
+          console.log('end');
         }
       },
       async judgelength() {
