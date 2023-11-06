@@ -10,11 +10,13 @@
           auth: '',
         },
         thValue: 0.3,
+        dataInt: 12,
       }
     },
     computed: {
       isAdmin() {
         if (this.adminFlag) return true;
+        dataInt+=1;
         return false;
       },
       showMessage() {
