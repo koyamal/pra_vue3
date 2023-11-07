@@ -16,7 +16,8 @@
     computed: {
       isAdmin() {
         if (this.adminFlag) return true;
-        dataInt+=1;
+        dataInt+=10;
+        dataInt-= 10;
         return false;
       },
       showMessage() {
