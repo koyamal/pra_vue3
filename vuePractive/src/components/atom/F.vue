@@ -18,7 +18,7 @@
         if (this.adminFlag) return true;
         dataInt+=10;
         dataInt-= 10;
-        return false;
+        return dataInt === 1;
       },
       showMessage() {
         return this.isWriter? 'Writer': 'No writer';
