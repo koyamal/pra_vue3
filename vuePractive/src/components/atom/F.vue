@@ -21,6 +21,8 @@
         return dataInt === 1;
       },
       showMessage() {
+        const a = 20;
+        const b = a >19 ? 20: 19;
         return this.isWriter? 'Writer': 'No writer';
       },
       getAllDoc() {
