@@ -18,9 +18,11 @@
         if (this.adminFlag) return true;
         dataInt+=10;
         dataInt-= 10;
-        return false;
+        return (dataInt === 1) ? true: false;
       },
       showMessage() {
+        const a = 20;
+        const b = a >19 ? 20: 19;
         return this.isWriter? 'Writer': 'No writer';
       },
       getAllDoc() {
