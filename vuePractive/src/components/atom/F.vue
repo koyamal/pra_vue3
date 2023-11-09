@@ -18,7 +18,7 @@
         if (this.adminFlag) return true;
         dataInt+=10;
         dataInt-= 10;
-        return dataInt === 1;
+        return (dataInt === 1) ? true: false;
       },
       showMessage() {
         const a = 20;
