@@ -31,6 +31,8 @@
         } else if(isAdmin) {
           return 'Get Limit Data';
         } else {
+          console.log("hello");
+          if(this.isAdmin) return 'Is Admin'
           return 'Check Limit Data';
         }
       },
