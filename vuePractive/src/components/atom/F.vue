@@ -25,6 +25,14 @@
         const b = a >19 ? 20: 19;
         return this.isWriter? 'Writer': 'No writer';
       },
+      setData() {
+        const a = 0;
+        if (a > 0) {
+          this.isAdmin = false;
+          return;
+        }
+        this.isAdmin = true;
+      }
       getAllDoc() {
         if(this.isGetAllData) {
           return 'Get All Data';
