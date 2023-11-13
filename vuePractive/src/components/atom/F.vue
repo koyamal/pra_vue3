@@ -28,10 +28,10 @@
       setData() {
         const a = 0;
         if (a > 0) {
-          this.isAdmin = false;
+          this.isAdmin = true;
           return;
         }
-        this.isAdmin = true;
+        this.isAdmin = false;
       }
       getAllDoc() {
         if(this.isGetAllData) {
