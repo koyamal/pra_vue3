@@ -32,7 +32,7 @@
           return;
         }
         this.isAdmin = false;
-      }
+      },
       getAllDoc() {
         if(this.isGetAllData) {
           return 'Get All Data';
