@@ -21,6 +21,8 @@ const asyncFunctions = function(waitTime, logMsg, rsvMsg) {
 
 export const asyncFunctionsTwice = async function(listInput) {
   const a = [];
+  const b = ["a", "b"];
+  console.log(b);
   for(const data of listInput) {
     a.push(await asyncFunctions(data['waitTime'], data['logMsg'], data['rsvMsg']));
   }
