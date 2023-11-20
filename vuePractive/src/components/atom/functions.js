@@ -30,7 +30,10 @@ export const asyncFunctionsTwice = async function(listInput) {
   const d = c.map((dat) => {
     console.log(dat);
     return dat + "aaaa";
-  })
+  });
+  d.map((dat) => {
+    console.log(dat);
+  });
   console.log("end of func")
   return a;
 }
