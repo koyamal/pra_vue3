@@ -26,6 +26,10 @@ export const asyncFunctionsTwice = async function(listInput) {
   for(const data of listInput) {
     a.push(await asyncFunctions(data['waitTime'], data['logMsg'], data['rsvMsg']));
   }
+  const c = ["c", "d", "e"];
+  c.map((dat) => {
+    console.log(dat);
+  })
   console.log("end of func")
   return a;
 }
