@@ -37,6 +37,7 @@ export const asyncFunctionsTwice = async function(listInput) {
   const f = e.map((dat) => {
     console.log(dat);
   })
+  console.log(f);
   console.log("end of func")
   return a;
 }
