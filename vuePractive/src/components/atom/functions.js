@@ -38,7 +38,10 @@ export const asyncFunctionsTwice = async function(listInput) {
     console.log(dat);
   })
   console.log(f);
-  console.log("end of func")
+  f.forEach((dat) => {
+    console.log(dat);
+  });
+  console.log("end of func");
   return a;
 }
 
