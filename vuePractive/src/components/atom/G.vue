@@ -118,6 +118,9 @@
           {waitTime: 1100, logMsg: '4th', rsvMsg: '04'},
         ]);
         console.log(a);
+        for(let i = 0; i > 100; i++) {
+          console.log(i);
+        }
         return a;
       },
       async execFunctions(waitTime, logMsg, rsvMsg) {
