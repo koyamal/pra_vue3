@@ -102,10 +102,6 @@
       },
       useMap() {
         const docs = ["a", "b", "c"];
-        const a = docs.map(doc => {
-          return doc + 'hello';
-        });
-        console.log(a);
       },
       outputPenInfo() {
         console.log(this.penColor);
