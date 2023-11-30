@@ -102,7 +102,9 @@
       },
       useMap() {
         const docs = ["a", "b", "c"];
-        docs.forEach(() => {});
+        docs.forEach((data) => {
+          console.log(data);
+        });
       },
       outputPenInfo() {
         console.log(this.penColor);
