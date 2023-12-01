@@ -4,9 +4,26 @@
     <div class="bigbig">
       <slot />
     </div>
+    <div class="alert-box3">
+      <p>AlertBox</p>
+      <p>HelloGirls
+        <h1>thisispen</h1>
+      </p>
+      <div>
+      </div>
+      <p>This is Box</p>
+      <div>
+        <p>AlertBox.</p>
+        <div class="alert-box2">
+          <p>AlertBox.</p>
+          <input type="radio">
+        </div>
+        <input type="radio">
+      </div>
+    </div>
   </div>
 </template>
-  
+
 <style>
 .alert-box {
   color: red;
@@ -14,5 +31,13 @@
 }
 .bigbig {
   font-size: 60px;
+}
+.alert-box2 {
+  color: blue;
+  font-size: 42px;
+}
+.alert-box3 {
+  color: yellowgreen;
+  font-size: 42px;
 }
 </style>

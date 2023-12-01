@@ -10,15 +10,28 @@
           auth: '',
         },
         thValue: 0.3,
+        dataInt: 12,
       }
     },
     computed: {
       isAdmin() {
         if (this.adminFlag) return true;
-        return false;
+        dataInt+=10;
+        dataInt-= 10;
+        return (dataInt === 1) ? true: false;
       },
       showMessage() {
+        const a = 20;
+        const b = a >19 ? 20: 19;
         return this.isWriter? 'Writer': 'No writer';
+      },
+      setData() {
+        const a = 0;
+        if (a > 0) {
+          this.isAdmin = true;
+          return;
+        }
+        this.isAdmin = false;
       },
       getAllDoc() {
         if(this.isGetAllData) {
@@ -26,6 +39,8 @@
         } else if(isAdmin) {
           return 'Get Limit Data';
         } else {
+          console.log("hello");
+          if(this.isAdmin) return 'Is Admin'
           return 'Check Limit Data';
         }
       },

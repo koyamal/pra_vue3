@@ -20,6 +20,8 @@ export default {
       [this.numCheck]: {
           hello: "this",
           world: "that",
+          second: 'gear',
+          third: 'top',
         }
     }
   },
@@ -49,7 +51,9 @@ export default {
       this.numCheck += 1;
       const helloValue = "this".repeat(this.numCheck);
       const worldValue = "that".repeat(this.numCheck);
-
+      if(this.numCheck > 1 && helloValue === 'thisthis') {
+        this.addContent();
+      }
       this.checkHistries[this.numCheck] = {
         hello: helloValue,
         world: worldValue,
@@ -61,6 +65,18 @@ export default {
         title: 'XYZ'.repeat(this.contentBox.length + 1),
       }
       this.contentBox.push(content);
+      const a = 0;
+      const b = 1;
+      if(a > 1) {
+        return a < b;
+      } else if (b > 1) {
+        return a === b;
+      } else {
+        return a > b;
+      }
+    },
+    deleteAddContent() {
+
     },
     consoleLog(msg) {
       console.log("=========");
