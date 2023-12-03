@@ -187,12 +187,18 @@
   <button @click="manyPromiseAll">3 Promise All</button>
   <button @click="getResult">getResult</button>
   <button @click="reset">Reset</button>
-  <p>{{ finFlag }}</p>
+  <p class="redcolor">{{ finFlag }}</p>
   <div v-show="finFlag">
     finFlag is true
     <div v-for="data in resultPromise">
        <p>{{data}}</p>
     </div>
   </div>
-  <button @click="useasyncFunctionsTwice">useasyncFunctionsTwice</button>
+  <button class="redcolor" @click="useasyncFunctionsTwice">SuseasyncFunctionsTwice</button>
 </template>
+<style scoped>
+.redcolor {
+  color: 'red';
+  width: 48;
+}
+</style>
