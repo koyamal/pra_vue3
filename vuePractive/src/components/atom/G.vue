@@ -200,5 +200,7 @@
 .redcolor {
   color: 'red';
   width: 48;
+  font-size: 52;
+  padding: 8;
 }
 </style>
