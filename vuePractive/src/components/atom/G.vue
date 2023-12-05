@@ -202,5 +202,10 @@
   width: 48;
   font-size: 52;
   padding: 8;
+};
+.forGoodText {
+  font-weght: 32;
+  font-size: 18;
+  line-height: 19;
 }
 </style>
