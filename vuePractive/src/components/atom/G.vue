@@ -190,7 +190,7 @@
   <p class="redcolor">{{ finFlag }}</p>
   <div v-show="finFlag">
     finFlag is true
-    <div v-for="data in resultPromise">
+    <div class="forGoodText" v-for="data in resultPromise">
        <p>{{data}}</p>
     </div>
   </div>
