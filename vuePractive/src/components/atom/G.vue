@@ -107,6 +107,7 @@
         try {
           console.log("try");
         } catch (error) {
+          const a = "error";
           console.log(error);
         }
       }
