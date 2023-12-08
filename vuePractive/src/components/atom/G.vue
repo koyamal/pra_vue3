@@ -102,6 +102,14 @@
           })
         }
       },
+      catchError() {
+        console.log("hello");
+        try {
+          console.log("try");
+        } catch {
+
+        }
+      }
       useMap() {
         const docs = ["a", "b", "c"];
         docs.forEach((data) => {
