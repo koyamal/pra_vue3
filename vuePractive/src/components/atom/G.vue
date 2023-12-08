@@ -106,8 +106,9 @@
         console.log("hello");
         try {
           console.log("try");
-        } catch {
-
+        } catch (error) {
+          const a = "error";
+          console.log(error);
         }
       }
       useMap() {
