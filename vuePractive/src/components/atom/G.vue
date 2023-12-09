@@ -109,6 +109,8 @@
         } catch (error) {
           const a = "error";
           console.log(error);
+        } finally {
+          console.log("fin.")
         }
       }
       useMap() {
