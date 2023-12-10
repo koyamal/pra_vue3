@@ -110,7 +110,11 @@
           const a = "error";
           console.log(error);
         } finally {
-          console.log("fin.")
+          const a = true;
+          const b = false;
+          const c = a && b;
+          console.log("fin.");
+          console.log("");
         }
       }
       useMap() {
