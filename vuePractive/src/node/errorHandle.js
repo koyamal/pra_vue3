@@ -8,4 +8,6 @@ try {
   console.log(e.message);
 }
 
+throw new Error("clash");
+
 console.log("end");
