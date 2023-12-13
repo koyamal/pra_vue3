@@ -7,7 +7,8 @@ try {
 } catch(e) {
   console.log(e.message);
 } finally {
-  console.log("fin")
+  throw new Error("fin");
+  console.log("fin");
 }
 
 throw new Error("clash");
