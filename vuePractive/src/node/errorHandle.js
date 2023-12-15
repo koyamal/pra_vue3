@@ -10,6 +10,4 @@ try {
   throw new Error("fin");
 }
 
-throw new Error("clash");
-
 console.log("end");
