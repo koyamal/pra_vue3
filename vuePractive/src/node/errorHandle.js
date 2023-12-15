@@ -9,5 +9,3 @@ try {
 } finally {
   throw new Error("fin");
 }
-
-console.log("end");
