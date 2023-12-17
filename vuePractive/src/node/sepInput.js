@@ -1,4 +1,4 @@
-const result = [["A", "B"], ["C", "D"], ["E", "F"]];
+const result = [["A", "B"], ["C", "D"], ["E", "F"], ["GH"]];
 
 const [ab, cd, ef] = result;
 
