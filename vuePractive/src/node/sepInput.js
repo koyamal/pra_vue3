@@ -7,3 +7,7 @@ console.log("cd", cd);
 console.log("ef", ef);
 
 console.log(...result);
+
+const output = {...result}
+
+console.log(output);
