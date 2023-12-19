@@ -8,6 +8,6 @@ console.log("ef", ef);
 
 console.log(...result);
 
-const output = {...result}
+const output = {...result, 'C': 'D'}
 
 console.log(output);
