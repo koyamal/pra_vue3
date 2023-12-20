@@ -5,3 +5,4 @@ const checkText = function(value) {
 
 console.log(checkText("helle"));
 console.log(checkText("hel le"));
+console.log(checkText("hel　le"));
