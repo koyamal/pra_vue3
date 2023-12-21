@@ -34,13 +34,28 @@
     }
   },
   methods: {
+    processCheck() {
+      // const processValue = 'dev';
+      const processValue = 'prod';
+      const backupName = processValue === 'dev' ? '_fromDev': '';
+      console.log(backupName);
+      if(processValue === 'dev') return 0;
+      if(processValue === 'prod') return 0;
+      if('a' === 'b') return 1;
+    },
     penInfoOutput() {
       console.log(this.penColor);
+      const b = 0;
+      if(b > 1) return 1;
+      if(b < 1) return 1;
     },
     reset() {
       this.numberList = [
-        1, 3, 3, 4, 5
+        1, 3, 3, 4, 5, 6
       ];
+      for(num of this.numberList) {
+        console.log(num);
+      }
       this.checkHistories = [
         {
           draft: { userName: 'tom', updateDate: '20230815 20:00' },
@@ -98,6 +113,7 @@
   }
 </script>
 <template>
+  <button @click="processCheck">processCheck</button>
   <div>This is C</div>
   <button @click="editAndShowNumberList">List</button>
   <button @click="editSpreadNumberList">SpreadList</button>
