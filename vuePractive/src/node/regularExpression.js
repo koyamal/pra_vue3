@@ -13,8 +13,14 @@ const checkRe = (reg, value) => {
 // console.log(checkText("hel　le"));
 
 
-const re = /abc/;
+// const re = /abc/;
 
-console.log(checkRe('abc' ,"Hello, abcdefg"));
-console.log(checkRe('abc' ,"Hello, cbadefg"));
-console.log(checkRe('abc' ,"Helloa bcefg"));
+// console.log(checkRe('abc' ,"Hello, abcdefg"));
+// console.log(checkRe('abc' ,"Hello, cbadefg"));
+// console.log(checkRe('abc' ,"Helloa bcefg"));
+
+
+//  1 個の "a" に 0 個以上の "b" が続き、さらに "c" が続くものに一致させる
+console.log(checkRe('ab*c', 'aac'));
+console.log(checkRe('ab*c', 'aabc'));
+console.log(checkRe('ab*c', 'aabbbbbbbc'));
