@@ -15,5 +15,6 @@ const checkRe = (reg, value) => {
 
 const re = /abc/;
 
-console.log(checkRe('abc' ,"Hello, acdefg"));
+console.log(checkRe('abc' ,"Hello, abcdefg"));
 console.log(checkRe('abc' ,"Hello, cbadefg"));
+console.log(checkRe('abc' ,"Helloa bcefg"));
