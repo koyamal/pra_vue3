@@ -26,6 +26,11 @@ const checkRe = (reg, value) => {
 // console.log(checkRe('ab*c', 'aabbbbbbbc'));
 
 // 先頭のAを検出
-console.log(checkRe('^A', 'Abc')); // true
-console.log(checkRe('^A', 'bAc')); // false
-console.log(checkRe('^A', 'b Ac')); // false
+// console.log(checkRe('^A', 'Abc')); // true
+// console.log(checkRe('^A', 'bAc')); // false
+// console.log(checkRe('^A', 'b Ac')); // false
+
+// 末尾のtを検出
+console.log(checkRe('t$', 'eat')); // true
+console.log(checkRe('t$', 'top')); // false
+console.log(checkRe('t$', 'topt ')); // false
