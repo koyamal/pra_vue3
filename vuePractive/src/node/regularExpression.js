@@ -31,6 +31,12 @@ const checkRe = (reg, value) => {
 // console.log(checkRe('^A', 'b Ac')); // false
 
 // 末尾のtを検出
-console.log(checkRe('t$', 'eat')); // true
-console.log(checkRe('t$', 'top')); // false
-console.log(checkRe('t$', 'topt ')); // false
+// console.log(checkRe('t$', 'eat')); // true
+// console.log(checkRe('t$', 'top')); // false
+// console.log(checkRe('t$', 'topt ')); // false
+
+// 区切り前のooを検出
+console.log(checkRe(/oo\b/, 'moon')); // false
+console.log(checkRe(/oo\b/, 'moo n')); // true
+console.log(checkRe(/oon\b/, 'moon')); // true
+
