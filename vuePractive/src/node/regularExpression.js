@@ -35,3 +35,12 @@ const checkRe = (reg, value) => {
 // console.log(checkRe('t$', 'top')); // false
 // console.log(checkRe('t$', 'topt ')); // false
 
+// 区切り前のooを検出
+console.log(checkRe('oo\b', 'moon'));
+console.log(checkRe('oo\b', 'moo'));
+console.log(checkRe('oon\b', 'moon'));
+
+const re = /oon\b/;
+const re2 = new RegExp(/oon\b/);
+const a = re2.test('moon');
+console.log(a);
