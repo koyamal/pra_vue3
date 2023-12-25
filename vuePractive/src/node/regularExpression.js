@@ -21,6 +21,11 @@ const checkRe = (reg, value) => {
 
 
 //  1 個の "a" に 0 個以上の "b" が続き、さらに "c" が続くものに一致させる
-console.log(checkRe('ab*c', 'aac'));
-console.log(checkRe('ab*c', 'aabc'));
-console.log(checkRe('ab*c', 'aabbbbbbbc'));
+// console.log(checkRe('ab*c', 'aac'));
+// console.log(checkRe('ab*c', 'aabc'));
+// console.log(checkRe('ab*c', 'aabbbbbbbc'));
+
+// 先頭のAを検出
+console.log(checkRe('^A', 'Abc'));
+console.log(checkRe('^A', 'bAc'));
+console.log(checkRe('^A', 'b Ac'));
