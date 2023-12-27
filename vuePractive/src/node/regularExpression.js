@@ -41,3 +41,4 @@ const checkRe = (reg, value) => {
 // console.log(checkRe(/oon\b/, 'moon')); // true
 
 console.log(checkRe(/\Bon/, 'at noon'));
+console.log(checkRe(/yes\B/, 'possibly yesterday'));
