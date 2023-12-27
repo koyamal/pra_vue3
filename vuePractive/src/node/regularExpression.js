@@ -47,5 +47,5 @@ const matchRe = (reg, value) => {
 console.log(checkRe(/\Bon/, 'at noon'));
 console.log(checkRe(/yes\B/, 'possibly yesterday'));
 
-console.log(matchRe(/\Bon/, 'at noon'));
-console.log(matchRe(/ye\B/, 'possibly yesterday'));
+console.log(matchRe(/\Bon/, 'at noon')); // true
+console.log(matchRe(/ye\B/, 'possibly yesterday')); // true
