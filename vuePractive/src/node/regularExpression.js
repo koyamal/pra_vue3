@@ -7,6 +7,10 @@ const checkRe = (reg, value) => {
   return re.test(value);
 }
 
+const matchRe = (reg, value) => {
+  const re = new RegExp(reg);
+  return value.match(re);
+}
 
 // console.log(checkText("helle "));
 // console.log(checkText(" hel le"));
@@ -42,3 +46,6 @@ const checkRe = (reg, value) => {
 
 console.log(checkRe(/\Bon/, 'at noon'));
 console.log(checkRe(/yes\B/, 'possibly yesterday'));
+
+console.log(matchRe(/\Bon/, 'at noon'));
+console.log(matchRe(/ye\B/, 'possibly yesterday'));
