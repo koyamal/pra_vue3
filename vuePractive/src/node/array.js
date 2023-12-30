@@ -9,3 +9,9 @@ const arr3 = [element0, element1, element2];
 console.log(arr1);
 console.log(arr2);
 console.log(arr3);
+
+console.log(arr1['length']);
+
+arr1.length = 2;
+console.log(arr1.length);
+console.log(arr2.length);
