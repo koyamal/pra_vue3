@@ -19,3 +19,9 @@ mySet.add("some text");
 mySet.add("foo");
 
 console.log(mySet);
+
+const arry1 = [...mySet];
+console.log(arry1);
+
+const arry2 = Array.from(mySet);
+console.log(arry2);
