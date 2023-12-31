@@ -8,3 +8,7 @@ console.log(sayings);
 console.log(sayings.get("dog"));
 console.log(sayings.has("dog"));  // true
 console.log(sayings.has("bird")); // false
+
+for (let [key, value] of sayings) {
+  console.log(key + " goes " + value);
+}
