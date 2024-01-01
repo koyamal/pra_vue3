@@ -5,3 +5,4 @@ myCar.year = 1969;
 
 console.log(myCar);
 console.log(myCar.color);
+console.log(myCar["make"]);
