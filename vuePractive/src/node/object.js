@@ -26,3 +26,5 @@ for(let i in myObj) {
   console.log(i);
   console.log(myObj[i]);
 }
+
+console.log(Object.keys(myObj));
