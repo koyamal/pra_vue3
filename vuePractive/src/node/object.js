@@ -21,3 +21,8 @@ myObj[obj] = "オブジェクト";
 myObj[""] = "空文字列も可能";
 
 console.log(myObj);
+
+for(let i in myObj) {
+  console.log(i);
+  console.log(myObj[i]);
+}
