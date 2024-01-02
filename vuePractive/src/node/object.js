@@ -28,3 +28,5 @@ for(let i in myObj) {
 }
 
 console.log(Object.keys(myObj));
+
+console.log(Object.getOwnPropertyNames(myObj));
