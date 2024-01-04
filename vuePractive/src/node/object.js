@@ -30,3 +30,11 @@ for(let i in myObj) {
 console.log(Object.keys(myObj));
 
 console.log(Object.getOwnPropertyNames(myObj));
+
+var obj = {
+  property_1: "value_1",
+  2: "value_2",
+  "property n": "value_n",
+};
+
+console.log(obj);
