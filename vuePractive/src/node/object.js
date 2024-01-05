@@ -42,3 +42,10 @@ console.log(obj);
 const myHonda = { color: "red", wheels: 4, engine: { cylinders: 4, size: {height: 100, width: 200} } };
 
 console.log(myHonda);
+
+function Car(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+}
+
