@@ -51,3 +51,6 @@ function Car(make, model, year) {
 
 const kenscar = new Car("Nissan", "300ZX", 1992);
 const vpgscar = new Car("Mazda", "Miata", 1990);
+
+console.log(kenscar);
+console.log(vpgscar);
