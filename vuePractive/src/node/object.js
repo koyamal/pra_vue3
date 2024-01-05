@@ -39,6 +39,6 @@ var obj = {
 
 console.log(obj);
 
-const myHonda = { color: "red", wheels: 4, engine: { cylinders: 4, size: 2.2 } };
+const myHonda = { color: "red", wheels: 4, engine: { cylinders: 4, size: {height: 100, width: 200} } };
 
 console.log(myHonda);
