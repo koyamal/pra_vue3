@@ -43,10 +43,11 @@ const myHonda = { color: "red", wheels: 4, engine: { cylinders: 4, size: {height
 
 console.log(myHonda);
 
-function Car(make, model, year) {
+function Car(make, model, year, owner) {
   this.make = make;
   this.model = model;
   this.year = year;
+  this.owner = owner;
 }
 
 const kenscar = new Car("Nissan", "300ZX", 1992);
@@ -54,3 +55,12 @@ const vpgscar = new Car("Mazda", "Miata", 1990);
 
 console.log(kenscar);
 console.log(vpgscar);
+
+function Person(name, age, sex) {
+  this.name = name;
+  this.age = age;
+  this.sex = sex;
+}
+
+const rand = new Person("Rand McKinnon", 33, "M");
+const ken = new Person("Ken Jones", 39, "M");
