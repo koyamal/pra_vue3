@@ -60,3 +60,6 @@ function Person(name, age, sex) {
   this.age = age;
   this.sex = sex;
 }
+
+const rand = new Person("Rand McKinnon", 33, "M");
+const ken = new Person("Ken Jones", 39, "M");
