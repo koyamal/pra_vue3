@@ -62,8 +62,10 @@ function Person(name, age, sex) {
   this.sex = sex;
 }
 
-const rand = new Person("Rand McKinnon", 33, "M");
+const kinnon = new Person("Rand McKinnon", 33, "M");
 const ken = new Person("Ken Jones", 39, "M");
 
-const car1 = new Car("Eagle", "Talon TSi", 1993, rand);
+const car1 = new Car("Eagle", "Talon TSi", 1993, kinnon);
 const car2 = new Car("Nissan", "300ZX", 1992, ken);
+
+console.log(car1);
