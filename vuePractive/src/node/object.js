@@ -69,3 +69,5 @@ const car1 = new Car("Eagle", "Talon TSi", 1993, kinnon);
 const car2 = new Car("Nissan", "300ZX", 1992, ken);
 
 console.log(car1);
+
+console.log(car2.owner.name);
