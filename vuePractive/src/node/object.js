@@ -54,3 +54,9 @@ const vpgscar = new Car("Mazda", "Miata", 1990);
 
 console.log(kenscar);
 console.log(vpgscar);
+
+function Person(name, age, sex) {
+  this.name = name;
+  this.age = age;
+  this.sex = sex;
+}
