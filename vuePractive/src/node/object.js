@@ -50,11 +50,11 @@ function Car(make, model, year, owner) {
   this.owner = owner;
 }
 
-const kenscar = new Car("Nissan", "300ZX", 1992);
-const vpgscar = new Car("Mazda", "Miata", 1990);
+// const kenscar = new Car("Nissan", "300ZX", 1992);
+// const vpgscar = new Car("Mazda", "Miata", 1990);
 
-console.log(kenscar);
-console.log(vpgscar);
+// console.log(kenscar);
+// console.log(vpgscar);
 
 function Person(name, age, sex) {
   this.name = name;
@@ -62,5 +62,10 @@ function Person(name, age, sex) {
   this.sex = sex;
 }
 
-const rand = new Person("Rand McKinnon", 33, "M");
+const kinnon = new Person("Rand McKinnon", 33, "M");
 const ken = new Person("Ken Jones", 39, "M");
+
+const car1 = new Car("Eagle", "Talon TSi", 1993, kinnon);
+const car2 = new Car("Nissan", "300ZX", 1992, ken);
+
+console.log(car1);
