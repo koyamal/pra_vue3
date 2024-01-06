@@ -43,10 +43,11 @@ const myHonda = { color: "red", wheels: 4, engine: { cylinders: 4, size: {height
 
 console.log(myHonda);
 
-function Car(make, model, year) {
+function Car(make, model, year, owner) {
   this.make = make;
   this.model = model;
   this.year = year;
+  this.owner = owner;
 }
 
 const kenscar = new Car("Nissan", "300ZX", 1992);
