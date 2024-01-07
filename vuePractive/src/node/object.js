@@ -81,7 +81,14 @@ const myOBJ = {
     console.log("=======start=======");
     console.log(params);
     console.log("=======end=======");
+  },
+
+  myOtherMethod(params) {
+    console.log("=======START=======");
+    console.log(params);
+    console.log("=======END=======");
   }
 };
 
 myOBJ.myMethod("myObj");
+myOBJ.myOtherMethod("myObj");
