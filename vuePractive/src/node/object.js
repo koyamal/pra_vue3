@@ -71,3 +71,6 @@ const car2 = new Car("Nissan", "300ZX", 1992, ken);
 console.log(car1);
 
 console.log(car2.owner.name);
+
+car1.color = "black";
+console.log(car1);
