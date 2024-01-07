@@ -74,3 +74,14 @@ console.log(car2.owner.name);
 
 car1.color = "black";
 console.log(car1);
+
+
+const myOBJ = {
+  myMethod: function(params) {
+    console.log("=======start=======");
+    console.log(params);
+    console.log("=======end=======");
+  }
+};
+
+myOBJ.myMethod("myObj");
