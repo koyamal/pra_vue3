@@ -116,3 +116,6 @@ const sayName = function() {
 
 mA.sayName = sayName;
 mB.sayName = sayName;
+
+mA.sayName();
+mB.sayName();
