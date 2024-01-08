@@ -99,3 +99,17 @@ const myOBJ = {
 
 myOBJ.myMethod("myObj");
 myOBJ.myOtherMethod("myObj");
+
+const mA = {
+  name: 'Tom',
+  age: 23
+}
+
+const mB = {
+  name: 'Bob',
+  age: 25
+}
+
+const sayName = function() {
+  console.log(`My name is ${this.name}`);
+}
