@@ -113,3 +113,6 @@ const mB = {
 const sayName = function() {
   console.log(`My name is ${this.name}`);
 }
+
+mA.sayName = sayName;
+mB.sayName = sayName;
