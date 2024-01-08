@@ -73,6 +73,7 @@ const car1 = new Car("Eagle", "Talon TSi", 1993, kinnon);
 const car2 = new Car("Nissan", "300ZX", 1992, ken);
 
 car1.displayCar();
+car2.displayCar();
 
 console.log(car1);
 
