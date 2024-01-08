@@ -48,6 +48,10 @@ function Car(make, model, year, owner) {
   this.model = model;
   this.year = year;
   this.owner = owner;
+  this.displayCar = function displayCar() {
+    var result = "美しい " + this.year + "年式 " + this.make + " " + this.model;
+    console.log(result);
+  }
 }
 
 // const kenscar = new Car("Nissan", "300ZX", 1992);
@@ -67,6 +71,8 @@ const ken = new Person("Ken Jones", 39, "M");
 
 const car1 = new Car("Eagle", "Talon TSi", 1993, kinnon);
 const car2 = new Car("Nissan", "300ZX", 1992, ken);
+
+car1.displayCar();
 
 console.log(car1);
 
