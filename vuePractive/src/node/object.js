@@ -73,6 +73,7 @@ const car1 = new Car("Eagle", "Talon TSi", 1993, kinnon);
 const car2 = new Car("Nissan", "300ZX", 1992, ken);
 
 car1.displayCar();
+car2.displayCar();
 
 console.log(car1);
 
@@ -98,3 +99,23 @@ const myOBJ = {
 
 myOBJ.myMethod("myObj");
 myOBJ.myOtherMethod("myObj");
+
+const mA = {
+  name: 'Tom',
+  age: 23
+}
+
+const mB = {
+  name: 'Bob',
+  age: 25
+}
+
+const sayName = function() {
+  console.log(`My name is ${this.name}`);
+}
+
+mA.sayName = sayName;
+mB.sayName = sayName;
+
+mA.sayName();
+mB.sayName();
