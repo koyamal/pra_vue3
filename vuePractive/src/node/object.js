@@ -134,3 +134,9 @@ console.log(getSetObj.a);
 console.log(getSetObj.b);
 getSetObj.c = 5;
 console.log(getSetObj.a);
+
+const deleteObj = {
+  age: 23,
+  height: 222,
+  width: 100,
+}
