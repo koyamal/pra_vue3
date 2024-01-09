@@ -122,4 +122,7 @@ mB.sayName();
 
 const getSetObj = {
   a : 100,
+  get b() {
+    return this.a * 10;
+  }
 }
