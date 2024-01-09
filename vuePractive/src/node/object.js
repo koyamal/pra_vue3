@@ -119,3 +119,18 @@ mB.sayName = sayName;
 
 mA.sayName();
 mB.sayName();
+
+const getSetObj = {
+  a : 100,
+  get b() {
+    return this.a * 10;
+  },
+  set c(x) {
+    this.a = x * 2;
+  }
+}
+
+console.log(getSetObj.a);
+console.log(getSetObj.b);
+getSetObj.c = 5;
+console.log(getSetObj.a);
