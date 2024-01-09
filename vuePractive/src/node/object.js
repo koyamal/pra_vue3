@@ -124,5 +124,8 @@ const getSetObj = {
   a : 100,
   get b() {
     return this.a * 10;
+  },
+  set c(x) {
+    this.a = c * 2;
   }
 }
