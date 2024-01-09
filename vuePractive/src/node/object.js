@@ -126,6 +126,11 @@ const getSetObj = {
     return this.a * 10;
   },
   set c(x) {
-    this.a = c * 2;
+    this.a = x * 2;
   }
 }
+
+console.log(getSetObj.a);
+console.log(getSetObj.b);
+getSetObj.c = 5;
+console.log(getSetObj.a);
