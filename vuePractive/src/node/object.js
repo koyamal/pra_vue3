@@ -119,3 +119,7 @@ mB.sayName = sayName;
 
 mA.sayName();
 mB.sayName();
+
+const getSetObj = {
+  a : 100,
+}
