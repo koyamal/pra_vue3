@@ -143,3 +143,5 @@ const deleteObj = {
 console.log(deleteObj);
 delete deleteObj.height;
 console.log(deleteObj);
+
+console.log("height" in deleteObj);
