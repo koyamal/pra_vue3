@@ -141,3 +141,4 @@ const deleteObj = {
   width: 100,
 }
 console.log(deleteObj);
+delete deleteObj.height;
