@@ -140,3 +140,4 @@ const deleteObj = {
   height: 222,
   width: 100,
 }
+console.log(deleteObj);
