@@ -155,3 +155,5 @@ const objB = {
 }
 
 console.log(objA === objB? 'objA === objB': 'objA != objB');
+
+const objC = objA;
