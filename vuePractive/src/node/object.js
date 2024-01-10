@@ -145,3 +145,13 @@ delete deleteObj.height;
 console.log(deleteObj);
 
 console.log("height" in deleteObj);
+
+const objA = {
+  name: 'apple',
+};
+
+const objB = {
+  name: 'apple',
+}
+
+console.log(objA === objB? 'objA === objB': 'objA != objB');
