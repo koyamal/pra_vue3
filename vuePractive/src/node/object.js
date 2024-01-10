@@ -153,3 +153,5 @@ const objA = {
 const objB = {
   name: 'apple',
 }
+
+console.log(objA === objB? 'objA === objB': 'objA != objB');
