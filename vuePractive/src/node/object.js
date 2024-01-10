@@ -159,3 +159,6 @@ console.log(objA === objB? 'objA === objB': 'objA != objB');
 const objC = objA;
 
 console.log(objA === objC? 'objA === objC': 'objA != objC');
+
+objA.name = 'orange';
+console.log(objC.name);
