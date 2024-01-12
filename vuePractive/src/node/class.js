@@ -6,3 +6,6 @@ class MyClass {
     this.myName = userName;
   }
 }
+
+const myInstance = new MyClass('bob');
+console.log(myInstance);
