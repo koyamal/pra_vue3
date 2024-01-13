@@ -11,6 +11,7 @@ class MyClass {
   yourMehotd() {
     console.log(`Your name is ${this.myName}`);
   }
+  static myStaticField = "bar";
 }
 
 const myInstance = new MyClass('bob');
