@@ -8,6 +8,9 @@ class MyClass {
   myMethod() {
     console.log(`My name is ${this.myName}`);
   }
+  yourMehotd() {
+    console.log(`Your name is ${this.myName}`);
+  }
 }
 
 const myInstance = new MyClass('bob');
