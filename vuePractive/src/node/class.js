@@ -15,5 +15,6 @@ class MyClass {
 }
 
 const myInstance = new MyClass('bob');
+// const myInstance2 = MyClass('bob');
 console.log(myInstance);
 myInstance.myMethod();
