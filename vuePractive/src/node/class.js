@@ -24,3 +24,6 @@ class Color {
     this.values = [r, g, b];
   }
 }
+
+const red = new Color(255, 0, 0);
+console.log(red);
