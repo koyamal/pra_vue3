@@ -18,3 +18,9 @@ const myInstance = new MyClass('bob');
 // const myInstance2 = MyClass('bob');
 console.log(myInstance);
 myInstance.myMethod();
+
+class Color {
+  constructor(r, g, b) {
+    this.values = [r, g, b];
+  }
+}
