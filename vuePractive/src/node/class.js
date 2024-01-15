@@ -36,3 +36,4 @@ console.log(red);
 console.log(red.getRed());
 
 console.log(new Color().getBlue === new Color().getBlue);
+console.log(new Color().getRed === new Color().getRed);
