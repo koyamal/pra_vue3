@@ -30,3 +30,4 @@ class Color {
 
 const red = new Color(255, 0, 0);
 console.log(red);
+console.log(red.getRed());
