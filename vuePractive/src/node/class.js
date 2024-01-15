@@ -22,6 +22,9 @@ myInstance.myMethod();
 class Color {
   constructor(r, g, b) {
     this.values = [r, g, b];
+    this.getBlue = function() {
+      return this.values[2];
+    }
   }
   getRed() {
     return this.values[0];
