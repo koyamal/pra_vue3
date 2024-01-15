@@ -22,6 +22,9 @@ myInstance.myMethod();
 class Color {
   constructor(r, g, b) {
     this.values = [r, g, b];
+    this.getBlue = function() {
+      return this.values[2];
+    }
   }
   getRed() {
     return this.values[0];
@@ -31,3 +34,6 @@ class Color {
 const red = new Color(255, 0, 0);
 console.log(red);
 console.log(red.getRed());
+
+console.log(new Color().getBlue === new Color().getBlue);
+console.log(new Color().getRed === new Color().getRed);
