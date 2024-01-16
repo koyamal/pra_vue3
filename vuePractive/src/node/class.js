@@ -44,3 +44,5 @@ console.log(new Color().getBlue === new Color().getBlue);
 console.log(new Color().getRed === new Color().getRed);
 
 // console.log(red.#values); // error
+
+red.setRed(3);
