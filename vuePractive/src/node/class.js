@@ -29,6 +29,9 @@ class Color {
   getRed() {
     return this.values[0];
   }
+  setRed(value) {
+    this.values[0] = value;
+  }
 }
 
 const red = new Color(255, 0, 0);
