@@ -20,17 +20,18 @@ console.log(myInstance);
 myInstance.myMethod();
 
 class Color {
+  #values;
   constructor(r, g, b) {
-    this.values = [r, g, b];
+    this.#values = [r, g, b];
     this.getBlue = function() {
-      return this.values[2];
+      return this.#values[2];
     }
   }
   getRed() {
-    return this.values[0];
+    return this.#values[0];
   }
   setRed(value) {
-    this.values[0] = value;
+    this.#values[0] = value;
   }
 }
 
@@ -40,3 +41,5 @@ console.log(red.getRed());
 
 console.log(new Color().getBlue === new Color().getBlue);
 console.log(new Color().getRed === new Color().getRed);
+
+// console.log(red.#values); // error
