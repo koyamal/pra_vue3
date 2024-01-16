@@ -31,6 +31,7 @@ class Color {
     return this.#values[0];
   }
   setRed(value) {
+    if(value % 3 === 0) throw new Error("Invalid value");
     this.#values[0] = value;
   }
 }
