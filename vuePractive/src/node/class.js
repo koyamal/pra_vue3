@@ -45,4 +45,4 @@ console.log(new Color().getRed === new Color().getRed);
 
 // console.log(red.#values); // error
 
-red.setRed(3);
+// red.setRed(3);
