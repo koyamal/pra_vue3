@@ -34,6 +34,9 @@ class Color {
     if(value % 3 === 0) throw new Error("Invalid value");
     this.#values[0] = value;
   }
+  // deleteValues() {
+  //   delete this.#values; // error
+  // }
 }
 
 const red = new Color(255, 0, 0);
