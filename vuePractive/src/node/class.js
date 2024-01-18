@@ -37,6 +37,9 @@ class Color {
   get red() {
     return this.#values[0];
   }
+  set red(value) {
+    this.#values[0] = value;
+  }
   // deleteValues() {
   //   delete this.#values; // error
   // }
@@ -56,4 +59,4 @@ console.log(new Color().getRed === new Color().getRed);
 const blue = new Color(0, 0, 255);
 console.log(blue.red); // 0
 blue.red = 100;
-console.log(blue.red); // 0
+console.log(blue.red); // 100
