@@ -34,6 +34,9 @@ class Color {
     if(value % 3 === 0) throw new Error("Invalid value");
     this.#values[0] = value;
   }
+  get red() {
+    return this.#values[0];
+  }
   // deleteValues() {
   //   delete this.#values; // error
   // }
@@ -49,3 +52,6 @@ console.log(new Color().getRed === new Color().getRed);
 // console.log(red.#values); // error
 
 // red.setRed(3);
+
+const blue = new Color(0, 0, 255);
+console.log(blue.red);
