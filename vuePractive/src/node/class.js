@@ -55,3 +55,5 @@ console.log(new Color().getRed === new Color().getRed);
 
 const blue = new Color(0, 0, 255);
 console.log(blue.red);
+blue.red = 100;
+console.log(blue.red);
