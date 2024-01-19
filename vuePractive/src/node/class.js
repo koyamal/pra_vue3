@@ -60,3 +60,9 @@ const blue = new Color(0, 0, 255);
 console.log(blue.red); // 0
 blue.red = 100;
 console.log(blue.red); // 100
+
+class MyClassMath {
+  randValue = Math.random();
+}
+console.log(new MyClassMath().randValue);
+console.log(new MyClassMath().randValue);
