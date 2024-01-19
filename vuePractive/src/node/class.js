@@ -64,3 +64,4 @@ console.log(blue.red); // 100
 class MyClassMath {
   randValue = Math.random();
 }
+console.log(new MyClassMath().randValue);
