@@ -71,3 +71,6 @@ console.log(new MyClassMath().randValue);
 console.log(new MyClassMath().randValue);
 console.log(new MyClassMath().randVal);
 console.log(new MyClassMath().randVal);
+
+const rand1 = new MyClassMath();
+const rand2 = new MyClassMath();
