@@ -69,3 +69,5 @@ class MyClassMath {
 }
 console.log(new MyClassMath().randValue);
 console.log(new MyClassMath().randValue);
+console.log(new MyClassMath().randVal);
+console.log(new MyClassMath().randVal);
