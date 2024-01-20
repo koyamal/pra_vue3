@@ -63,6 +63,11 @@ console.log(blue.red); // 100
 
 class MyClassMath {
   randValue = Math.random();
+  constructor() {
+    this.randVal = Math.random();
+  }
 }
 console.log(new MyClassMath().randValue);
 console.log(new MyClassMath().randValue);
+console.log(new MyClassMath().randVal);
+console.log(new MyClassMath().randVal);
