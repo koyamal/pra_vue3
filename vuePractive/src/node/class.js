@@ -76,11 +76,11 @@ const rand1 = new MyClassMath();
 const rand2 = new MyClassMath();
 
 console.log(rand1.randValue);
-console.log(rand1.randValue);
+// console.log(rand1.randValue);
 console.log(rand2.randValue);
-console.log(rand2.randValue);
+// console.log(rand2.randValue);
 
-console.log(rand1.randVal);
-console.log(rand1.randVal);
-console.log(rand2.randVal);
-console.log(rand2.randVal);
+// console.log(rand1.randVal);
+// console.log(rand1.randVal);
+// console.log(rand2.randVal);
+// console.log(rand2.randVal);
