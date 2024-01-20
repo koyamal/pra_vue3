@@ -79,3 +79,8 @@ console.log(rand1.randValue);
 console.log(rand1.randValue);
 console.log(rand2.randValue);
 console.log(rand2.randValue);
+
+console.log(rand1.randVal);
+console.log(rand1.randVal);
+console.log(rand2.randVal);
+console.log(rand2.randVal);
