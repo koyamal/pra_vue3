@@ -40,6 +40,9 @@ class Color {
   set red(value) {
     this.#values[0] = value;
   }
+  static isValid() {
+    return true;
+  }
   // deleteValues() {
   //   delete this.#values; // error
   // }
