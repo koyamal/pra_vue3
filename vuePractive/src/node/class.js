@@ -40,6 +40,9 @@ class Color {
   set red(value) {
     this.#values[0] = value;
   }
+  static isValid(r, g, b) {
+    return r >= 0 && r <= 255 && g >= 0 && g <= 255 && b >= 0 && b <= 255;
+  }
   // deleteValues() {
   //   delete this.#values; // error
   // }
