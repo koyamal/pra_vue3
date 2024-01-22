@@ -100,4 +100,7 @@ class ColorWithAlpha extends Color {
     super(r, g, b);
     this.#alpha = a;
   }
+  get alpha() {
+    return this.#alpha;
+  }
 }
