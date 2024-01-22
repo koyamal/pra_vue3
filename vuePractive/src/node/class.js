@@ -103,4 +103,7 @@ class ColorWithAlpha extends Color {
   get alpha() {
     return this.#alpha;
   }
+  set alpha(val) {
+    this.#alpha = val;
+  }
 }
