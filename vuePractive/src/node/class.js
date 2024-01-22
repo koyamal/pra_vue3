@@ -93,3 +93,17 @@ console.log(Color.isValid(2, 3, 5));
 const colorA = new Color(2, 3, 5);
 // console.log(colorA.isValid(2, 3, 5)); // error
 // console.log(colorA.isValid()); // error
+
+class ColorWithAlpha extends Color {
+  #alpha;
+  constructor(r, g, b, a) {
+    super(r, g, b);
+    this.#alpha = a;
+  }
+  get alpha() {
+    return this.#alpha;
+  }
+  set alpha(val) {
+    this.#alpha = val;
+  }
+}
