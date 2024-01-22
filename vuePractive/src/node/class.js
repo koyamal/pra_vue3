@@ -107,3 +107,7 @@ class ColorWithAlpha extends Color {
     this.#alpha = val;
   }
 }
+
+const colorAlpha = new ColorWithAlpha(255, 255, 0, 10);
+console.log(colorAlpha.alpha);
+console.log(colorAlpha.red);
