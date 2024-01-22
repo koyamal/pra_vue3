@@ -96,4 +96,7 @@ const colorA = new Color(2, 3, 5);
 
 class ColorWithAlpha extends Color {
   #alpha;
+  constructor(r, g, b, a) {
+    super(r, g, b);
+  }
 }
