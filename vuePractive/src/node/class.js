@@ -109,3 +109,4 @@ class ColorWithAlpha extends Color {
 }
 
 const colorAlpha = new ColorWithAlpha(255, 255, 0, 10);
+console.log(colorAlpha.alpha);
