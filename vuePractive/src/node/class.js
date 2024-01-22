@@ -98,5 +98,6 @@ class ColorWithAlpha extends Color {
   #alpha;
   constructor(r, g, b, a) {
     super(r, g, b);
+    this.#alpha = a;
   }
 }
