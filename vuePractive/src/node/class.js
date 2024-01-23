@@ -109,6 +109,9 @@ class ColorWithAlpha extends Color {
   set alpha(val) {
     this.#alpha = val;
   }
+  overRided() {
+    console.log("This function is overRided by ColorWithAlpha");
+  }
 }
 
 const colorAlpha = new ColorWithAlpha(255, 255, 0, 10);
