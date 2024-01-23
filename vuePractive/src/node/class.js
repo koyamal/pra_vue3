@@ -27,6 +27,9 @@ class Color {
       return this.#values[2];
     }
   }
+  overRided() {
+    console.log("This is Original func");
+  }
   getRed() {
     return this.#values[0];
   }
