@@ -110,6 +110,7 @@ class ColorWithAlpha extends Color {
     this.#alpha = val;
   }
   overRided() {
+    super.overRided();
     console.log("This function is overRided by ColorWithAlpha");
   }
 }
