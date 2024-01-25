@@ -80,10 +80,12 @@ console.log(new MyClassMath().randVal);
 
 const rand1 = new MyClassMath();
 const rand2 = new MyClassMath();
+const rand3 = new MyClassMath();
 
 console.log(rand1.randValue);
 // console.log(rand1.randValue);
 console.log(rand2.randValue);
+console.log(rand3.randValue);
 // console.log(rand2.randValue);
 
 // console.log(rand1.randVal);
