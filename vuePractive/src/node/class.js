@@ -115,6 +115,9 @@ class ColorWithAlpha extends Color {
     super.overRided();
     console.log("This function is overRided by ColorWithAlpha");
   }
+  static isValid(r, g, b, a) {
+    return super.isValid(r, g, b) && a >= 0 && a <= 1;
+  }
 }
 
 const colorAlpha = new ColorWithAlpha(255, 255, 0, 10);
