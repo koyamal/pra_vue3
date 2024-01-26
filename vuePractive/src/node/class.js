@@ -124,3 +124,6 @@ const colorAlpha = new ColorWithAlpha(255, 255, 0, 10);
 console.log(colorAlpha.alpha);
 console.log(colorAlpha.red);
 colorAlpha.overRided();
+
+const a = ColorWithAlpha.isValid(255, 255, 255, 0.9);
+console.log(a);
