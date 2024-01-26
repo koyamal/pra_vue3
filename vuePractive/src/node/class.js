@@ -115,7 +115,8 @@ class ColorWithAlpha extends Color {
     super.overRided();
     console.log("This function is overRided by ColorWithAlpha");
   }
-  static isValid() {
+  static isValid(r, g, b, a) {
+    return super.isValid(r, g, b);
   }
 }
 
