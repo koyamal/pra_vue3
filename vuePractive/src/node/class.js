@@ -125,5 +125,5 @@ console.log(colorAlpha.alpha);
 console.log(colorAlpha.red);
 colorAlpha.overRided();
 
-const a = ColorWithAlpha.isValid(255, 255, 255, 0.9);
-console.log(a);
+console.log(ColorWithAlpha.isValid(255, 255, 255, 0.9));
+console.log(ColorWithAlpha.isValid(255, 255, 255, 9));
