@@ -119,7 +119,7 @@ class ColorWithAlpha extends Color {
     return super.isValid(r, g, b) && a >= 0 && a <= 1;
   }
   accessToValues() {
-    console.log(this.#values);
+    // console.log(this.#values); // error
   }
 }
 
