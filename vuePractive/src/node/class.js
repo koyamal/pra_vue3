@@ -118,6 +118,9 @@ class ColorWithAlpha extends Color {
   static isValid(r, g, b, a) {
     return super.isValid(r, g, b) && a >= 0 && a <= 1;
   }
+  accessToValues() {
+    // console.log(this.#values); // error
+  }
 }
 
 const colorAlpha = new ColorWithAlpha(255, 255, 0, 10);
