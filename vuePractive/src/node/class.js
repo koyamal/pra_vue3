@@ -130,3 +130,5 @@ colorAlpha.overRided();
 
 console.log(ColorWithAlpha.isValid(255, 255, 255, 0.9));
 console.log(ColorWithAlpha.isValid(255, 255, 255, 9));
+
+console.log(colorAlpha instanceof ColorWithAlpha);
