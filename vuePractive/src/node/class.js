@@ -46,6 +46,9 @@ class Color {
   static isValid(r, g, b) {
     return r >= 0 && r <= 255 && g >= 0 && g <= 255 && b >= 0 && b <= 255;
   }
+  static isStaticFunc(value) {
+    return value * value;
+  }
   // deleteValues() {
   //   delete this.#values; // error
   // }
