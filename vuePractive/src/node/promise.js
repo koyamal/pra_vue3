@@ -1,8 +1,9 @@
 const promiseFunc = new Promise((resolve, reject) => {
   setTimeout(() => {
     console.log("hello");
-    resolve();
+    // resolve();
+    reject();
   }, 1000);
 });
 
-promiseFunc.then(() => {console.log("done")});
+promiseFunc.then(() => {console.log("done")}, () => {console.log("reject")});
