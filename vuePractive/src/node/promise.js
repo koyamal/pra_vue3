@@ -6,4 +6,7 @@ const promiseFunc = new Promise((resolve, reject) => {
   }, 300);
 });
 
-promiseFunc.then((val) => {console.log("done", val)}, (val) => {console.log("reject", val)});
+promiseFunc.then(
+  (val) => {console.log("done", val)},
+  (val) => {console.log("reject", val)}
+);
