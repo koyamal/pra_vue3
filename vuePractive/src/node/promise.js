@@ -6,13 +6,15 @@ const promiseFunc = new Promise((resolve, reject) => {
   }, 300);
 });
 
-promiseFunc.then(
-  (val) => {console.log("done", val)},
-  (val) => {console.log("reject", val)}
-);
+console.log(promiseFunc)
 
-const a = promiseFunc;
-const b = a.then();
+// promiseFunc.then(
+//   (val) => {console.log("done", val)},
+//   (val) => {console.log("reject", val)}
+// );
 
-console.log(a);
-console.log(b);
+// const a = promiseFunc;
+// const b = a.then();
+
+// console.log(a);
+// console.log(b);
