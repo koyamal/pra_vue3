@@ -10,3 +10,9 @@ promiseFunc.then(
   (val) => {console.log("done", val)},
   (val) => {console.log("reject", val)}
 );
+
+const a = promiseFunc;
+const b = a.then();
+
+console.log(a);
+console.log(b);
