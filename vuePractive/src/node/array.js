@@ -34,3 +34,6 @@ const int16View = new Int16Array(buffer);
 for (let i = 0; i < int16View.length; i++) {
   console.log(`Entry ${i}: ${int16View[i]}`);
 }
+
+int16View[0] = 32;
+console.log(`Entry 0 in the 32-bit array is now ${int32View[0]}`);
