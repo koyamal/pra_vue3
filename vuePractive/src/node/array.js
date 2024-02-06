@@ -37,3 +37,11 @@ for (let i = 0; i < int16View.length; i++) {
 
 int16View[0] = 32;
 console.log(`Entry 0 in the 32-bit array is now ${int32View[0]}`);
+
+const buffer2 = new ArrayBuffer(24);
+
+// ... read the data into the buffer ...
+
+const idView = new Uint32Array(buffer2, 0, 1);
+const usernameView = new Uint8Array(buffer2, 4, 16);
+const amountDueView = new Float32Array(buffer2, 20, 1);
