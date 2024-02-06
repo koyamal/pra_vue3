@@ -45,3 +45,6 @@ const buffer2 = new ArrayBuffer(24);
 const idView = new Uint32Array(buffer2, 0, 1);
 const usernameView = new Uint8Array(buffer2, 4, 16);
 const amountDueView = new Float32Array(buffer2, 20, 1);
+
+const typedArray = new Uint8Array([1, 2, 3, 4]);
+const normalArray = Array.from(typedArray);
