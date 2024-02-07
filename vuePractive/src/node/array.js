@@ -48,3 +48,6 @@ const amountDueView = new Float32Array(buffer2, 20, 1);
 
 const typedArray = new Uint8Array([1, 2, 3, 4]);
 const normalArray = Array.from(typedArray);
+
+const normalArray2 = [...typedArray];
+console.log(normalArray2);
