@@ -52,3 +52,6 @@ console.log(normalArray);
 
 const normalArray2 = [...typedArray];
 console.log(normalArray2);
+
+const typedArray3 = new Uint8Array([1, 2, 3, 4]);
+const normalArray3 = Array.prototype.slice.call(typedArray3);
