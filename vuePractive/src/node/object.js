@@ -162,3 +162,21 @@ console.log(objA === objC? 'objA === objC': 'objA != objC');
 
 objA.name = 'orange';
 console.log(objC.name);
+
+const key_filename = './helloworld.json';
+
+const flagAddData = false;
+
+const newInstance = {
+  pjId: 'pj23498734',
+  ...(flagAddData && {keyFilename: key_filename}),
+};
+
+console.log(newInstance);
+
+const newInstance2 = {
+  pjId: 'pj23498734',
+  keyFilename: flagAddData ? key_filename : undefined
+};
+
+console.log(newInstance2);
