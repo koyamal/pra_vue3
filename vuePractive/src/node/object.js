@@ -164,3 +164,8 @@ objA.name = 'orange';
 console.log(objC.name);
 
 const key_filename = './helloworld.json';
+
+const newInstance = {
+  pjId: 'pj23498734',
+  ...(false && {keyFilename: key_filename}),
+};
