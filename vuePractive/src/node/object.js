@@ -178,3 +178,5 @@ const newInstance2 = {
   pjId: 'pj23498734',
   keyFilename: flagAddData ? key_filename : null
 };
+
+console.log(newInstance2);
