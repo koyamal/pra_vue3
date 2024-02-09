@@ -165,7 +165,7 @@ console.log(objC.name);
 
 const key_filename = './helloworld.json';
 
-const flagAddData = true;
+const flagAddData = false;
 
 const newInstance = {
   pjId: 'pj23498734',
@@ -176,7 +176,7 @@ console.log(newInstance);
 
 const newInstance2 = {
   pjId: 'pj23498734',
-  keyFilename: flagAddData ? key_filename : null
+  keyFilename: flagAddData ? key_filename : undefined
 };
 
 console.log(newInstance2);
