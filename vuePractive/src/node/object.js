@@ -165,6 +165,8 @@ console.log(objC.name);
 
 const key_filename = './helloworld.json';
 
+const flagAddData = true;
+
 const newInstance = {
   pjId: 'pj23498734',
   ...(true && {keyFilename: key_filename}),
