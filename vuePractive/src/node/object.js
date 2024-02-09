@@ -162,3 +162,5 @@ console.log(objA === objC? 'objA === objC': 'objA != objC');
 
 objA.name = 'orange';
 console.log(objC.name);
+
+const key_filename = './helloworld.json';
