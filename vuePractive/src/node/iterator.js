@@ -17,7 +17,11 @@ function makeRangeIterator(start = 0, end = Infinity, step = 1) {
   return rangeIterator;
 }
 
-const iterator = makeRangeIterator(0, 100, 1);
+const iterator = makeRangeIterator(0, 5, 1);
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
+console.log(iterator.next());
 console.log(iterator.next());
 console.log(iterator.next());
 console.log(iterator.next());
