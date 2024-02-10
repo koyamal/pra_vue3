@@ -32,3 +32,5 @@ while(!result.done) {
   console.log(result.value);
   result = iterator.next();
 }
+
+console.log("done")
