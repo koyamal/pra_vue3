@@ -18,16 +18,17 @@ function makeRangeIterator(start = 0, end = Infinity, step = 1) {
 }
 
 const iterator = makeRangeIterator(0, 5, 1);
-console.log(iterator.next());
-console.log(iterator.next());
-console.log(iterator.next());
-console.log(iterator.next());
-console.log(iterator.next());
-console.log(iterator.next());
-console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
 
 let result = iterator.next();
 
 while(!result.done) {
-
+  console.log(result.value);
+  result = iterator.next();
 }
