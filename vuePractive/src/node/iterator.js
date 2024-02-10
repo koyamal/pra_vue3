@@ -25,3 +25,9 @@ console.log(iterator.next());
 console.log(iterator.next());
 console.log(iterator.next());
 console.log(iterator.next());
+
+let result = iterator.next();
+
+while(!result.done) {
+
+}
