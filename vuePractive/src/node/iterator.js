@@ -48,3 +48,8 @@ function* makeRangeIterator2(start = 0, end = 100, step = 1) {
 const ite2 = makeRangeIterator2(0, 5, 1);
 console.log(ite2.next());
 console.log(ite2.next());
+console.log(ite2.next());
+console.log(ite2.next());
+console.log(ite2.next());
+console.log(ite2.next());
+console.log(ite2.next());
