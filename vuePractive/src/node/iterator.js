@@ -33,4 +33,4 @@ while(!result.done) {
   result = iterator.next();
 }
 
-console.log("done")
+console.log("done");
