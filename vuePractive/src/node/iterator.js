@@ -68,14 +68,14 @@ function* fibonacci() {
 }
 
 const sequence = fibonacci();
-console.log(sequence.next().value); // 0
-console.log(sequence.next().value); // 1
-console.log(sequence.next().value); // 1
-console.log(sequence.next().value); // 2
-console.log(sequence.next().value); // 3
-console.log(sequence.next().value); // 5
-console.log(sequence.next().value); // 8
-console.log(sequence.next(true).value); // 0
-console.log(sequence.next().value); // 1
-console.log(sequence.next().value); // 1
-console.log(sequence.next().value); // 2
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next(true).value);
+console.log(sequence.next().value);
+console.log(sequence.next().value);
+console.log(sequence.next().value);
