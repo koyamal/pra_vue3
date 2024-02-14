@@ -20,11 +20,7 @@ function makeRangeIterator(start = 0, end = Infinity, step = 1) {
 const iterator = makeRangeIterator(0, 5, 1);
 // console.log(iterator.next());
 // console.log(iterator.next());
-// console.log(iterator.next());
-// console.log(iterator.next());
-// console.log(iterator.next());
-// console.log(iterator.next());
-// console.log(iterator.next());
+
 
 let result = iterator.next();
 
@@ -46,8 +42,6 @@ function* makeRangeIterator2(start = 0, end = 100, step = 1) {
 }
 
 const ite2 = makeRangeIterator2(0, 5, 1);
-console.log(ite2.next());
-console.log(ite2.next());
 console.log(ite2.next());
 console.log(ite2.next());
 console.log(ite2.next());
