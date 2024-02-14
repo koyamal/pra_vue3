@@ -47,8 +47,6 @@ console.log(ite2.next());
 console.log(ite2.next());
 console.log(ite2.next());
 console.log(ite2.next());
-console.log(ite2.next());
-console.log(ite2.next());
 
 function* fibonacci() {
   let current = 0;
