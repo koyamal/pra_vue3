@@ -5,3 +5,9 @@
 console.log(Math.ceil(4.4)); // 5
 
 console.log(Math.ceil(4)); // 4
+
+/**
+ * Math.cos()
+ * コサイン
+ */
+console.log(Math.cos(1.5707963267948966)); // ほぼゼロ
