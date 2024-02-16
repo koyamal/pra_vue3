@@ -15,3 +15,5 @@ console.log(Math.cos(1.5707963267948966)); // ほぼゼロ
 /**
  * Math..log10()
  */
+console.log(Math.log10(10)); // 1
+console.log(Math.log10(100)); // 2
