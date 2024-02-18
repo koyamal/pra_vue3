@@ -21,3 +21,10 @@ console.log(Math.log10(1000)); // 3
 
 const arr1 = [1, 4, 6, 8, 10];
 console.log(Math.max(...arr1));
+
+/**
+ * Math.rand()
+ */
+console.log(Math.random());
+
+console.log(Math.random());
