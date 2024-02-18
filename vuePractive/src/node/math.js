@@ -24,6 +24,7 @@ console.log(Math.max(...arr1));
 
 /**
  * Math.rand()
+ * 0 ~ 1 の乱数
  */
 console.log(Math.random());
 
