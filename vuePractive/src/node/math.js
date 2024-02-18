@@ -35,3 +35,10 @@ function getRandValue(max) {
 }
 
 console.log(getRandValue(100));
+
+/**
+ * Math.round()
+ * 四捨五入して整数を表示
+ */
+console.log(Math.round(5.4)); // 5
+console.log(Math.round(5.5)); // 6
