@@ -28,3 +28,9 @@ console.log(Math.max(...arr1));
 console.log(Math.random());
 
 console.log(Math.random());
+
+function getRandValue(max) {
+  return Math.random() * max;
+}
+
+console.log(getRandValue(100));
