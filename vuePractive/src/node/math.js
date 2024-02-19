@@ -42,3 +42,9 @@ console.log(getRandValue(100));
  */
 console.log(Math.round(5.4)); // 5
 console.log(Math.round(5.5)); // 6
+
+/**
+ * Math.min()
+ * 最小
+ */
+console.log(Math.min(13,5,6,7,8));
