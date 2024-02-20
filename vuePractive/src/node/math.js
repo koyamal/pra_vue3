@@ -48,3 +48,9 @@ console.log(Math.round(5.5)); // 6
  * 最小
  */
 console.log(Math.min(13,5,6,7,8));
+
+/**
+ * Math.max()
+ * 最大
+ */
+console.log(Math.max(13,5,6,7,8));
