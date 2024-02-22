@@ -72,3 +72,9 @@ console.log(Math.sqrt(4)); // 2
  * 小数点以下を切り捨て整数を返す
  */
 console.log(Math.trunc(4.2124)); // 4
+
+/**
+ * Math.abs()
+ * 絶対値
+ */
+console.log(Math.abs(-13)); // 13
