@@ -59,4 +59,10 @@ console.log(Math.max(13,5,6,7,8));
  * Math.pow(base, exponent)
  * baseのexponent乗
  */
-console.log(Math.pow(2, 8));
+console.log(Math.pow(2, 8)); // 256
+
+/**
+ * Math.sqrt(x)
+ * xの平方根
+ */
+console.log(Math.sqrt(4)); // 2
