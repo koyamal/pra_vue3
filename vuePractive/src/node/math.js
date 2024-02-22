@@ -66,3 +66,9 @@ console.log(Math.pow(2, 8)); // 256
  * xの平方根
  */
 console.log(Math.sqrt(4)); // 2
+
+/**
+ * Math.trunc()
+ * 小数点以下を切り捨て整数を返す
+ */
+console.log(Math.trunc(4.2124)); // 4
