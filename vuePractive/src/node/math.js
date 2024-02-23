@@ -84,3 +84,4 @@ console.log(Math.abs(-13)); // 13
  * x以下の最大の整数
  */
 console.log(Math.floor(10.4)); // 10
+console.log(Math.floor(11)); // 11
