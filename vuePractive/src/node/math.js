@@ -78,3 +78,9 @@ console.log(Math.trunc(4.2124)); // 4
  * 絶対値
  */
 console.log(Math.abs(-13)); // 13
+
+/**
+ * Math.floor(x)
+ * x以下の最大の整数
+ */
+console.log(Math.floor(10.4)); // 10
