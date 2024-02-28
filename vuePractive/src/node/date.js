@@ -19,3 +19,5 @@ console.log(newDate.getMonth());
 console.log(newDate.getSeconds());
 
 console.log(newDate.getTime());
+
+console.log(newDate.getUTCDate());
