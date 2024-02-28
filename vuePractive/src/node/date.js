@@ -17,3 +17,5 @@ console.log(newDate.getMilliseconds());
 console.log(newDate.getMonth());
 
 console.log(newDate.getSeconds());
+
+console.log(newDate.getTime());
