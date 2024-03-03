@@ -27,3 +27,7 @@ console.log(newDate.getUTCFullYear());
 console.log(newDate.getUTCHours());
 
 console.log(newDate.getUTCMilliseconds());
+
+console.log(newDate.getUTCMinutes());
+
+console.log(newDate.getUTCMinutes());
