@@ -37,3 +37,5 @@ console.log(newDate.getUTCMonth());
 console.log(newDate.getUTCSeconds());
 
 console.log(newDate.getYear());
+
+console.log(newDate.setDate());
