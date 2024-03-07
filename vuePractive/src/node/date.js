@@ -39,3 +39,5 @@ console.log(newDate.getUTCSeconds());
 console.log(newDate.getYear());
 
 console.log(newDate.setDate());
+
+console.log(newDate.setFullYear());
