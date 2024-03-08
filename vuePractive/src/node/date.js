@@ -41,3 +41,5 @@ console.log(newDate.getYear());
 console.log(newDate.setDate());
 
 console.log(newDate.setFullYear());
+
+console.log(newDate.setHours());
