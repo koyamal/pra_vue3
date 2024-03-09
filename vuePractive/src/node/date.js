@@ -43,3 +43,6 @@ console.log(newDate.setDate());
 console.log(newDate.setFullYear());
 
 console.log(newDate.setHours());
+
+
+console.log(newDate.setMilliseconds());
