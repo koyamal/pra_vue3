@@ -44,5 +44,6 @@ console.log(newDate.setFullYear());
 
 console.log(newDate.setHours());
 
-
 console.log(newDate.setMilliseconds());
+
+console.log(newDate.setMinutes());
