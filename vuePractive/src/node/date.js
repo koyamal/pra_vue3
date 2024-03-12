@@ -51,3 +51,5 @@ console.log(newDate.setMinutes());
 console.log(newDate.setMonth());
 
 console.log(newDate.toJSON());
+
+console.log(newDate.valueOf());
