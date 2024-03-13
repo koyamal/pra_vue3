@@ -53,3 +53,6 @@ console.log(newDate.setMonth());
 console.log(newDate.toJSON());
 
 console.log(newDate.valueOf());
+
+const a = {date: "aaa"};
+console.log({...a, user: "bbb"});
