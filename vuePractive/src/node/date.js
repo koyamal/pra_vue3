@@ -62,3 +62,4 @@ const c = [...b, 10];
 console.log(c);
 
 console.log(Number("123"));
+console.log(Number("123")+ Number("456"));
