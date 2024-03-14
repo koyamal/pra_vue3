@@ -60,3 +60,5 @@ console.log({...a, user: "bbb"});
 const b = [1, 2, 4, 6, 7];
 const c = [...b, 10];
 console.log(c);
+
+console.log(Number("123"));
