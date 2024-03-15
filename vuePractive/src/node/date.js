@@ -66,3 +66,5 @@ const d = [...c, ...b];
 console.log(Number("123"));
 console.log(Number("123")+ Number("456"));
 console.log(Number("123") === 123);
+const strNumber = "1234";
+console.log(Number(strNumber) + 1);
