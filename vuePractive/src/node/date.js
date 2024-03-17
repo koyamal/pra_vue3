@@ -72,3 +72,5 @@ console.log(Number(strNumber) + 1);
 console.log("true", Number(true));
 
 console.log("undefined", Number(undefined));
+
+console.log(Number(null));
