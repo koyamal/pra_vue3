@@ -69,6 +69,6 @@ console.log(Number("123") === 123);
 const strNumber = "1234";
 console.log(Number(strNumber) + 1);
 
-console.log(Number(true));
+console.log("true", Number(true));
 
 console.log("undefined", Number(undefined));
