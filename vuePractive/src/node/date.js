@@ -73,4 +73,4 @@ console.log("true", Number(true));
 
 console.log("undefined", Number(undefined));
 
-console.log(Number(null));
+console.log("null", Number(null));
