@@ -74,3 +74,5 @@ console.log("true", Number(true));
 console.log("undefined", Number(undefined));
 
 console.log("null", Number(null));
+
+console.log(Number.MAX_VALUE);
