@@ -76,3 +76,14 @@ console.log("undefined", Number(undefined));
 console.log("null", Number(null));
 
 console.log(Number.MAX_VALUE);
+
+let obj1 = { foo: "bar", x: 42 };
+let obj2 = { foo: "baz", y: 13 };
+const merge = (...objects) => {
+  console.log(...objects);
+  return { ...objects }
+}
+;
+
+let mergedObj1 = merge(obj1, obj2);
+console.log(mergedObj1);
