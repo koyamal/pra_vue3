@@ -84,6 +84,7 @@ const merge = (...objects) => {
   return { ...objects };
 }
 
+console.log("1" === 1);
 
 let mergedObj1 = merge(obj1, obj2);
 console.log(mergedObj1);
