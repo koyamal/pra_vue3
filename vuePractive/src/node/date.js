@@ -97,6 +97,7 @@ const wait = () => {
   });
 }
 (async () => {
-  await wait();
+  const a = await wait();
+  console.log(a);
   console.log("hello")
 })()
