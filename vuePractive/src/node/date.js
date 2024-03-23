@@ -100,4 +100,4 @@ const wait = (sec) => {
   const a = await wait(3000);
   console.log(a);
   console.log("hello")
-})()
+})();
