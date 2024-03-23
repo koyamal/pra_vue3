@@ -91,13 +91,15 @@ console.log(true === 1);
 let mergedObj1 = merge(obj1, obj2);
 console.log(mergedObj1);
 
-const wait = () => {
+const wait = (sec) => {
   return new Promise((resolve) => {
-    setTimeout(() => {resolve("resolve called")}, 3000);
+    setTimeout(() => {resolve("resolve called")}, sec * 1000);
   });
 }
 (async () => {
-  const a = await wait();
-  console.log(a);
-  console.log("hello")
-})()
+  for(let i = 1; i < 4; i++) {
+    const a = await wait(i);
+    console.log(`NUM: ${i}`);
+  }
+  console.log("hello");
+})();
