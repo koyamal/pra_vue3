@@ -93,7 +93,7 @@ console.log(mergedObj1);
 
 const wait = () => {
   return new Promise((resolve) => {
-    setTimeout(resolve, 10000);
+    setTimeout(resolve, 3000);
   });
 }
 (async () => {
