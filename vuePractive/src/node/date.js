@@ -101,6 +101,5 @@ const wait = (sec) => {
     const a = await wait(i);
     console.log(`NUM: ${i}`);
   }
-
   console.log("hello");
 })();
