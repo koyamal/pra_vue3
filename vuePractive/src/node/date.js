@@ -98,8 +98,8 @@ const wait = (sec) => {
 }
 (async () => {
   for(let i = 1; i < 4; i++) {
-    const a = await wait(i);
-    const b = await wait(i);
+    const a = await wait(i*2);
+    const b = await wait(i*3);
     console.log(b);
     console.log(`NUM: ${i}`);
   }
