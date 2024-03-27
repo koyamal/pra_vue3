@@ -95,6 +95,8 @@ const wait = (sec, rejectFlag = false) => {
   return new Promise((resolve, reject) => {
     if (rejectFlag) reject();
     setTimeout(() => {resolve("resolve called")}, sec * 100);
+  }).catch(() => {
+    throw new Error('Error is occured');
   });
 }
 (async () => {
@@ -109,5 +111,7 @@ const wait = (sec, rejectFlag = false) => {
     const outputWait = await wait(23, true);
   }catch(error) {
     console.log("error");
+    console.log(error);
   }
+  console.log("after try catch");
 })();
