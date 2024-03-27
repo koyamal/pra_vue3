@@ -91,8 +91,8 @@ console.log(true === 1);
 let mergedObj1 = merge(obj1, obj2);
 console.log(mergedObj1);
 
-const wait = (sec) => {
-  return new Promise((resolve) => {
+const wait = (sec, rejectFlag) => {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {resolve("resolve called")}, sec * 1000);
   });
 }
