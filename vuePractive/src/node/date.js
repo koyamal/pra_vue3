@@ -94,15 +94,20 @@ console.log(mergedObj1);
 const wait = (sec, rejectFlag = false) => {
   return new Promise((resolve, reject) => {
     if (rejectFlag) reject();
-    setTimeout(() => {resolve("resolve called")}, sec * 1000);
+    setTimeout(() => {resolve("resolve called")}, sec * 100);
   });
 }
 (async () => {
   for(let i = 1; i < 4; i++) {
-    const a = await wait(i*2);
-    const b = await wait(i*3);
+    const a = await wait(i);
+    const b = await wait(i);
     console.log(b);
     console.log(`NUM: ${i}`);
   }
   console.log("hello");
+  try{
+    const outputWait = await wait(23, true);
+  }catch(error) {
+    console.log("error");
+  }
 })();
