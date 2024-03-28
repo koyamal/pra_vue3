@@ -115,3 +115,16 @@ const wait = (sec, rejectFlag = false) => {
   }
   console.log("after try catch");
 })();
+
+console.log(null === undefined);
+
+const object1 = {
+  name: "hello",
+};
+
+const object2 = {
+  name: "hello",
+};
+
+console.log(object1 === object2); // false
+console.log(object1 === object1); // true
