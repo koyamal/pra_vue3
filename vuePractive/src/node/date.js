@@ -115,3 +115,5 @@ const wait = (sec, rejectFlag = false) => {
   }
   console.log("after try catch");
 })();
+
+console.log(null === undefined);
