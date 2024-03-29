@@ -128,6 +128,8 @@ const object2 = {
 
 console.log(object1 === object2); // false
 console.log(object1 === object1); // true
+console.log(object1 !== object2); // true
+onsole.log(object1 !== object1); // false
 
 console.log(true !== 1);
 console.log(null !== undefined);
