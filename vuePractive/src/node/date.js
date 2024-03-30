@@ -133,3 +133,7 @@ onsole.log(object1 !== object1); // false
 
 console.log(true !== 1);
 console.log(null !== undefined);
+
+const x = 4;
+const y = -x;
+console.log(y);
