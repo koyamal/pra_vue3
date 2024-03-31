@@ -137,3 +137,8 @@ console.log(null !== undefined);
 const x = 4;
 const y = -x;
 console.log(y);
+
+const aa = '4';
+const bb = -aa;
+
+console.log(bb);
