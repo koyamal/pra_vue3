@@ -141,4 +141,5 @@ console.log(y);
 const aa = '4';
 const bb = -aa;
 
+console.log(aa);
 console.log(bb);
