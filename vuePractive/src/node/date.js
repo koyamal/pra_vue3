@@ -148,3 +148,13 @@ console.log(+'');
 
 const output = void 1;
 console.log(output);
+
+void function test() {
+  console.log('test function executed');
+};
+try {
+  test();
+} catch (e) {
+  console.log('test function is not defined');
+  // Expected output: "test function is not defined"
+}
