@@ -145,3 +145,6 @@ console.log(aa);
 console.log(bb);
 
 console.log(+'');
+
+const output = void 1;
+console.log(output);
