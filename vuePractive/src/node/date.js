@@ -161,9 +161,8 @@ try {
 
 const breakFor = () => {
   for(let i = 0; i < 10; i++) {
-    console.log(i);
     if(i % 3 === 2) {
-      // break;
+      break;
     }
     console.log(i);
   }
