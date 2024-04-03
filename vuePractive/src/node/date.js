@@ -159,14 +159,28 @@ try {
   // Expected output: "test function is not defined"
 }
 
-const breakFor = () => {
+// const breakFor = () => {
+//   for(let i = 0; i < 10; i++) {
+//     if(i % 3 === 2) {
+//       break;
+//     }
+//     console.log(i);
+//   }
+//   console.log("fin");
+// }
+
+// breakFor();
+
+
+const continueFor = () => {
   for(let i = 0; i < 10; i++) {
     if(i % 3 === 2) {
-      break;
+      continue;
     }
     console.log(i);
   }
   console.log("fin");
 }
 
-breakFor();
+continueFor();
+
