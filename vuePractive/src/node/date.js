@@ -160,11 +160,14 @@ try {
 }
 
 const breakFor = () => {
-  for(let i = 0; i > 10; i++) {
-    if(i % 3 === 0) {
-      break;
+  for(let i = 0; i < 10; i++) {
+    console.log(i);
+    if(i % 3 === 2) {
+      // break;
     }
     console.log(i);
   }
   console.log("fin");
 }
+
+breakFor();
