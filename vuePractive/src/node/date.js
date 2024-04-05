@@ -186,4 +186,8 @@ continueFor();
 
 if(3 == "3") {
   console.log(2);
+} else if(3 == 3) {
+  console.log(4);
+} else {
+  console.log("no");
 }
