@@ -109,7 +109,7 @@ const wait = (sec, rejectFlag = false) => {
   }
   console.log("hello");
   try{
-    const outputWait = await wait(23, true);
+    const outputWait = await wait(23, 1 === 1);
   }catch(error) {
     console.log(error);
   }
