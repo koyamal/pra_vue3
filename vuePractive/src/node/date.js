@@ -101,8 +101,8 @@ const wait = (sec, rejectFlag = false) => {
   });
 }
 (async () => {
-  for(let i = 1; i < 4; i++) {
-    const a = await wait(i);
+  for(let i = 1; i < 3; i++) {
+    const a = await wait(i ++);
     const b = await wait(i);
     console.log(b);
     console.log(`NUM: ${i}`);
