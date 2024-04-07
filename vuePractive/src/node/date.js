@@ -101,15 +101,15 @@ const wait = (sec, rejectFlag = false) => {
   });
 }
 (async () => {
-  for(let i = 1; i < 4; i++) {
-    const a = await wait(i);
+  for(let i = 1; i < 3; i++) {
+    const a = await wait(i ++);
     const b = await wait(i);
     console.log(b);
     console.log(`NUM: ${i}`);
   }
   console.log("hello");
   try{
-    const outputWait = await wait(23, true);
+    const outputWait = await wait(23, 1 === 1);
   }catch(error) {
     console.log(error);
   }
