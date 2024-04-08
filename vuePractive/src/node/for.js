@@ -7,3 +7,7 @@ const wait = (sec, rejectFlag = false) => {
     throw new Error('Error is occured');
   });
 }
+
+(async function() {
+  await wait(1);
+})();
