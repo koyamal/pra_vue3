@@ -9,5 +9,7 @@ const wait = (sec, rejectFlag = false) => {
 }
 
 (async function() {
-  await wait(1);
+  await wait(1).catch((e) => {
+    console.log(e);
+  });
 })();
