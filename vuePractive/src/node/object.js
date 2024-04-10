@@ -180,3 +180,6 @@ const newInstance2 = {
 };
 
 console.log(newInstance2);
+
+var abso = 1;
+console.log(abso);
