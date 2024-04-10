@@ -184,5 +184,5 @@ console.log(newInstance2);
 var abso = 1;
 console.log(abso);
 
-const abso = 2;
-console.log(abso);
+const abso2 = 2;
+console.log(abso2);
