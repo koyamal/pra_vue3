@@ -187,5 +187,8 @@ console.log(abso);
 let abso3 = 3;
 console.log(abso3);
 
+abso3 = 4;
+console.log(abso3);
+
 const abso2 = 2;
 console.log(abso2);
