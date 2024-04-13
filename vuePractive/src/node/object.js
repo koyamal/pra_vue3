@@ -192,3 +192,5 @@ console.log(abso3);
 
 const abso2 = 2;
 console.log(abso2);
+
+const routePath = '/newsInfo/get';
