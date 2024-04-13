@@ -184,5 +184,13 @@ console.log(newInstance2);
 var abso = 1;
 console.log(abso);
 
+let abso3 = 3;
+console.log(abso3);
+
+abso3 = 4;
+console.log(abso3);
+
 const abso2 = 2;
 console.log(abso2);
+
+const routePath = '/newsInfo/get';
