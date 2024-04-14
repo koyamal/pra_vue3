@@ -69,3 +69,9 @@ console.log(sequence.next(true).value);
 console.log(sequence.next().value);
 console.log(sequence.next().value);
 console.log(sequence.next().value);
+
+const funcA = (val1, val2) => {
+  return val1 + val2;
+}
+
+console.log(funcA(1, 3));
