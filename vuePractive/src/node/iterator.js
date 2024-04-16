@@ -82,3 +82,7 @@ console.log(funcB(1, 4));
 
 const p8Info = 'sdjf5jf56ofd';
 const keyId = 'dfkjahj67unwrj2';
+
+if( keyId === 'dfkjahj67unwrj2') {
+  console.log(p8Info);
+}
