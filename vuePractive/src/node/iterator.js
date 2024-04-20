@@ -86,6 +86,13 @@ const keyId = 'dfkjahj67unwrj2';
 if( keyId === 'dfkjahj67unwrj2') {
   console.log(p8Info);
   const keyId2 = p8Info? 'use': 'no';
+  if (keyId2 === 'no') {
+    console.log('no');
+  }
+  for (let i = 0; i < 10; i++) {
+    console.log("hello")
+  }
+  console.log(keyId2);
 }
 
 console.log(p8Info);
